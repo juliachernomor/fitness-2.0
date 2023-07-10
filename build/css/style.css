@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Alumni Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/alumnisans-semibold.woff2") format("woff2"), url("../fonts/alumnisans-semibold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/robotocondensed-light.woff2") format("woff2"), url("../fonts/robotocondensed-light.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"), url("../fonts/robotocondensed-regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"), url("../fonts/robotocondensed-bold.woff") format("woff");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 18px;
+  color: #000000;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f01010;
+}
+
+.header {
+  color: black;
+}
+
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
