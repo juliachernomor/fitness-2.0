@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+  justify-content: end;
+  column-gap: 11px;
+
+  @include vp-1199 {
+    column-gap: 9px;
+  }
+}
+
+.socials__item {
+  margin-right: 1px;
+}

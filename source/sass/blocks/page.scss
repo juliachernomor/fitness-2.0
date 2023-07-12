@@ -6,7 +6,7 @@
   flex-grow: 1;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 101px 0 103px;
+  color: $color-default-black;
   background-color: $color-default-white;
   overflow-x: hidden ;
 
@@ -21,42 +21,68 @@
     background-repeat: no-repeat;
     z-index: 0;
 
+    @include retina {
+      background-image: url("../img/hero-gradient@2x.png")
+    }
+
     @include vp-1199 {
       min-height: 554px;
     }
-  }
 
-  @include vp-1199 {
-    padding: 0 45px;
-  }
-
-  @include vp-767 {
-    padding: 0 15px;
+    @include vp-767 {
+      min-height: 491px;
+    }
   }
 }
 
 .page__header {
+  padding: 0 101px 0 103px;
   min-height: 104px;
   margin: 0;
   z-index: 1;
 
   @include vp-1199 {
     min-height: 82px;
+    padding: 0 45px;
   }
 
   @include vp-767 {
     min-height: 54px;
+    padding: 0 15px;
   }
 }
 
 
 .page__main {
+  padding: 0 101px 0 103px;
   display: flex;
   flex-direction: column;
   z-index: 1;
   margin: 0;
+
+  @include vp-1199 {
+    min-height: 82px;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    min-height: 54px;
+    padding: 0 15px;
+  }
 }
 
 .page__footer {
+  padding: 41px 101px 22px 103px;
+  min-height: 108px;
   margin: 0;
+
+  @include vp-1199 {
+    min-height: 114px;
+    padding: 45px 45px 0 45px;
+  }
+
+  @include vp-767 {
+    min-height: 260px;
+    padding: 44px 15px 47px 15px;
+  }
 }

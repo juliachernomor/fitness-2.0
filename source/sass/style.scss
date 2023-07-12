@@ -12,6 +12,7 @@
 @import "mixins";
 @import "global/fonts";
 @import "global/reboot";
+@import "global/utils";
 
 // Blocks
 // ---------------------------------
@@ -23,6 +24,10 @@
 @import "blocks/phone";
 @import "blocks/logo";
 @import "blocks/hero";
+@import "blocks/nav";
+@import "blocks/site-list";
+@import "blocks/socials";
+
 
 // ---------------------------------
 
