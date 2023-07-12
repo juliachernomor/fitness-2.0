@@ -1,0 +1,25 @@
+.phone {
+  align-self: flex-start;
+  font-family: $ff-alumni-sans;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 29px;
+  font-weight: 600;
+  letter-spacing: 0.78px;
+
+  @include vp-1199 {
+    display: block;
+    min-height: 17px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.48px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+}
