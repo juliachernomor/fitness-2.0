@@ -271,42 +271,17 @@ ul {
   max-width: 1366px;
   margin: 0 auto;
   color: #000000;
-  background-color: #ffffff;
-  overflow-x: hidden;
-}
-.page__body::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 657.5px;
   background-image: url("../img/hero-gradient.png");
+  background-color: #ffffff;
   background-size: 100% 657.5px;
   background-repeat: no-repeat;
-  z-index: 0;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .page__body::after {
-    background-image: url("../img/hero-gradient@2x.png");
-  }
-}
-@media (max-width: 1199px) {
-  .page__body::after {
-    min-height: 554px;
-  }
-}
-@media (max-width: 767px) {
-  .page__body::after {
-    min-height: 491px;
-  }
+  overflow-x: hidden;
 }
 
 .page__header {
   padding: 30px 101px 30px 103px;
   min-height: 104px;
   margin: 0;
-  z-index: 1;
 }
 @media (max-width: 1199px) {
   .page__header {
