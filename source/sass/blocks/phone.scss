@@ -2,10 +2,12 @@
   align-self: flex-start;
   font-family: $ff-alumni-sans;
   font-size: 26px;
+  align-self: center;
   font-style: normal;
-  line-height: 29px;
+  line-height: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
+  margin-bottom: 12px;
 
   @include vp-1199 {
     display: block;
@@ -14,6 +16,8 @@
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.48px;
+    align-self: flex-end;
+    margin: 0;
   }
 
   @include vp-767 {

@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 657.5px;
+    height: 657.5px;
     background-image: url("../img/hero-gradient.png") ;
     background-repeat: no-repeat;
     z-index: 0;
@@ -26,29 +26,29 @@
     }
 
     @include vp-1199 {
-      min-height: 554px;
+      height: 554px;
     }
 
     @include vp-767 {
-      min-height: 491px;
+      height: 491px;
     }
   }
 }
 
 .page__header {
-  padding: 0 101px 0 103px;
+  padding: 30px 101px 30px 103px;
   min-height: 104px;
   margin: 0;
   z-index: 1;
 
   @include vp-1199 {
     min-height: 82px;
-    padding: 0 45px;
+    padding: 25px 45px 25px 45px;
   }
 
   @include vp-767 {
     min-height: 54px;
-    padding: 0 15px;
+    padding: 14px 15px 18px 15px;
   }
 }
 
