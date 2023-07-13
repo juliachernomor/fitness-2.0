@@ -112,7 +112,6 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 30px 0;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-negative: 0;
@@ -197,14 +196,14 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 657.5px;
+  height: 657.5px;
   background-image: url("../img/hero-gradient.png");
   background-repeat: no-repeat;
   z-index: 0;
 }
 
 .page__header {
-  padding: 0 101px 0 103px;
+  padding: 30px 101px 30px 103px;
   min-height: 104px;
   margin: 0;
   z-index: 1;
@@ -234,10 +233,14 @@ ul {
   align-self: flex-start;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   font-style: normal;
-  line-height: 29px;
+  line-height: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
+  margin-bottom: 12px;
 }
 
 .logo__img--footer {
@@ -438,10 +441,9 @@ ul {
 
 @media (max-width: 1199px) {
   .header {
-    padding: 40px 0 25px 0;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
   }
 
   .header__logo {
@@ -482,12 +484,12 @@ ul {
   }
 
   .page__body::after {
-    min-height: 554px;
+    height: 554px;
   }
 
   .page__header {
     min-height: 82px;
-    padding: 0 45px;
+    padding: 25px 45px 25px 45px;
   }
 
   .page__main {
@@ -507,6 +509,9 @@ ul {
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.48px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin: 0;
   }
 
   .logo__img--footer {
@@ -607,7 +612,6 @@ ul {
 
 @media (max-width: 767px) {
   .header {
-    padding: 14px 0 16px 0;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -645,12 +649,12 @@ ul {
   }
 
   .page__body::after {
-    min-height: 491px;
+    height: 491px;
   }
 
   .page__header {
     min-height: 54px;
-    padding: 0 15px;
+    padding: 14px 15px 18px 15px;
   }
 
   .page__main {
