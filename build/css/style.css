@@ -267,10 +267,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  min-height: 100%;
   max-width: 1366px;
   margin: 0 auto;
   color: #000000;
@@ -283,8 +280,9 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 657.5px;
+  min-height: 657.5px;
   background-image: url("../img/hero-gradient.png");
+  background-size: 100% 657.5px;
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -295,12 +293,12 @@ ul {
 }
 @media (max-width: 1199px) {
   .page__body::after {
-    height: 554px;
+    min-height: 554px;
   }
 }
 @media (max-width: 767px) {
   .page__body::after {
-    height: 491px;
+    min-height: 491px;
   }
 }
 
