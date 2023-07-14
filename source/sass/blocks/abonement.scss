@@ -20,7 +20,7 @@
       left: calc(100% - 310px);
     }
 
-    @include vp-1199 {
+    @include vp-767 {
       display: none;
     }
   }
