@@ -1,0 +1,111 @@
+.abonement {
+  position: relative;
+  background-color: $color-ghost-white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/gym-equipment-desktop.png");
+    background-repeat: no-repeat;
+    width: 321px;
+    height: 384px;
+    top: 59.5%;
+    left: 79%;
+    z-index: 1;
+
+    @include vp-1199 {
+      background-image: url("../img/gym-equipment-tablet.png");
+      background-position: -40px -20px;
+      top: calc(100% - 300px);
+      left: calc(100% - 310px);
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
+
+.abonement__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 122px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 103px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+}
+
+.abonement__title {
+  margin: 0 0 22px 0;
+  color: #102654;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.abonement__months-number {
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  column-gap: 46px;
+  padding-bottom: 10px;
+  margin-bottom: 39px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+
+  @include vp-1199 {
+    width: 50%;
+    padding-bottom: 11px;
+    column-gap: 54px;
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding-bottom: 11px;
+    column-gap: 45px;
+    margin-bottom: 37px;
+  }
+}
+
+.quantity-month {
+  color: rgba(16, 38, 84, 0.50);
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 18px;
+  }
+
+  @include vp-1199 {
+    font-size: 16px;
+  }
+}
