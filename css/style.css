@@ -639,6 +639,7 @@ ul {
   line-height: 150%;
   margin-right: 14px;
   margin-bottom: 34px;
+  z-index: 1;
 }
 
 .programs__price::after {
@@ -650,6 +651,7 @@ ul {
   opacity: 0.5;
   top: -57px;
   right: -15px;
+  z-index: -1;
 }
 
 .programs__price--first::after {
@@ -982,10 +984,6 @@ ul {
     left: calc(100% - 310px);
   }
 
-  .abonement::after {
-    display: none;
-  }
-
   .abonement__container {
     padding-top: 103px;
     padding-bottom: 100px;
@@ -1310,6 +1308,10 @@ ul {
     height: 313px;
     top: 0;
     left: -15px;
+  }
+
+  .abonement::after {
+    display: none;
   }
 
   .abonement__container {
