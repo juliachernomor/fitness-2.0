@@ -1,7 +1,4 @@
 .main {
-  flex-grow: 1;
-}
-
-.main__hero {
-  min-height: 450px;
+  display: flex;
+  flex-direction: column;
 }

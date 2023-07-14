@@ -3,7 +3,6 @@
   width: 100%;
   justify-content: end;
   background-color: $color-black-russian;
-  flex-shrink: 0;
 
   @include vp-1199 {
     justify-content: space-between;

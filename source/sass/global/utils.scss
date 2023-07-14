@@ -1,3 +1,22 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100hv;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  overflow-x: hidden;
+
+  .header,
+  .footer {
+    flex-shrink: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
