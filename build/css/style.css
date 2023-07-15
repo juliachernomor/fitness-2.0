@@ -80,7 +80,6 @@ img,
 video {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 textarea {
@@ -536,6 +535,7 @@ ul {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+    height: auto;
   }
 }
 @media (max-width: 767.5px) {
@@ -558,6 +558,7 @@ ul {
     min-width: 324px;
     min-height: 390px;
     margin-left: auto;
+    height: auto;
   }
 }
 
@@ -786,6 +787,11 @@ ul {
 .video__img {
   position: relative;
 }
+@media (max-width: 1199.5px) {
+  .video__img {
+    height: auto;
+  }
+}
 @media (max-width: 767.5px) {
   .video__img {
     width: 320px;
@@ -850,7 +856,7 @@ ul {
   .gym__container {
     -ms-grid-rows: 27.5% 37.3% 19.6%;
     grid-template-rows: 27.5% 37.3% 19.6%;
-    row-gap: 40px;
+    row-gap: 39px;
     padding-top: 65px;
     margin-bottom: 0;
     padding-bottom: 26px;
@@ -928,6 +934,7 @@ ul {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
+  height: auto;
 }
 @media (max-width: 1199.5px) {
   .gym__video {
@@ -999,7 +1006,8 @@ ul {
     min-width: 290px;
     font-size: 32px;
     letter-spacing: 0.96px;
-    text-align: start;
+    text-align: left;
+    margin-right: auto;
     margin-bottom: 7px;
   }
 }
@@ -1026,6 +1034,7 @@ ul {
     font-weight: 400;
     letter-spacing: 0px;
     min-width: 290px;
+    margin-right: auto;
     margin-bottom: 24px;
   }
 }
@@ -1075,6 +1084,7 @@ ul {
 .gym-image__img {
   margin: 0;
   width: 100%;
+  height: auto;
 }
 @media (max-width: 767.5px) {
   .gym-image__img {
@@ -1084,9 +1094,10 @@ ul {
        object-fit: contain;
     -o-object-position: center;
        object-position: center;
-    height: 313px;
+    min-height: 313px;
     top: 0;
     left: -15px;
+    margin: 0 auto;
   }
 }
 
@@ -1423,7 +1434,7 @@ ul {
 @media (max-width: 767.5px) {
   .supergames__container {
     padding-top: 69px;
-    padding-bottom: 70px;
+    padding-bottom: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1711,6 +1722,236 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767.5px) {
+  .supergames-picture__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 292px;
+  }
+}
+
+.slide {
+  position: relative;
+  cursor: pointer;
+}
+.slide:hover > .slide__card {
+  display: block;
+}
+.slide:hover > .slide__name {
+  display: none;
+}
+@media (max-width: 1199.5px) {
+  .slide:active > .slide__card {
+    display: block;
+  }
+  .slide:active > .slide__name {
+    display: none;
+  }
+}
+
+.slide__name {
+  position: absolute;
+  content: "";
+  top: 82.5%;
+  right: 29%;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+@media (max-width: 1199.5px) {
+  .slide__name {
+    top: 81%;
+  }
+}
+
+.slide__name--modified {
+  right: 26%;
+}
+
+.slide__img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767.5px) {
+  .slide__img {
+    min-height: 274px;
+  }
+}
+
+.slide__card {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 51px 57px 10px 57px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  z-index: 1;
+}
+
+.trainer {
+  position: relative;
+}
+
+.trainer__container {
+  padding-bottom: 105px;
+}
+@media (max-width: 1199.5px) {
+  .trainer__container {
+    padding-bottom: 93px;
+  }
+}
+@media (max-width: 767.5px) {
+  .trainer__container {
+    padding-bottom: 93px;
+  }
+}
+
+.trainer__title {
+  color: #102654;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  margin: 0 0 53px 0;
+  text-align: start;
+}
+@media (max-width: 1199.5px) {
+  .trainer__title {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin: 0 0 34px 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767.5px) {
+  .trainer__title {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    margin: 0 0 45px 0;
+  }
+}
+
+.trainer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 105px;
+}
+
+.trainer__swiper-prev,
+.trainer__swiper-next {
+  position: relative;
+}
+
+.trainer__svg-prev {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 34px;
+  top: 17%;
+  left: 127%;
+}
+@media (max-width: 1199.5px) {
+  .trainer__svg-prev {
+    top: -23%;
+  }
+}
+@media (max-width: 767.5px) {
+  .trainer__svg-prev {
+    width: 10px;
+    height: 19px;
+    top: 4%;
+    left: 22%;
+  }
+}
+
+.trainer__svg-next {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 34px;
+  top: 17%;
+  right: 127%;
+}
+@media (max-width: 1199.5px) {
+  .trainer__svg-next {
+    top: -23%;
+  }
+}
+@media (max-width: 767.5px) {
+  .trainer__svg-next {
+    width: 10px;
+    height: 19px;
+    top: 4%;
+    left: 41%;
+  }
+}
+
+.trainer-card__title {
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.trainer-card__event {
+  margin: 0 0 29px 0;
+  color: #b6bdcc;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.trainer-card__advantages-list {
+  list-style-type: disc;
+  margin-left: 13px;
+}
+
+.trainer-card__advantages-item {
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 13px;
+}
+
+.swiper {
+  width: 85%;
+}
+@media (max-width: 1199.5px) {
+  .swiper {
+    width: 73.6%;
+  }
+}
+@media (max-width: 767.5px) {
+  .swiper {
+    width: 70.6%;
+  }
+}
+
+.swiper__wrapper {
+  z-index: 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
 
 /* @mixin hover-focus {
