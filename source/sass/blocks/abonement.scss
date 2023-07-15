@@ -7,10 +7,11 @@
     content: "";
     background-image: url("../img/gym-equipment-desktop.png");
     background-repeat: no-repeat;
+    background-position: -40px -30px;
     width: 321px;
     height: 384px;
-    top: 59.5%;
-    left: 79%;
+    top: calc(100% - 313px);
+    left: calc(100% - 246px);
     z-index: 1;
 
     @include vp-1199 {
@@ -35,7 +36,7 @@
 
   @include vp-1199 {
     padding-top: 103px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   @include vp-767 {
@@ -105,7 +106,7 @@
     font-size: 18px;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     font-size: 16px;
   }
 }

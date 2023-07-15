@@ -1,0 +1,190 @@
+.supergames-info {
+  padding: 85px 78px 87px 78px;
+  display: grid;
+  grid-template-columns: 58.5% 41.5%;
+  grid-template-rows: 48% 9% 3.9% 18.5% 20.4% ;
+  color: $color-default-white;
+  background-color: $color-torch-red3;
+
+  @include vp-1199 {
+    padding: 51px 45px 51px 45px;
+    grid-template-rows: 48% 5.7% 3.9% 21% 20.4% ;
+  }
+
+  @include vp-767 {
+    padding: 50px 44px 51px 44px;
+    grid-template-rows: 47% 7% 10% 14.4% 23%;
+    min-height: 292px;
+  }
+}
+
+.supergames-info__title {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 0;
+  text-align: center;
+  font-family: $ff-alumni-sans;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+  font-size: 48px;
+  letter-spacing: 1.44px;
+  text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.supergames-info__wrapper {
+  margin-left: 35%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15%;
+
+  @include vp-1199 {
+    row-gap: 0;
+  }
+}
+
+.supergames-info__date-information {
+  display: grid;
+  grid-template-columns: 29% 71%;
+  grid-template-rows: 23% 30% 42.9%;
+  justify-content: start;
+  align-items: start;
+  margin: 0;
+  font-family:$ff-roboto-condensed;
+  font-style: normal;
+
+  @include vp-1199 {
+    grid-template-rows: 23% 73%;
+  }
+}
+
+.supergames-info__date {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    align-self: self-start;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+}
+
+.supergames-info__day {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  font-size: 40px;
+  font-weight: 700;
+
+  @include vp-1199 {
+  font-size: 24px;
+  grid-row: 2/3;
+  padding-top: 8px;
+  margin-bottom: 8px;
+  }
+}
+
+.supergames-info__month {
+  display: block;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+
+  @include vp-1199 {
+    font-size: 10px;
+    grid-row: 2/3;
+    padding-top: 8px;
+    line-height: 1;
+    padding-top: 11px;
+  }
+}
+
+.supergames-info__time-information {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.supergames-info__time {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+}
+
+.supergames-info__hour {
+  font-size: 40px;
+  font-weight: 700;
+
+  @include vp-1199 {
+  font-size: 24px;
+  line-height: 1;
+  }
+}
+
+.supergames-info__description {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin: 0;
+  font-family: $ff-roboto-condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+.supergames-info__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/3;
+  grid-row: 5/6;
+  border: 4px solid $color-default-white;
+  max-width: 343px;
+  min-height: 67px;
+  font-family: $ff-roboto-condensed;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  @include vp-1199 {
+    max-width: 202px;
+    min-height: 39px;
+    border: 2px solid $color-default-white;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+}
