@@ -66,7 +66,7 @@ html {
   font-weight: 400;
   line-height: 24px;
   font-size: 16px;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -173,7 +173,7 @@ ul {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  background-color: #030A1a;
+  background-color: #030a1a;
 }
 
 .footer__wrapper {
@@ -516,10 +516,11 @@ ul {
   content: "";
   background-image: url("../img/gym-equipment-desktop.png");
   background-repeat: no-repeat;
+  background-position: -40px -30px;
   width: 321px;
   height: 384px;
-  top: 59.5%;
-  left: 79%;
+  top: calc(100% - 313px);
+  left: calc(100% - 246px);
   z-index: 1;
 }
 
@@ -643,7 +644,7 @@ ul {
 }
 
 .programs__price::after {
-  color: #E8E8E8;
+  color: #e8e8e8;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -679,7 +680,201 @@ ul {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 25px 44px 23px 44px;
-  border: 2px solid #1C3374;
+  border: 2px solid #1c3374;
+}
+
+.supergames__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 43% 57%;
+  grid-template-columns: 43% 57%;
+  padding-top: 120px;
+  padding-bottom: 106px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.supergames-info {
+  padding: 85px 78px 87px 78px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 58.5% 41.5%;
+  grid-template-columns: 58.5% 41.5%;
+  -ms-grid-rows: 48% 9% 3.9% 18.5% 20.4%;
+  grid-template-rows: 48% 9% 3.9% 18.5% 20.4%;
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.supergames-info__title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin: 0;
+  text-align: center;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+}
+
+.supergames-info__wrapper {
+  margin-left: 35%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 15%;
+}
+
+.supergames-info__date-information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 29% 71%;
+  grid-template-columns: 29% 71%;
+  -ms-grid-rows: 23% 30% 42.9%;
+  grid-template-rows: 23% 30% 42.9%;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+}
+
+.supergames-info__date {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.supergames-info__day {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.supergames-info__month {
+  display: block;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.supergames-info__time-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  line-height: 150%;
+  font-style: normal;
+}
+
+.supergames-info__time {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.supergames-info__hour {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.supergames-info__description {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.supergames-info__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  border: 4px solid #ffffff;
+  max-width: 343px;
+  min-height: 67px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.supergames-picture {
+  width: 100%;
+  height: 100%;
+}
+
+.supergames-picture__img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /* @mixin hover-focus {
@@ -723,7 +918,7 @@ ul {
   }
 */
 
-@media (max-width: 1199px) {
+@media (max-width: 1199.5px) {
   .container {
     padding: 0 45px;
   }
@@ -986,7 +1181,7 @@ ul {
 
   .abonement__container {
     padding-top: 103px;
-    padding-bottom: 100px;
+    padding-bottom: 102px;
   }
 
   .abonement__title {
@@ -1005,10 +1200,6 @@ ul {
 
   .quantity-month {
     font-size: 18px;
-  }
-
-  .quantity-month {
-    font-size: 16px;
   }
 
   .programs {
@@ -1036,16 +1227,94 @@ ul {
   .programs__link {
     padding: 23px 44px 23px 44px;
   }
+
+  .supergames__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .supergames-info {
+    padding: 51px 45px 51px 45px;
+    -ms-grid-rows: 48% 5.7% 3.9% 21% 20.4%;
+    grid-template-rows: 48% 5.7% 3.9% 21% 20.4%;
+  }
+
+  .supergames-info__title {
+    font-size: 48px;
+    letter-spacing: 1.44px;
+    text-align: center;
+  }
+
+  .supergames-info__wrapper {
+    row-gap: 0;
+  }
+
+  .supergames-info__date-information {
+    -ms-grid-rows: 23% 73%;
+    grid-template-rows: 23% 73%;
+  }
+
+  .supergames-info__date {
+    font-size: 12px;
+    -ms-flex-item-align: self-start;
+    -ms-grid-row-align: self-start;
+    align-self: self-start;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .supergames-info__day {
+    font-size: 24px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .supergames-info__month {
+    font-size: 10px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-top: 8px;
+    line-height: 1;
+    padding-top: 11px;
+  }
+
+  .supergames-info__time {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .supergames-info__hour {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .supergames-info__description {
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .supergames-info__link {
+    max-width: 202px;
+    min-height: 39px;
+    border: 2px solid #ffffff;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
 }
 
-@media (max-width: 1199px) and (max-width: 767px) {
+@media (max-width: 1199.5px) and (max-width: 767.5px) {
   .hero__title {
     min-height: 137px;
     margin-bottom: 22px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.5px) {
   .container {
     padding: 0 15px;
   }
@@ -1333,13 +1602,17 @@ ul {
     margin-bottom: 37px;
   }
 
+  .quantity-month {
+    font-size: 16px;
+  }
+
   .programs {
-    gap: 31px;
+    gap: 35px;
   }
 
   .programs__program {
     width: 100%;
-    padding: 50px 0 55px 0;
+    padding: 50px 0 53px 0;
   }
 
   .programs__title {
@@ -1364,5 +1637,28 @@ ul {
   .programs__price::after {
     font-size: 80px;
     top: -46px;
+  }
+
+  .supergames__container {
+    padding-top: 69px;
+    padding-bottom: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .supergames-info {
+    padding: 50px 44px 51px 44px;
+    -ms-grid-rows: 47% 7% 10% 14.4% 23%;
+    grid-template-rows: 47% 7% 10% 14.4% 23%;
+    min-height: 292px;
+  }
+
+  .supergames-info__title {
+    text-align: center;
   }
 }
