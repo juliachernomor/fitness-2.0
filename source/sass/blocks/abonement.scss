@@ -75,27 +75,29 @@
   text-align: center;
   display: flex;
   column-gap: 46px;
-  padding-bottom: 10px;
   margin-bottom: 39px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.20);
 
   @include vp-1199 {
     width: 50%;
-    padding-bottom: 11px;
     column-gap: 54px;
     margin-bottom: 45px;
   }
 
   @include vp-767 {
     width: 100%;
-    padding-bottom: 11px;
     column-gap: 45px;
     margin-bottom: 37px;
   }
 }
 
-.quantity-month {
+.abonement__quantity-month {
   color: rgba(16, 38, 84, 0.50);
+  border:none;
+  background-color: $color-ghost-white;
+  padding: 0;
+  padding-bottom: 10px;
+
   font-family: $ff-roboto-condensed;
   font-size: 20px;
   font-style: normal;
@@ -109,4 +111,8 @@
   @include vp-767 {
     font-size: 16px;
   }
+}
+
+.abonement__quantity-month.is-active {
+  border-bottom: 1px solid $color-crimson;
 }

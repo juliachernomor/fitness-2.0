@@ -112,8 +112,10 @@
 
 
 .promotion__img {
+  width: 100%;
   object-fit: cover;
   object-position: -45px 0;
+  height: 100%;
 
   @include vp-1199 {
     object-position: 0 0;
