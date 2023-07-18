@@ -1,11 +1,16 @@
-.footer {
+.footer__container {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 34px;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: end;
   background-color: $color-black-russian;
 
   @include vp-1199 {
-    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 34px;
   }
 
   @include vp-767 {
@@ -13,47 +18,31 @@
   }
 }
 
-.footer__wrapper {
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  column-gap: 25%;
-
-  @include vp-1199 {
-    justify-content: space-between;
-    column-gap: 7.4%;
-  }
-
-  @include vp-767 {
-    position: relative;
-    width: 100%;
-    display: block;
-  }
-}
-
-
 .footer__logo {
-  width: 20%;
+  width: 7.59%;
+  margin-right: 23.89%;
 
   @include vp-1199 {
-    width: 19.4%;
+    width: 12.09%;
+    margin-right: 9.14%;
   }
 
   @include vp-767 {
     position: absolute;
     content: "";
-    padding-top: 5px;
+    top: 19%;
     width: 66px;
     height: 15px;
   }
 }
 
 .footer__nav {
-  width: 55%;
+  width: 37.18%;
+  margin-right: 22.95%;
 
   @include vp-1199 {
-    width: 73%;
+    width: 57.67%;
+    margin-right: 6.78%;
   }
 
   @include vp-767 {
@@ -62,10 +51,10 @@
 }
 
 .footer__socials {
-  width: 30%;
+  width: 8.37%;
 
   @include vp-1199 {
-    width: 21%;
+    width: 14.30%;
   }
 
   @include vp-767 {

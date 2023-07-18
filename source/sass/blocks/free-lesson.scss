@@ -1,0 +1,36 @@
+.free-lesson {
+  padding: 56px 170px 42px  103px;
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  font-style: normal;
+
+  @include vp-1199 {
+    padding: 54px 163px 42.5px  133px;
+  }
+
+  @include vp-767 {
+    padding: 58px 15px 41.5px 15px;
+  }
+}
+
+.free-lesson__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 156%;
+  letter-spacing: 1.62px;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+   font-size: 42px;
+   letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.7px;
+    margin-bottom: 35px;
+  }
+}
