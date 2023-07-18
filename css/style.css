@@ -74,6 +74,8 @@ html {
 body {
   width: 100%;
   height: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -137,9 +139,6 @@ ul {
 }
 
 .container {
-  width: 100%;
-  max-width: 1365px;
-  margin: 0 auto;
   padding: 0 101px 0 103px;
 }
 
@@ -148,7 +147,21 @@ ul {
 }
 
 .header {
+  position: relative;
   background-color: #000000;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/hero-gradient.png");
+  background-size: 100% 657.5px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 657.5px;
+  z-index: 0;
 }
 
 .header__container {
@@ -166,6 +179,14 @@ ul {
   padding-top: 30px;
   padding-bottom: 30px;
   min-height: 104px;
+}
+
+.header__logo {
+  z-index: 1;
+}
+
+.header__phone {
+  z-index: 1;
 }
 
 .footer__container {
@@ -1997,6 +2018,10 @@ ul {
     padding: 0 45px;
   }
 
+  .header::after {
+    min-height: 554px;
+  }
+
   .header__container {
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -2774,6 +2799,10 @@ ul {
 @media (max-width: 767.5px) {
   .container {
     padding: 0 15px;
+  }
+
+  .header::after {
+    min-height: 491px;
   }
 
   .header__container {
@@ -3571,5 +3600,11 @@ ul {
     font-size: 32px;
     letter-spacing: 0.7px;
     margin-bottom: 35px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .header::after {
+    background-image: url("../img/hero-gradient@2x.png");
   }
 }
