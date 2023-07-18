@@ -1,5 +1,5 @@
-const createNewSlider = () => {
-new Swiper('.swiper', {
+const createNewSlider1 = () => {
+new Swiper('.swiper--1', {
     navigation: {
       nextEl:'.trainer__swiper-next',
       prevEl:'.trainer__swiper-prev',
@@ -19,7 +19,28 @@ new Swiper('.swiper', {
           }
   }});
 }
-export {createNewSlider};
+
+const createNewSlider2 = () => {
+  new Swiper('.swiper--2', {
+    slidesPerView: 1,
+      navigation: {
+        nextEl:'.reviews__swiper-next',
+        prevEl:'.reviews__swiper-prev',
+      },
+      breakpoints: {
+            // 320: {
+            //   slidesPerView: 1,
+            // },
+            // // 768: {
+            // //   slidesPerView: 2,
+            // //   spaceBetween: 30
+            // // },
+            1200: {
+              slidesPerView: 1,
+            }
+    }});
+  }
+export {createNewSlider1, createNewSlider2};
 
 
 

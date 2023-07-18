@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {createNewSlider} from './vendor/swiper';
+import {createNewSlider1, createNewSlider2} from './vendor/swiper';
 import {initTabs} from './init-tabs';
 import {initAccordions} from './init-accordion';
 
@@ -12,7 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   initAccordions();
   iosVhFix();
-  createNewSlider();
+  createNewSlider1();
+  createNewSlider2();
   initTabs();
 
   // Modules
