@@ -284,7 +284,7 @@
       </section>
 
       <section class="main__trainer trainer">
-        <div class="trainer__container container swiper">
+        <div class="trainer__container container swiper swiper--1">
           <h2 class="trainer__title">Тренеры</h2>
           <div class="trainer__wrapper swiper-wrapper">
             <div class="trainer__slide slide slide--1 swiper-slide">
@@ -869,8 +869,47 @@
           </div>
         </div>
       </section>
-    </main>
 
+
+      <section class="main__reviews reviews">
+        <div class="reviews__container container swiper swiper--2">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__wrapper swiper-wrapper">
+
+            <blockquote class="reviews__slide swiper-slide">
+              <img class="reviews__author-image" src="img/review-orlova.png" width="80" height="80"
+                   alt="Фото Анны Орловой.">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Анна Орлова</cite>
+                <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+              </div>
+            </blockquote>
+
+            <blockquote class="reviews__slide reviews__slide--color swiper-slide">
+              <img class="reviews__author-image" src="img/review-orlova.png" width="80" height="80"
+                   alt="Фото Анны Орловой.">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Анна Орлова</cite>
+                <p class="reviews__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»</p>
+              </div>
+            </blockquote>
+          </div>
+          <div class="reviews__swiper-prev swiper-button-prev">
+            <svg class="reviews__svg-prev" width="16" height="32" viewBox="0 0 16 32">
+              <use href="img/sprite.svg#button-prev"></use>
+            </svg>
+          </div>
+          <div class="reviews__swiper-next swiper-button-next">
+            <svg class="reviews__svg-next" width="16" height="32" viewBox="0 0 16 32">
+              <use href="img/sprite.svg#button-next"></use>
+            </svg>
+          </div>
+        </div>
+
+      </section>
+
+
+    </main>
     <footer class="page__footer footer">
       <div class="footer__container container">
         <a class="footer__logo logo logo" href="#">
