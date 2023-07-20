@@ -935,19 +935,19 @@
           </h2>
 
 
-          <div class="feedback__free-lesson free-lesson" data-form-validate data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" date-message-extra="Неверный ввод данных">
+          <div class="feedback__free-lesson free-lesson" data-form-validate data-callback="base">
 
             <h3 class="free-lesson__title">Бесплатное занятие</h3>
-            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
 
-              <div class="form__name" data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required>
+              <div class="form__name custom__input is-invalid" data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required>
                 <label class="visually-hidden" for="user-name-1">Имя:</label>
-                <input class="form__input form__input--name" placeholder="Имя" type="text" aria-invalid="true" name="user-name-1" class id="name" required>
+                <input class="form__input form__input--name" placeholder="Имя" type="text" name="user-name-1" class aria-invalid="true"required>
               </div>
 
               <div class="form__phone" data-validate-type="phone", data-on-input-validate, data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-message-success="Поле заполнено верно", data-required>
                 <label class="visually-hidden" for="phone">Телефон:</label>
-                <input class="form__input form__input--phone" placeholder="Телефон" type="tel" name="phone" id="phone" required>
+                <input class="form__input form__input--phone" placeholder="Телефон" type="tel" name="user-phone" aria-invalid="true" required>
               </div>
 
               <button class="form__submit" type="submit">Отправить</button>
