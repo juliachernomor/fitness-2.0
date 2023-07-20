@@ -284,7 +284,9 @@
       </section>
 
       <section class="main__trainer trainer">
-        <div class="trainer__container container swiper swiper--1">
+        <div class="trainer__container container swiper-container">
+          <div class="swiper swiper--1">
+
           <h2 class="trainer__title">Тренеры</h2>
           <div class="trainer__wrapper swiper-wrapper">
             <div class="trainer__slide slide slide--1 swiper-slide">
@@ -485,6 +487,7 @@
             <use href="img/sprite.svg#button-next"></use>
           </svg>
         </div>
+      </div>
       </section>
 
       <section class="main__advantages advantages">
@@ -887,7 +890,8 @@
 
 
       <section class="main__reviews reviews">
-        <div class="reviews__container container swiper swiper--2">
+        <div class="reviews__container container">
+        <div class="reviews__swiper swiper swiper--2">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__wrapper swiper-wrapper">
 
@@ -922,26 +926,34 @@
             </svg>
           </div>
         </div>
+      </div>
       </section>
+
       <section class="main__feedback feedback">
-        <div class="feedback__container container container--paddind">
+        <div class="feedback__container--1">
           <h2 class="visually-hidden">Здесь вы можете записаться на пробное бесплатное занятие и увидеть наши контакты
           </h2>
 
-          <div class="feedback__free-lesson free-lesson">
-            <h3 class="free-lesson__title">Бесплатное занятие</h3>
-            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form__name">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input error" type="text" name="name" id="name" required>
-              </div>
-              <div class="form__phone">
-                <label class="form__label" for="phone">Телефон:</label>
-                <input class="form__input" type="tel" name="phone" id="phone" required>
-              </div>
-              <button class="form__submit" type="button">Отправить</button>
-          </div>
 
+          <div class="feedback__free-lesson free-lesson" data-form-validate data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" date-message-extra="Неверный ввод данных">
+
+            <h3 class="free-lesson__title">Бесплатное занятие</h3>
+            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <div class="form__name" data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required>
+                <label class="visually-hidden" for="name">Имя:</label>
+                <input class="form__input form__input--name" placeholder="Имя" type="text" aria-invalid="true" name="user-name-1" class id="name" minlength="1" maxlength="11" required>
+              </div>
+
+              <div class="form__phone" data-validate-type="phone", data-on-input-validate, data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-message-success="Поле заполнено верно", data-required>
+                <label class="visually-hidden" for="phone">Телефон:</label>
+                <input class="form__input form__input--phone" placeholder="Телефон" type="tel" name="phone" id="phone" pattern="^\+7[1-9]{10}$" required>
+              </div>
+
+              <button class="form__submit" type="submit">Отправить</button>
+          </div>
+        </div>
+        <div class="feedback__container--2">
           <div class="feedback__contacts contacts">
             <h3 class="contacts__title">Контакты</h3>
             <div class="contacts__wrapper">
@@ -963,7 +975,8 @@
             </a>
           </div>
           </div>
-  </div>
+        </div>
+
   </section>
   </main>
   <footer class="page__footer footer">
@@ -976,19 +989,19 @@
       <nav class="footer__nav nav">
         <ul class="nav__list">
           <li class="nav__item site-list site-list--servises">
-            <a class="site-list__link">Услуги</a>
+            <a class="site-list__link" href="#">Услуги</a>
           </li>
           <li class="nav__item site-list site-list--abonements">
-            <a class="site-list__link">Абонементы</a>
+            <a class="site-list__link" href="#">Абонементы</a>
           </li>
           <li class="nav__item site-list site-list--actions">
-            <a class="site-list__link">Акции</a>
+            <a class="site-list__link" href="#">Акции</a>
           </li>
           <li class="nav__item site-list site-list--treners">
-            <a class="site-list__link">Тренеры</a>
+            <a class="site-list__link" href="#">Тренеры</a>
           </li>
           <li class="nav__item site-list site-list--shedules">
-            <a class="site-list__link">Расписание</a>
+            <a class="site-list__link" href="#" disabled >Расписание</a>
           </li>
         </ul>
       </nav>
@@ -997,7 +1010,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--vkontakte" href="#"><span class="visually-hidden">
               Перейти на нашу страницу в Вконтакте.</span>
-            <svg width="25" height="25" viewBox="0 0 25 25">
+            <svg class="socials__svg" width="13.89" height="13.89" viewBox="0 0 13.89 13.89">
               <use href="img/sprite.svg#vk"></use>
             </svg>
           </a>
@@ -1005,7 +1018,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--ok" href="#"><span class="visually-hidden">Перейти на нашу страницу в
               Одноклассники.</span>
-            <svg width="25" height="25" viewBox="0 0 25 25">
+            <svg class="icon" width="8.83" height="15.73" viewBox="0 0 8.83 15.73">
               <use href="img/sprite.svg#ok"></use>
             </svg>
           </a>
@@ -1013,7 +1026,7 @@
         <li class="socials__item">
           <a class="socials__link socials__link--reddit" href="#"><span class="visually-hidden">
               Перейти на нашу страницу в Reddit.</span>
-            <svg width="25" height="25" viewBox="0 0 25 25">
+            <svg class="socials__svg" width="13.89" height="13.89" viewBox="0 0 13.89 13.89">
               <use href="img/sprite.svg#reddit"></use>
             </svg>
           </a>
