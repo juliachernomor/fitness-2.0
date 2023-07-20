@@ -14,14 +14,14 @@
 
   @include vp-1199 {
     padding-top: 67px;
-    padding-bottom: 92px;
+    padding-bottom: 68px;
     flex-direction: column;
     align-items: center;
   }
 
   @include vp-767 {
     padding-top: 46px;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
   }
 }
 
