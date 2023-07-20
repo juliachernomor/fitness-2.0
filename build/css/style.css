@@ -3819,8 +3819,11 @@ ul {
 }
 .form__input:active, .form__input:focus {
   padding: 10px 15px;
-  border: 1px solid #ffffff;
-  outline: none;
+  outline: 1px solid #ffffff;
+  border: none;
+}
+.form__input:disabled {
+  opacity: 0.4;
 }
 @media (max-width: 1199.5px) {
   .form__input {
@@ -3829,7 +3832,27 @@ ul {
   }
 }
 
-.form__input--name::-webkit-input-placeholder, .form__input--phone::-webkit-input-placeholder {
+.form__input:disabled::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__input:disabled::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__input:disabled:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__input:disabled::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__input:disabled::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form__input::-webkit-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -3838,7 +3861,7 @@ ul {
   line-height: normal;
 }
 
-.form__input--name::-moz-placeholder, .form__input--phone::-moz-placeholder {
+.form__input::-moz-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -3847,7 +3870,7 @@ ul {
   line-height: normal;
 }
 
-.form__input--name:-ms-input-placeholder, .form__input--phone:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -3856,7 +3879,7 @@ ul {
   line-height: normal;
 }
 
-.form__input--name::-ms-input-placeholder, .form__input--phone::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -3865,8 +3888,7 @@ ul {
   line-height: normal;
 }
 
-.form__input--name::placeholder,
-.form__input--phone::placeholder {
+.form__input::placeholder {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
@@ -3875,23 +3897,23 @@ ul {
   line-height: normal;
 }
 
-.form__input:avtive::-webkit-input-placeholder, .form__input:focus::-webkit-input-placeholder {
+.form__input:active::-webkit-input-placeholder, .form__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.form__input:avtive::-moz-placeholder, .form__input:focus::-moz-placeholder {
+.form__input:active::-moz-placeholder, .form__input:focus::-moz-placeholder {
   color: transparent;
 }
 
-.form__input:avtive:-ms-input-placeholder, .form__input:focus:-ms-input-placeholder {
+.form__input:active:-ms-input-placeholder, .form__input:focus:-ms-input-placeholder {
   color: transparent;
 }
 
-.form__input:avtive::-ms-input-placeholder, .form__input:focus::-ms-input-placeholder {
+.form__input:active::-ms-input-placeholder, .form__input:focus::-ms-input-placeholder {
   color: transparent;
 }
 
-.form__input:avtive::placeholder,
+.form__input:active::placeholder,
 .form__input:focus::placeholder {
   color: transparent;
 }
@@ -3916,7 +3938,6 @@ ul {
 
 [data-message-base="Поле обязательно к заполнению"],
 [data-message-extra="Проверьте корректность заполнения поля"] {
-  position: static;
   color: #ff121f;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;

@@ -64,8 +64,12 @@
   &:active,
   &:focus {
     padding: 10px 15px;
-    border:  1px solid $color-default-white;
-    outline: none;
+    outline: 1px solid $color-default-white;
+    border: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
   }
 
   @include vp-1199 {
@@ -74,8 +78,11 @@
   }
 }
 
-.form__input--name::placeholder,
-.form__input--phone::placeholder {
+.form__input:disabled::placeholder {
+    color:rgba(255, 255, 255, 0.4);
+}
+
+.form__input::placeholder {
   color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
@@ -84,7 +91,7 @@
   line-height: normal;
 }
 
-.form__input:avtive::placeholder,
+.form__input:active::placeholder,
 .form__input:focus::placeholder {
     color: transparent;
   }
@@ -109,12 +116,10 @@
 
 [data-message-base="Поле обязательно к заполнению"],
 [data-message-extra="Проверьте корректность заполнения поля"]  {
-  position: static;
-  color:$color-torch-red1;
+  color: $color-torch-red1;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
 }
-

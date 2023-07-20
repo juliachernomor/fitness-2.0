@@ -941,13 +941,13 @@
             <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post">
 
               <div class="form__name" data-validate-type="text", data-limitation="name", data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-required>
-                <label class="visually-hidden" for="name">Имя:</label>
-                <input class="form__input form__input--name" placeholder="Имя" type="text" aria-invalid="true" name="user-name-1" class id="name">
+                <label class="visually-hidden" for="user-name-1">Имя:</label>
+                <input class="form__input form__input--name" placeholder="Имя" type="text" aria-invalid="true" name="user-name-1" class id="name" required>
               </div>
 
               <div class="form__phone" data-validate-type="phone", data-on-input-validate, data-message-base="Поле обязательно к заполнению", data-message-extra="Проверьте корректность заполнения поля", data-message-success="Поле заполнено верно", data-required>
                 <label class="visually-hidden" for="phone">Телефон:</label>
-                <input class="form__input form__input--phone" placeholder="Телефон" type="tel" name="phone" id="phone">
+                <input class="form__input form__input--phone" placeholder="Телефон" type="tel" name="phone" id="phone" required>
               </div>
 
               <button class="form__submit" type="submit">Отправить</button>
