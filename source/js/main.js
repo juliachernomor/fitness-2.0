@@ -16,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
   createNewSlider1();
   createNewSlider2();
   initTabs();
+  const form = new Form();
+  window.form = form;
+  form.init();
+  window.form.reset(form);
 
   // Modules
   // ---------------------------------
@@ -25,9 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
 
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+
   });
 });
 
