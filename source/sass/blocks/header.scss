@@ -5,17 +5,13 @@
     &::after {
     position: absolute;
     content: "";
-    background-image: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);;
+    background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 657px;
     z-index: 0;
-
-    @include retina {
-      background-image: url("../img/hero-gradient@2x.png")
-    }
 
     @include vp-1199 {
       min-height: 554px;

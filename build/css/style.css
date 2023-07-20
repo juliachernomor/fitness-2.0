@@ -150,18 +150,13 @@ ul {
 .header::after {
   position: absolute;
   content: "";
-  background-image: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 657px;
   z-index: 0;
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .header::after {
-    background-image: url("../img/hero-gradient@2x.png");
-  }
 }
 @media (max-width: 1199.5px) {
   .header::after {
