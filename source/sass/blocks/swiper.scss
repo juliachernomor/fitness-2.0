@@ -1,24 +1,24 @@
 .swiper--1 {
-  width: 85%;
+  width: 100%;
 
   @include vp-1199 {
-    width: 73.6%;
+    width: 83.5%;
   }
 
   @include vp-767 {
-    width: 70.6%;
+    width: 77%;
   }
 }
 
 .swiper--2 {
-  width: 41%;
+  width: 48.2%;
 
   @include vp-1199 {
-    width: 73.8%;
+    width: 83.6%;
   }
 
   @include vp-767 {
-    width: 70.6%;
+    width: 77%;
   }
 }
 

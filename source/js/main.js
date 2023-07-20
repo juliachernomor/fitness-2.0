@@ -5,6 +5,7 @@ import {createNewSlider1, createNewSlider2} from './vendor/swiper';
 import {initTabs} from './init-tabs';
 import {initAccordions} from './init-accordion';
 
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

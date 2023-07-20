@@ -1,17 +1,16 @@
 .header {
   position: relative;
-  background-color: $color-default-black;
+  background-color: $color-nero;
 
     &::after {
     position: absolute;
     content: "";
-    background-image: url("../img/hero-gradient.png");
-    background-size: 100% 657.5px;
+    background-image: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);;
     background-repeat: no-repeat;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 657.5px;
+    min-height: 657px;
     z-index: 0;
 
     @include retina {
@@ -40,7 +39,7 @@
 
 
   @include vp-1199 {
-    align-items: end;
+    align-items: flex-start;
     padding-top:  25px;
     padding-bottom:  25px;
     min-height: 82px;

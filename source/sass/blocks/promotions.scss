@@ -1,6 +1,11 @@
+.promotions {
+  background-color: $color-nero;
+}
+
 .promotions__container {
   padding-top: 95px;
   padding-bottom: 121px;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     padding-top: 58px;

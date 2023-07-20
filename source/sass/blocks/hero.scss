@@ -1,13 +1,14 @@
 .hero {
-  background-color: $color-default-black;
+  background-color: $color-nero;
   color: $color-default-white;
 }
+
 .hero__container {
   position: relative;
   display: grid;
   grid-template-columns: 11.5% 22.8% 65.7%;
   min-height: 450px;
-  margin-bottom: 51px;
+  margin-bottom: 50.5px;
 
   @include vp-1199 {
     grid-template-columns:  48% 52%;

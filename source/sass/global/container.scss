@@ -1,5 +1,7 @@
 .container {
   padding: 0 101px 0 103px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @include vp-1199 {
     padding: 0 45px;
@@ -8,8 +10,4 @@
   @include vp-767 {
     padding: 0 15px;
   }
-}
-
-.container--paddind {
-  padding: 0;
 }

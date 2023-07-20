@@ -2,19 +2,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
+  justify-content: space-between;
   align-items: center;
   margin-top: 1px;
-
-  @include vp-1199 {
-    column-gap: 7.8%;
-  }
 
   @include vp-767 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px 29px;
+    gap: 16px 10%;
     margin-bottom: 34px;
   }
 }

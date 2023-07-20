@@ -2,18 +2,16 @@
   background-color: $color-ghost-white;
   margin-top: 0;
 
-  @include vp-1199 {
-    margin-top: -13px;
 
     @include vp-767 {
       margin-top: -35px;
     }
   }
-}
+
 
 .advantages__container {
-  padding-top: 68px;
-  padding-bottom: 129px;
+  padding-top: 62px;
+  padding-bottom: 129.5px;
 
   @include vp-1199 {
     padding-top: 59px;
@@ -46,7 +44,9 @@
 
   @include vp-767 {
     margin: 0;
-    padding-top: 0;
+    padding-top: 37px;
+    text-align: center;
+    margin-right: 10px;
     padding-bottom: 45px;
     font-size: 32px;
     letter-spacing: 0.96px;
@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: 29.7% 22.2% 32.6%;
   column-gap: 5.45% ;
-  row-gap: 40%;
+  row-gap: 41%;
 
   @include vp-1199 {
     grid-template-columns: 17.3% 27.6% 37.7% 19%;

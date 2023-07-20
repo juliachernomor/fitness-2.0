@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 9%;
+  column-gap: 7%;
   row-gap: 30px;
   font-family: $ff-roboto-condensed;
   color: $color-default-white;
@@ -20,8 +20,7 @@
 .form__name {
   display: flex;
   flex-wrap: wrap;
-  width: 45.5%;
-  border-bottom: 1px solid $color-light-slate-grey;
+  width: 46.3%;
 
   @include vp-1199 {
     width: 43.6%;
@@ -35,8 +34,7 @@
 .form__phone {
   display: flex;
   flex-wrap: wrap;
-  width: 45.5%;
-  border-bottom: 1px solid $color-light-slate-grey;
+  width: 46.3%;
 
   @include vp-1199 {
     width: 43.6%;
@@ -48,19 +46,46 @@
   }
 }
 
-.form__label {
-  width: 26%;
-  font-weight: 400;
-}
 
 .form__input {
-  width: 74%;
+  width: 100%;
   margin-bottom: 3px;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  background-color: transparent;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  color: $color-default-white;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:active,
+  &:focus {
+    padding: 10px 15px;
+    border:  1px solid $color-default-white;
+    outline: none;
+  }
+
+  @include vp-1199 {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
 }
 
-.form__input  {
-  background-color: $color-sapphire;
-  border: none
+.form__input--name::placeholder,
+.form__input--phone::placeholder {
+  color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form__input:avtive +.form__input::placeholder  {
+display: none;
 }
 
 .form__submit {
@@ -80,3 +105,15 @@
   line-height: 1;
   letter-spacing: 0.7px;
 }
+
+[data-message-base="Поле обязательно к заполнению"],
+[data-message-extra="Проверьте корректность заполнения поля"]  {
+  position: static;
+  color:$color-torch-red1;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+

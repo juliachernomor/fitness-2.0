@@ -1,24 +1,31 @@
-.feedback__container {
-  display: flex;
-  flex-wrap: wrap;
+.feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @include vp-1199 {
-    flex-direction: column;
+    grid-template-columns: 100%;
+  }
+
+}
+
+.feedback__container--1 {
+  width: 100%;
+  grid-column: 1/2;
+
+  @include vp-1199 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+}
+
+.feedback__container--2 {
+  width: 100%;
+  grid-column: 2/3;
+
+  @include vp-1199 {
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
 
-.feedback__free-lesson {
-  width: 50%;
-
-  @include vp-1199 {
-    width: 100%;
-  }
-}
-
-.feedback__contacts {
-  width: 50%;
-
-  @include vp-1199 {
-    width: 100%;
-  }
-}
