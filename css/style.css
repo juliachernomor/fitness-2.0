@@ -150,7 +150,7 @@ ul {
 .header::after {
   position: absolute;
   content: "";
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.2363382578deg, #b80027 304deg, #003d85 360deg);
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -1760,11 +1760,11 @@ ul {
 }
 
 .reviews {
-  position: relative;
   background-color: #1e1e1e;
 }
 
 .reviews__container {
+  position: relative;
   max-width: 1366px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -1801,7 +1801,6 @@ ul {
 }
 
 .reviews__slide {
-  position: relative;
   width: 100%;
   margin: 0;
   margin-bottom: 120px;
@@ -1852,8 +1851,8 @@ ul {
   content: "";
   width: 18px;
   height: 34px;
-  top: 130%;
-  left: 1250%;
+  top: 120%;
+  left: 1240%;
 }
 
 .reviews__svg-next {
@@ -1861,8 +1860,8 @@ ul {
   content: "";
   width: 18px;
   height: 34px;
-  top: 130%;
-  right: 1250%;
+  top: 120%;
+  right: 1240%;
 }
 
 .feedback {
@@ -2607,7 +2606,8 @@ ul {
   }
 
   .slide__img {
-    height: 274px;
+    width: 268px;
+    height: 294px;
   }
 
   .slide__name {
@@ -2828,7 +2828,7 @@ ul {
 
   .faq__container {
     padding-top: 67px;
-    padding-bottom: 92px;
+    padding-bottom: 68px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2898,6 +2898,16 @@ ul {
 
   .reviews__text {
     margin-bottom: 20px;
+  }
+
+  .reviews__svg-prev {
+    top: 108%;
+    left: 120%;
+  }
+
+  .reviews__svg-next {
+    top: 108%;
+    right: 120%;
   }
 
   .feedback {
@@ -3369,6 +3379,10 @@ ul {
     min-height: 292px;
   }
 
+  .slide__img {
+    height: 274px;
+  }
+
   .trainer__container {
     padding-bottom: 68px;
   }
@@ -3654,7 +3668,7 @@ ul {
 
   .faq__container {
     padding-top: 46px;
-    padding-bottom: 45px;
+    padding-bottom: 25px;
   }
 
   .faq__title {
@@ -3725,7 +3739,7 @@ ul {
   }
 
   .reviews__slide {
-    padding: 48px 25px 34px 25px;
+    padding: 48px 25px 32px 25px;
     margin-bottom: 71.5px;
   }
 
@@ -3759,6 +3773,20 @@ ul {
   .reviews__text {
     text-align: center;
     margin-bottom: 0;
+  }
+
+  .reviews__svg-prev {
+    width: 10px;
+    height: 19px;
+    top: 110%;
+    left: 25%;
+  }
+
+  .reviews__svg-next {
+    width: 10px;
+    height: 19px;
+    top: 110%;
+    right: 25%;
   }
 
   .contacts {
@@ -3799,7 +3827,7 @@ ul {
 
   .form__name {
     width: 100%;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
   }
 
   .form__phone {
@@ -3808,12 +3836,12 @@ ul {
   }
 
   .free-lesson {
-    padding: 58px 15px 39.5px 15px;
+    padding: 58px 15px 43px 15px;
   }
 
   .free-lesson__title {
     font-size: 32px;
     letter-spacing: 0.7px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
