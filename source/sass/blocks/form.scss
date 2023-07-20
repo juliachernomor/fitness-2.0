@@ -84,9 +84,10 @@
   line-height: normal;
 }
 
-.form__input:avtive +.form__input::placeholder  {
-display: none;
-}
+.form__input:avtive::placeholder,
+.form__input:focus::placeholder {
+    color: transparent;
+  }
 
 .form__submit {
   width: 100%;
