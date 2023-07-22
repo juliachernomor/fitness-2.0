@@ -50,9 +50,9 @@
 
 html,
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100hv;
 }
 
 html {
@@ -100,7 +100,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100hv;
+  min-height: 100vh;
   color: #000000;
   background-color: #ffffff;
   overflow-x: hidden;
@@ -128,8 +128,8 @@ ul {
 }
 
 .container {
-  padding: 0 101px 0 103px;
   max-width: 1366px;
+  padding: 0 101px 0 103px;
   margin: 0 auto;
 }
 @media (max-width: 1199.5px) {
@@ -150,7 +150,7 @@ ul {
 .header::after {
   position: absolute;
   content: "";
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.2363382578deg, #b80027 304deg, #003d85 360deg);
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
   background-repeat: no-repeat;
   top: 0;
   left: 0;
@@ -323,8 +323,6 @@ ul {
 }
 
 .phone {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   -ms-flex-item-align: center;
@@ -1099,7 +1097,7 @@ ul {
   .about-gym__area {
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     min-width: 290px;
     margin-right: auto;
     margin-bottom: 24px;
@@ -1123,7 +1121,7 @@ ul {
     width: 74%;
     font-size: 16px;
     margin-bottom: 30px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 767.5px) {
@@ -1683,7 +1681,6 @@ ul {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    padding-top: 8px;
     line-height: 1;
     padding-top: 11px;
   }
@@ -2369,8 +2366,8 @@ ul {
   font-weight: 700;
   line-height: 1;
   background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1199.5px) {
@@ -2843,7 +2840,6 @@ ul {
 }
 
 .promotion__link-first {
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -2928,7 +2924,6 @@ ul {
 
 .promotion__link {
   display: inline;
-  text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -3438,7 +3433,6 @@ ul {
 }
 
 .reviews__author-image {
-  width: 18.3%;
   margin-right: 6.4%;
   width: 80px;
   height: 80px;
@@ -3726,7 +3720,7 @@ ul {
 }
 @media (max-width: 767.5px) {
   .contacts__text--link {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767.5px) {
@@ -3741,7 +3735,7 @@ ul {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 152.344%;
+  line-height: 152.34%;
 }
 @media (max-width: 1199.5px) {
   .contacts__phone,
@@ -3935,7 +3929,6 @@ ul {
 
 .form__submit {
   width: 100%;
-  font-weight: 700;
   text-transform: uppercase;
   padding: 17px;
   text-align: center;
