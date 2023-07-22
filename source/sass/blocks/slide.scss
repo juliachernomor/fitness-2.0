@@ -2,18 +2,20 @@
   position: relative;
   cursor: pointer;
 
-  &:hover>.slide__card {
+  &:hover > .slide__card {
     display: block;
   }
-  &:hover>.slide__name {
+
+  &:hover > .slide__name {
     display: none;
   }
 
   @include vp-1199 {
-    &:active>.slide__card {
+    &:active > .slide__card {
       display: block;
     }
-    &:active>.slide__name {
+
+    &:active > .slide__name {
       display: none;
     }
   }
@@ -51,7 +53,7 @@
   }
 }
 
-.slide__card  {
+.slide__card {
   display: none;
   position: absolute;
   top: 0;

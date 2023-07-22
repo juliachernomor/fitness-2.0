@@ -10,7 +10,7 @@
 }
 
 .reviews__swiper {
-  color:$color-default-white;
+  color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-style: normal;
 }
@@ -56,7 +56,7 @@
   margin-bottom: 120px;
   background-image: $torch-red-to-cobalt;
   padding: 60px 60px 35px 62px;
-  box-shadow: 0 0 40px rgba(28, 51, 116, 0.20);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   box-sizing: border-box;
   display: flex;
   min-height: 242px;
@@ -105,7 +105,6 @@
 }
 
 .reviews__author-image {
-  width: 18.3%;
   margin-right: 6.4%;
   width: 80px;
   height: 80px;
@@ -145,7 +144,7 @@
 
 .reviews__svg-prev {
   position: absolute;
-  content:"";
+  content: "";
   width: 18px;
   height: 34px;
   top: 120%;
@@ -166,7 +165,7 @@
 
 .reviews__svg-next {
   position: absolute;
-  content:"";
+  content: "";
   width: 18px;
   height: 34px;
   top: 120%;

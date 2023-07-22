@@ -25,6 +25,7 @@
   @include vp-1199 {
     width: 43.6%;
   }
+
   @include vp-767 {
     width: 100%;
     margin-bottom: 4px;
@@ -79,7 +80,7 @@
 }
 
 .form__input:disabled::placeholder {
-    color:rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .form__input::placeholder {
@@ -93,12 +94,11 @@
 
 .form__input:active::placeholder,
 .form__input:focus::placeholder {
-    color: transparent;
-  }
+  color: transparent;
+}
 
 .form__submit {
   width: 100%;
-  font-weight: 700;
   text-transform: uppercase;
   padding: 17px;
   text-align: center;
@@ -115,7 +115,7 @@
 }
 
 [data-message-base="Поле обязательно к заполнению"],
-[data-message-extra="Проверьте корректность заполнения поля"]  {
+[data-message-extra="Проверьте корректность заполнения поля"] {
   color: $color-torch-red1;
   font-family: $ff-roboto-condensed;
   font-size: 14px;

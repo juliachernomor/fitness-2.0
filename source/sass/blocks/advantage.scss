@@ -51,7 +51,7 @@
   }
 }
 
-.advantage__wrapper{
+.advantage__wrapper {
   grid-column: 2/3;
   grid-row: 1/2;
 
@@ -74,12 +74,11 @@
   line-height: 1;
   background: $crimson-to-cobalt;
   background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 
-    @include vp-1199 {
-      font-size: 58px;
-    }
+  @include vp-1199 {
+    font-size: 58px;
+  }
 }
 
 .advantage__equipmemt-wrapper {
@@ -217,9 +216,9 @@
 }
 
 @include vp-767 {
-.advantage__description--width {
-  min-width: 183px;
-  margin-left: 68.5px;
-  margin-right: 68.5px;
+  .advantage__description--width {
+    min-width: 183px;
+    margin-left: 68.5px;
+    margin-right: 68.5px;
   }
 }

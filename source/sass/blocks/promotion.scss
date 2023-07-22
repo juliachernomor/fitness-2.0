@@ -32,14 +32,14 @@
   }
 }
 
-.promotion__wrapper-first{
+.promotion__wrapper-first {
   grid-column: 1/2;
   display: flex;
   flex-direction: column;
   padding: 40px 45px 45px 45px;
   justify-content: start;
   align-items: start;
-  background-color:$color-torch-red3;
+  background-color: $color-torch-red3;
   color: $color-default-white;
 
   @include vp-767 {
@@ -87,7 +87,6 @@
 }
 
 .promotion__link-first {
-  text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -148,7 +147,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    min-height:44px;
+    min-height: 44px;
     margin: 0 0 46px 0;
 
     @include vp-767 {
@@ -158,9 +157,8 @@
   }
 }
 
-.promotion__link  {
+.promotion__link {
   display: inline;
-  text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.7px;
@@ -168,7 +166,7 @@
   line-height: 16px;
   text-decoration: underline;
   color: $color-resolution-blue;
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
 
   @include vp-1199 {
     margin-bottom: 29px;
@@ -179,5 +177,3 @@
     margin-bottom: 21px;
   }
 }
-
-

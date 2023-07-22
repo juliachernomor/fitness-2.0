@@ -1,4 +1,4 @@
-.accordion{
+.accordion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(28, 51, 116, 0.20);
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
   margin: 0;
   margin-bottom: 20px;
   padding-top: 32px;
@@ -36,7 +36,7 @@
 }
 
 .accordion__element.is-active {
-  height:100%;
+  height: 100%;
   margin-bottom: 25px;
 
   @include vp-767 {
@@ -46,7 +46,7 @@
 
 .accordion__button {
   position: absolute;
-  content:"";
+  content: "";
   top: 26px;
   right: 0;
   border-radius: 50%;
@@ -67,8 +67,8 @@
   }
 }
 
-  @include vp-767 {
-    .accordion__element:last-child > .accordion__button  {
+@include vp-767 {
+  .accordion__element:last-child > .accordion__button {
     top: 30%;
   }
 }
@@ -104,8 +104,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
-letter-spacing: 0.1px;
-
+  letter-spacing: 0.1px;
 
   @include vp-767 {
     width: 82%;
@@ -114,4 +113,3 @@ letter-spacing: 0.1px;
     margin-bottom: 12px;
   }
 }
-
