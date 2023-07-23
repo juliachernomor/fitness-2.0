@@ -49,6 +49,9 @@
   background-color: $color-torch-red3;
   color: $color-default-white;
 
+  @include vp-767 {
+    min-width: 279px;
+  }
 
   @include vp-767 {
     width: 100%;
@@ -135,11 +138,16 @@
   width: 100%;
   height: 100%;
   grid-column: 2/3;
+  overflow: hidden;
+
+
+  @include vp-1199 {
+    width: 100%;
+  }
 
   @include vp-767 {
     min-width: 100%;
     min-height: 299px;
-    overflow: hidden;
   }
 }
 
@@ -153,7 +161,7 @@
   @include vp-1199 {
     object-position: 0 0;
     min-width: 399px;
-    height: auto;
+    width: 100%;
   }
 
   @include vp-767 {

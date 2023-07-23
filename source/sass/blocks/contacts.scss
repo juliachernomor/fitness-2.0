@@ -38,20 +38,23 @@
 
 .contacts__wrapper {
   position: relative;
-  display: grid;
-  grid-template-columns: 37.3% 36.4%;
-  grid-auto-rows: min-content;
-  gap: 20.2% 26.4%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 26%;
+  row-gap: 30px;
   padding-bottom: 70px;
 
   @include vp-1199 {
-    grid-template-columns: 43.4% 37.4%;
-    gap: 13.2% 19%;
+    column-gap: 19%;
+    row-gap: 35px;
+    flex-wrap: wrap;
+    min-height: 351px;
   }
 
   @include vp-767 {
     display: flex;
     flex-direction: column;
+    width: 100%;
     row-gap: 22px;
   }
 }
@@ -78,37 +81,54 @@
 }
 
 .contacts__address {
-  grid-column: 1/2;
-  grid-row: 1/2;
+  width: 37%;
+
+  @include vp-1199 {
+    width: 43.4%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    order: -1;
+  }
 }
 
 .contacts__phone {
-  grid-column: 2/3;
-  grid-row: 1/2;
+  width: 36.5%;
+
+  @include vp-1199 {
+    width: 37.4%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    order: 2;
+  }
 }
 
 .contacts__opening-hours {
-  grid-column: 1/2;
-  grid-row: 2/3;
+  width: 37%;
+
+  @include vp-1199 {
+    width: 43.4%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    order: 1;
+  }
 }
 
 .contacts__email {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.contacts__address,
-.contacts__opening-hours,
-.contacts__text--link {
-  margin: 0;
-  color: $color-sapphire;
-  font-family: $ff-roboto-condensed;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 150%;
+  width: 36.5%;
 
   @include vp-1199 {
-    font-size: 20px;
+    width: 37.4%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    order: 3;
   }
 }
 
@@ -146,3 +166,19 @@
     font-size: 18px;
   }
 }
+
+.contacts__address,
+.contacts__opening-hours,
+.contacts__text--link {
+  margin: 0;
+  color: $color-sapphire;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+
+  @include vp-1199 {
+    font-size: 20px;
+  }
+}
+
