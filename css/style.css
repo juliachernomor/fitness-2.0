@@ -283,6 +283,7 @@ ul {
   letter-spacing: 1.44px;
   text-align: right;
   text-transform: lowercase;
+  word-wrap: break-word;
 }
 
 .hero__title {
@@ -296,6 +297,7 @@ ul {
   text-align: right;
   text-transform: uppercase;
   text-shadow: 5px 0 0 #ffffff;
+  word-wrap: break-word;
 }
 
 .hero__link {
@@ -311,6 +313,7 @@ ul {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border: 4px solid #ffffff;
+  margin-bottom: 20px;
 }
 
 .hero__link:hover,
@@ -1644,6 +1647,7 @@ ul {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  overflow: hidden;
 }
 
 .promotion__img {
@@ -2142,13 +2146,15 @@ ul {
 
 .contacts__wrapper {
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 37.3% 36.4%;
-  grid-template-columns: 37.3% 36.4%;
-  grid-auto-rows: -webkit-min-content;
-  grid-auto-rows: min-content;
-  gap: 20.2% 26.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 26%;
+  -moz-column-gap: 26%;
+  column-gap: 26%;
+  row-gap: 30px;
   padding-bottom: 70px;
 }
 
@@ -2164,39 +2170,29 @@ ul {
 }
 
 .contacts__address {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  width: 37%;
 }
 
 .contacts__phone {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  width: 36.5%;
 }
 
 .contacts__opening-hours {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  width: 37%;
 }
 
 .contacts__email {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  width: 36.5%;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__text {
+  color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 152.34%;
 }
 
 .contacts__address,
@@ -2208,16 +2204,6 @@ ul {
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
-}
-
-.contacts__phone,
-.contacts__email,
-.contacts__text {
-  color: #102654;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 152.34%;
 }
 
 .form {
@@ -2596,6 +2582,7 @@ ul {
     font-size: 11px;
     letter-spacing: 1px;
     padding: 24px 33px;
+    margin-bottom: 20px;
   }
 
   .hero__picture {
@@ -3057,11 +3044,15 @@ ul {
     grid-template-columns: 41.1% 48.9%;
   }
 
+  .promotion__wrapper-img {
+    width: 100%;
+  }
+
   .promotion__img {
     -o-object-position: 0 0;
     object-position: 0 0;
     min-width: 399px;
-    height: auto;
+    width: 100%;
   }
 
   .promotion__description {
@@ -3196,9 +3187,13 @@ ul {
   }
 
   .contacts__wrapper {
-    -ms-grid-columns: 43.4% 37.4%;
-    grid-template-columns: 43.4% 37.4%;
-    gap: 13.2% 19%;
+    -webkit-column-gap: 19%;
+    -moz-column-gap: 19%;
+    column-gap: 19%;
+    row-gap: 35px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 351px;
   }
 
   .contacts__wrapper::before {
@@ -3207,10 +3202,20 @@ ul {
     left: 53%;
   }
 
-  .contacts__address,
-  .contacts__opening-hours,
-  .contacts__text--link {
-    font-size: 20px;
+  .contacts__address {
+    width: 43.4%;
+  }
+
+  .contacts__phone {
+    width: 37.4%;
+  }
+
+  .contacts__opening-hours {
+    width: 43.4%;
+  }
+
+  .contacts__email {
+    width: 37.4%;
   }
 
   .contacts__text--link {
@@ -3222,6 +3227,12 @@ ul {
   .contacts__email,
   .contacts__text {
     font-size: 18px;
+  }
+
+  .contacts__address,
+  .contacts__opening-hours,
+  .contacts__text--link {
+    font-size: 20px;
   }
 
   .form {
@@ -3454,6 +3465,8 @@ ul {
     row-gap: 39px;
     padding-top: 65px;
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 19px;
   }
 
@@ -3464,7 +3477,7 @@ ul {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    padding: 0;
+    padding: 0 15px;
   }
 
   .gym__image-wrapper {
@@ -3477,6 +3490,7 @@ ul {
     grid-row: 2/3;
     min-width: 320px;
     min-height: 313px;
+    width: 100%;
   }
 
   .about-gym__title {
@@ -3511,13 +3525,14 @@ ul {
   .gym-image__img {
     position: absolute;
     content: "";
+    min-width: 320px;
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center;
     min-height: 313px;
     top: 0;
-    left: -15px;
+    left: 0;
     margin: 0 auto;
   }
 
@@ -3541,6 +3556,7 @@ ul {
     -moz-column-gap: 45px;
     column-gap: 45px;
     margin-bottom: 37px;
+    word-wrap: break-word;
   }
 
   .abonement__quantity-month {
@@ -3777,12 +3793,15 @@ ul {
   }
 
   .promotions__list {
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%;
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
-    row-gap: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 30px;
     margin-bottom: 70px;
   }
 
@@ -3832,6 +3851,10 @@ ul {
   }
 
   .promotion__wrapper-first {
+    min-width: 279px;
+  }
+
+  .promotion__wrapper-first {
     width: 100%;
     min-width: 290px;
     -webkit-box-align: center;
@@ -3862,7 +3885,6 @@ ul {
   .promotion__wrapper-img {
     min-width: 100%;
     min-height: 299px;
-    overflow: hidden;
   }
 
   .promotion__img {
@@ -3921,7 +3943,6 @@ ul {
   .accordion__button {
     width: 32px;
     height: 32px;
-    top: 35%;
   }
 
   .accordion__btn-transform::before {
@@ -4025,11 +4046,40 @@ ul {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
     row-gap: 22px;
   }
 
   .contacts__wrapper::before {
     display: none;
+  }
+
+  .contacts__address {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .contacts__phone {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .contacts__opening-hours {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__email {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
 
   .contacts__text--link {
