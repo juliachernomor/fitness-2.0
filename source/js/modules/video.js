@@ -11,7 +11,7 @@ const setupVideo = () => {
   iframe.height = '100%';
   video.appendChild(iframe);
 
-  video.addEventListener('click', () => {
+  button.addEventListener('click', () => {
     link.remove();
     button.remove();
   });

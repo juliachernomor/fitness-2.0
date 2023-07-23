@@ -179,6 +179,22 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
+    color: $color-egyptian-blue;
+  }
+
+  &:active {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &:default {
+    background-color: $color-white-rgba;
+    color: $color-white-rgba;
+  }
+
   @include vp-1199 {
     max-width: 202px;
     min-height: 39px;

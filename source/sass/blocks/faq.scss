@@ -83,6 +83,19 @@
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -1px;
+  border: 1px solid $color-sapphire-rgba3;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-sapphire;
+    outline: none;
+  }
+
+  &:disabled {
+    border: 1px solid $color-link-water;
+    color: $color-link-water;
+  }
 
   @include vp-1199 {
     width: 23.9%;

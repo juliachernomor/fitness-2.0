@@ -12,7 +12,7 @@
     height: 384px;
     top: calc(100% - 313px);
     left: calc(100% - 246px);
-    z-index: 1;
+    z-index: 0;
 
     @include vp-1199 {
       background-image: url("../img/gym-equipment-tablet.png");

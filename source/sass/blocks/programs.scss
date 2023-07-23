@@ -25,7 +25,15 @@
   width: 31%;
   padding: 63px 30px 68px 30px;
   background-color: $color-default-white;
-  z-index: 2;
+  z-index: 222;
+
+  &:hover,
+  &:focus {
+    padding: 56px 23px 61px 23px;
+    border: 7px solid;
+    border-image: $torch-red-to-cobalt;
+    border-image-slice: 1;
+  }
 
   @include vp-1199 {
     width: 65%;
@@ -143,4 +151,29 @@
   @include vp-1199 {
     padding: 23px 44px 23px 44px;
   }
+}
+
+.programs__program:hover > .programs__link,
+.programs__program:focus > .programs__link {
+  background: $torch-red-to-cobalt;
+  color: $color-default-white;
+  border:none;
+}
+
+.programs__program:active > .programs__link {
+  background: $torch-red-to-cobalt;
+  color: rgba(255, 255, 255, 0.6);
+  border:none;
+}
+
+.programs__program:default > .programs__link {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(16, 38, 84, 0.3);
+}
+
+.programs__link:default {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(16, 38, 84, 0.3);
 }
