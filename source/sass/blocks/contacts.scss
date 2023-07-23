@@ -1,6 +1,7 @@
 .contacts {
   border-top: 1px solid $color-light-slate-grey;
-  padding: 59px 100px 20px 123px;
+  padding: 59px 100px 0 123px;
+  min-height: 336px;
   color: $color-sapphire;
   font-style: normal;
 
@@ -39,8 +40,9 @@
   position: relative;
   display: grid;
   grid-template-columns: 37.3% 36.4%;
+  grid-auto-rows: min-content;
   gap: 20.2% 26.4%;
-  margin-bottom: 20px;
+  padding-bottom: 70px;
 
   @include vp-1199 {
     grid-template-columns: 43.4% 37.4%;

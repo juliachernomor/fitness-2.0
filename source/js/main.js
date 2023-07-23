@@ -5,6 +5,7 @@ import {createNewSlider1, createNewSlider2} from './vendor/swiper';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
 import {setupVideo} from './modules/video';
+// import {toggleButton, removePlus} from './modules/accordion-btn';
 
 
 // ---------------------------------
@@ -12,6 +13,8 @@ import {setupVideo} from './modules/video';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
+  // removePlus();
+  // toggleButton();
   setupVideo();
   initAccordions();
   iosVhFix();

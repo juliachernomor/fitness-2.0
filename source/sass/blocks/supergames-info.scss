@@ -2,18 +2,16 @@
   padding: 87px 78px 87px 78px;
   display: grid;
   grid-template-columns: 58.5% 41.5%;
-  grid-template-rows: 48% 9% 3.9% 18.5% 20.4%;
+
   color: $color-default-white;
   background-color: $color-torch-red3;
 
   @include vp-1199 {
     padding: 51px 45px 51px 45px;
-    grid-template-rows: 48% 5.7% 3.9% 21% 20.4%;
   }
 
   @include vp-767 {
     padding: 50px 44px 51px 44px;
-    grid-template-rows: 47% 7% 10% 14.4% 23%;
     min-height: 292px;
   }
 }
@@ -30,6 +28,7 @@
   line-height: 96%;
   letter-spacing: 2.46px;
   text-transform: uppercase;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 48px;
@@ -58,16 +57,12 @@
 .supergames-info__date-information {
   display: grid;
   grid-template-columns: 29% 71%;
-  grid-template-rows: 23% 30% 42.9%;
+  grid-auto-rows: min-content;
   justify-content: start;
   align-items: start;
   margin: 0;
   font-family: $ff-roboto-condensed;
   font-style: normal;
-
-  @include vp-1199 {
-    grid-template-rows: 23% 73%;
-  }
 }
 
 .supergames-info__date {
@@ -76,6 +71,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 16px;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 12px;
@@ -90,6 +86,7 @@
   grid-row: 3/4;
   font-size: 40px;
   font-weight: 700;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 24px;
@@ -118,6 +115,7 @@
 .supergames-info__time-information {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   font-family: $ff-roboto-condensed;
   line-height: 150%;
@@ -139,6 +137,7 @@
 .supergames-info__hour {
   font-size: 40px;
   font-weight: 700;
+  word-wrap: break-word;
 
   @include vp-1199 {
     font-size: 24px;
