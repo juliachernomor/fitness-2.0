@@ -47,7 +47,7 @@
 
 
   @include vp-1199 {
-    padding-top: 45px;
+    padding-top: 47px;
     margin: 0 6px 2px 0;
     font-size: 34px;
     letter-spacing: 1.02px;
@@ -94,11 +94,11 @@
 }
 
 .hero__link {
-  display: inline-block;
+  display: block;
   width: 237px;
   margin-left: 27px;
   margin-bottom: 27px;
-  padding: 24px 56px 24px 56px;
+  padding: 14px 56px 14px 56px;
   font-family: $ff-roboto-condensed;
   font-size: 12px;
   font-style: normal;
@@ -131,7 +131,7 @@
     margin-left: auto;
     font-size: 11px;
     letter-spacing: 1px;
-    padding: 24px 33px;
+    padding: 14px 32px;
     margin-bottom: 20px;
   }
 
@@ -140,7 +140,7 @@
     text-align: center;
     font-size: 12px;
     letter-spacing: 0.4px;
-    padding: 25px 84px 25px 84px;
+    padding: 15px 84px 15px 84px;
   }
 }
 
@@ -168,6 +168,7 @@
   @include vp-1199 {
     padding: 0;
     margin-top: 0;
+    object-fit: cover;
     min-width: 324px;
     min-height: 390px;
     margin-left: auto;
@@ -192,14 +193,14 @@
     width: 113px;
     grid-column: none;
     padding-top: 186px;
-    padding-right: 30px;
+    padding-right: 0;
+
   }
 
   @include vp-767 {
     left: 4%;
     grid-column: none;
     padding-top: 178px;
-    padding-right: 30px;
   }
 }
 

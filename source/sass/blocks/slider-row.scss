@@ -3,15 +3,10 @@
   content: "";
   cursor: pointer;
 
-  // @include vp-1199 {
-
-  // }
-
-  // @include vp-767 {
-  //   width: 10px;
-  //   height: 19px;
-
-  // }
+  @include vp-767 {
+    width: 32px;
+    height: 39px;
+  }
 }
 
 .slider-row__svg-next {
@@ -20,15 +15,10 @@
   transform: rotate(180deg);
   cursor: pointer;
 
-  // @include vp-1199 {
-
-  // }
-
-  // @include vp-767 {
-  //   width: 10px;
-  //   height: 19px;
-
-  // }
+  @include vp-767 {
+    width: 32px;
+    height: 39px;
+  }
 }
 
 .slider-row__svg-circle {

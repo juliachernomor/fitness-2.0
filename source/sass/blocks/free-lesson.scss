@@ -6,17 +6,18 @@
   font-style: normal;
 
   @include vp-1199 {
-    padding: 54px 163px 42.5px  133px;
+    padding: 54px 163px 30px  133px;
+    min-height: 324px;
   }
 
   @include vp-767 {
-    padding: 58px 15px 43px 15px;
+    padding: 58px 15px 54.5px 15px;
   }
 }
 
 .free-lesson__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 700;
@@ -24,7 +25,7 @@
   letter-spacing: 1.62px;
 
   @include vp-1199 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     font-size: 42px;
     letter-spacing: 1.26px;
   }

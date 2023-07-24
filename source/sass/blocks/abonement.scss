@@ -32,21 +32,22 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 122px;
-  padding-bottom: 115px;
+  padding-bottom: 38px;
 
   @include vp-1199 {
     padding-top: 103px;
-    padding-bottom: 102px;
+    padding-bottom: 10px;
   }
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
 .abonement__title {
-  margin: 0 0 22px 0;
+  margin: 0 0 13px 0;
   color: #102654;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -73,7 +74,7 @@
   position: relative;
   justify-content: center;
   text-align: center;
-  display: flex;
+  display: flex;flex-wrap: wrap;
   column-gap: 46px;
   margin-bottom: 39px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -98,6 +99,7 @@
   background-color: $color-ghost-white;
   padding: 0;
   padding-bottom: 10px;
+  padding-top: 10px;
 
   font-family: $ff-roboto-condensed;
   font-size: 20px;
@@ -116,4 +118,8 @@
 
 .abonement__quantity-month.is-active {
   border-bottom: 1px solid $color-crimson;
+}
+
+.abonement__programs-content {
+  margin-bottom: 50px;
 }

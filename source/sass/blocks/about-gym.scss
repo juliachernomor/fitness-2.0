@@ -42,11 +42,11 @@
 .about-gym__area {
   color: #102654;
   font-family: $ff-roboto-condensed;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 0 40px 0;
+  margin: 0 0 39px 0;
 
   @include vp-1199 {
     margin-bottom: 37px;
@@ -68,18 +68,17 @@
   display: block;
   color: #102654;
   font-family: $ff-roboto-condensed;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: 0.2px;
   margin: 0;
 
   @include vp-1199 {
     text-align: center;
     width: 74%;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     letter-spacing: 0;
   }
 
@@ -90,13 +89,18 @@
     text-align: left;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 27px;
+    margin-bottom: 10px;
   }
 }
 
 .about-gym__descripton1 {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+}
+
+.about-gym__descripton2 {
+  display: block;
+  margin-bottom: 25px;
 }
 
 @include vp-1199 {

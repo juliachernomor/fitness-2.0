@@ -8,25 +8,24 @@
   }
 }
 
-
 .advantages__container {
-  padding-top: 62px;
-  padding-bottom: 129.5px;
+  padding-top: 113px;
+  padding-bottom: 124px;
 
   @include vp-1199 {
-    padding-top: 59px;
-    padding-bottom: 73px;
+    padding-top: 93px;
+    padding-bottom: 33px;
   }
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 31.5px;
+    padding-bottom: 0;
     overflow-x: hidden;
   }
 }
 
 .advantages__title {
-  margin-bottom: 45px;
+  margin: 0 0 42.5px 0;
   text-align: center;
   font-family: $ff-alumni-sans;
   color: $color-sapphire;
@@ -44,9 +43,8 @@
 
   @include vp-767 {
     margin: 0;
-    padding-top: 37px;
+    padding-top: 36px;
     text-align: center;
-    margin-right: 10px;
     padding-bottom: 45px;
     font-size: 32px;
     letter-spacing: 0.96px;
@@ -58,13 +56,15 @@
   display: grid;
   grid-template-columns: 29.7% 22.2% 32.6%;
   column-gap: 5.45%;
-  row-gap: 41%;
+  row-gap: 54%;
+  margin-bottom: 90px;
 
   @include vp-1199 {
     grid-template-columns: 17.3% 27.6% 37.7% 19%;
     column-gap: 0;
     row-gap: 0;
     padding: 0;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
