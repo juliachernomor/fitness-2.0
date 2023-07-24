@@ -8,17 +8,17 @@
 
 .trainer-card__event {
   margin: 0 0 29px 0;
-  color: $color-spindle;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  color: $color-spindle;
 }
 
 .trainer-card__advantages-list {
-  list-style-type: disc;
   margin-left: 13px;
+  list-style-type: disc;
 }
 
 .trainer-card__advantages-item {

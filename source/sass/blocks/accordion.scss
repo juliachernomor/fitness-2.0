@@ -11,10 +11,9 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(28, 51, 116, 0.2);
-  margin: 0;
-  margin-bottom: 20px;
   padding-top: 32px;
+  margin: 0 0 20px 0;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
 
   @include vp-1199 {
     margin-bottom: 16px;
@@ -49,36 +48,36 @@
   content: "";
   top: 26px;
   right: 0;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: $color-ghost-white;
   border: 1px solid  $color-resolution-blue;
-  width: 42px;
-  height: 42px;
 
   @include vp-767 {
+    top: 37px;
     width: 32px;
     height: 32px;
-    top: 37px;
   }
 }
 
 .accordion__btn-transform {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all .75s ease-in-out;
-  position:relative;
+  transition: all 0.75s ease-in-out;
   background-color: $color-ghost-white;
 }
 
 .accordion__btn-transform::before {
+  position: absolute;
+  content: "+";
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 18px;
   height: 18px;
-  content: "+";
   font-size: 32px;
   font-weight: 300;
   color: $color-resolution-blue;
@@ -89,14 +88,6 @@
     height: 12px;
   }
 }
-
-// .is-active > .accordion__btn-transform::before {
-//   position: absolute;
-//   content:"−";
-//   color: $color-resolution-blue;
-//   background-color: $color-ghost-white;
-// }
-
 
 .accordion__button:hover,
 .accordion__button:focus {
@@ -109,16 +100,15 @@
   background-color: $color-resolution-blue;
 }
 
-.is-active >.accordion__button {
-  color: $color-default-white;
-   background-color: $color-resolution-blue;
-
-}
-
-.is-active >.accordion__button > .accordion__btn-transform::before {
+.is-active > .accordion__button {
   color: $color-default-white;
   background-color: $color-resolution-blue;
+}
+
+.is-active > .accordion__button > .accordion__btn-transform::before {
   content: "−";
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
 }
 
 @include vp-1199 {
@@ -158,9 +148,9 @@
 }
 
 .accordion__title {
+  width: 89.3%;
   margin-top: 0;
   margin-bottom: 14px;
-  width: 89.3%;
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
@@ -168,8 +158,8 @@
 
   @include vp-767 {
     width: 82%;
+    margin-bottom: 12px;
     font-size: 18px;
     letter-spacing: 0;
-    margin-bottom: 12px;
   }
 }

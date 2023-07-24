@@ -34,19 +34,17 @@
   }
 }
 
-
 .slide__name {
   position: absolute;
   content: "";
   top: 82.5%;
   right: 29%;
-  color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-
+  color: $color-default-white;
 
   @include vp-1199 {
     top: 81%;
@@ -58,12 +56,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 51px 57px 10px 57px;
   width: 100%;
   height: 100%;
+  padding: 51px 57px 10px 57px;
   background-color: rgba(16, 38, 84, 0.89);
   color: $color-default-white;
   font-family: $ff-roboto-condensed;
   z-index: 1;
 }
-

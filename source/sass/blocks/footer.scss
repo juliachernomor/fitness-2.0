@@ -4,12 +4,12 @@
 
 .footer__container {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 34px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: end;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 34px;
   background-color: $color-black-russian;
 
   @include vp-1199 {

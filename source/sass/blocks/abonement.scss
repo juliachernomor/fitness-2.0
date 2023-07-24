@@ -5,20 +5,20 @@
   &::after {
     position: absolute;
     content: "";
+    top: calc(100% - 313px);
+    left: calc(100% - 246px);
+    width: 321px;
+    height: 384px;
     background-image: url("../img/gym-equipment-desktop.png");
     background-repeat: no-repeat;
     background-position: -40px -30px;
-    width: 321px;
-    height: 384px;
-    top: calc(100% - 313px);
-    left: calc(100% - 246px);
     z-index: 0;
 
     @include vp-1199 {
-      background-image: url("../img/gym-equipment-tablet.png");
-      background-position: -40px -20px;
       top: calc(100% - 300px);
       left: calc(100% - 310px);
+      background-image: url("../img/gym-equipment-tablet.png");
+      background-position: -40px -20px;
     }
 
     @include vp-767 {
@@ -48,7 +48,6 @@
 
 .abonement__title {
   margin: 0 0 13px 0;
-  color: #102654;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-style: normal;
@@ -56,6 +55,7 @@
   line-height: normal;
   letter-spacing: 1.62px;
   text-align: center;
+  color: $color-sapphire;
 
   @include vp-1199 {
     font-size: 42px;
@@ -69,38 +69,35 @@
 }
 
 .abonement__months-number {
-  width: 30%;
-  margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  display: flex;flex-wrap: wrap;
   column-gap: 46px;
-  margin-bottom: 39px;
+  width: 30%;
+  margin: 0 auto 39px auto;
+  text-align: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include vp-1199 {
-    width: 50%;
     column-gap: 54px;
+    width: 50%;
     margin-bottom: 45px;
   }
 
   @include vp-767 {
-    width: 100%;
     column-gap: 45px;
+    width: 100%;
     margin-bottom: 37px;
     word-wrap: break-word;
   }
 }
 
 .abonement__quantity-month {
+  padding: 10px 0;
   color: rgba(16, 38, 84, 0.5);
   border: none;
   background-color: $color-ghost-white;
-  padding: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
-
   font-family: $ff-roboto-condensed;
   font-size: 20px;
   font-style: normal;

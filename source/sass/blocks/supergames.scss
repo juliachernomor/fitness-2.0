@@ -5,27 +5,23 @@
 .supergames__container {
   display: grid;
   grid-template-columns: 43% 57%;
+  justify-content: start;
   row-gap: 30px;
   padding-top: 120px;
-  padding-bottom: 108.5px;
-  justify-content: start;
+  padding-bottom: 106.9px;
   background-color: $color-default-white;
 
   @include vp-1199 {
+    min-height: 292px;
     padding-top: 100px;
     padding-bottom: 103px;
-    min-height: 292px;
   }
 
   @include vp-767 {
-    padding-top: 70.5px;
-    padding-bottom: 64px;
     display: flex;
     flex-direction: column;
     row-gap: 0;
+    padding-top: 70.5px;
+    padding-bottom: 64px;
   }
 }
-
-
-
-

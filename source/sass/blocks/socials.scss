@@ -36,12 +36,12 @@
 
 .socials__link {
   display: flex;
-  background-color: $color-default-white;
   align-items: center;
   justify-content: center;
   margin: 0;
   width: 25px;
   height: 25px;
+  background-color: $color-default-white;
   border-radius: 50%;
 
   &:hover,

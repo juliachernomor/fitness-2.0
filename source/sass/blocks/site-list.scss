@@ -45,9 +45,8 @@
 }
 
 .site-list__link {
-  cursor: pointer;
   padding: 5px 10px;
-
+  cursor: pointer;
 
   &:hover {
     border-bottom: 1px solid $color-default-white;

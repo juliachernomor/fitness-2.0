@@ -47,16 +47,15 @@
   }
 }
 
-
 .form__input {
   width: 100%;
   margin-bottom: 3px;
   border: none;
-  border-bottom: 1px solid $color-light-slate-grey;
-  background-color: transparent;
   font-family: $ff-roboto-condensed;
   font-size: 16px;
   color: $color-default-white;
+  border-bottom: 1px solid $color-light-slate-grey;
+  background-color: transparent;
 
   &:hover {
     border-bottom: 1px solid $color-default-white;
@@ -84,12 +83,12 @@
 }
 
 .form__input::placeholder {
-  color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: $color-default-white;
 }
 
 .form__input:active::placeholder,
@@ -99,19 +98,19 @@
 
 .form__submit {
   width: 100%;
-  text-transform: uppercase;
   padding: 17px;
-  text-align: center;
   margin-bottom: 27px;
-  border: 3px solid $color-default-white;
-  background-color: $color-sapphire;
-  color: $color-default-white;
+  text-align: center;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.7px;
+  border: 3px solid $color-default-white;
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  text-transform: uppercase;
 
   @include vp-1199 {
     margin-bottom: 15px;

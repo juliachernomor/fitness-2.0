@@ -1,14 +1,14 @@
 .gym-image__img {
-  margin: 0;
   width: 100%;
   height: auto;
+  margin: 0;
+
 
   @include vp-767 {
     min-width: 320px;
-    object-fit: cover;
-    object-position: center;
     min-height: 313px;
     margin: 0 auto;
-
+    object-fit: cover;
+    object-position: center;
   }
 }

@@ -1,7 +1,6 @@
 .advantages {
-  background-color: $color-ghost-white;
   margin-top: 0;
-
+  background-color: $color-ghost-white;
 
   @include vp-767 {
     margin-top: -35px;
@@ -10,7 +9,7 @@
 
 .advantages__container {
   padding-top: 113px;
-  padding-bottom: 124px;
+  padding-bottom: 123px;
 
   @include vp-1199 {
     padding-top: 93px;
@@ -20,6 +19,8 @@
   @include vp-767 {
     padding-top: 64px;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     overflow-x: hidden;
   }
 }
@@ -44,20 +45,20 @@
   @include vp-767 {
     margin: 0;
     padding-top: 36px;
-    text-align: center;
     padding-bottom: 45px;
+    text-align: center;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
 }
 
 .advantages__list {
-  padding: 0 0 0 79px;
   display: grid;
   grid-template-columns: 29.7% 22.2% 32.6%;
   column-gap: 5.45%;
   row-gap: 54%;
   margin-bottom: 90px;
+  padding: 0 0 0 79px;
 
   @include vp-1199 {
     grid-template-columns: 17.3% 27.6% 37.7% 19%;
