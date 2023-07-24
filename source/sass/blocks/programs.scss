@@ -40,11 +40,21 @@
     padding: 63px 30px 68px 30px;
     margin-bottom: 40px;
   }
+}
 
-  @include vp-767 {
+@include vp-767 {
+  .programs__program {
     width: 100%;
     padding: 50px 0 53px 0;
     margin-bottom: 34px;
+
+    &:hover,
+    &:focus {
+      padding: 43px 0 56px 0;
+      border: 7px solid;
+      border-image: $torch-red-to-cobalt;
+      border-image-slice: 1;
+    }
   }
 }
 
