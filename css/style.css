@@ -1269,7 +1269,7 @@ ul {
 
 .advantages__container {
   padding-top: 113px;
-  padding-bottom: 123px;
+  padding-bottom: 37px;
 }
 
 .advantages__title {
@@ -1292,8 +1292,8 @@ ul {
   -webkit-column-gap: 5.45%;
   -moz-column-gap: 5.45%;
   column-gap: 5.45%;
-  row-gap: 54%;
-  margin-bottom: 90px;
+  row-gap: 125px;
+  margin-bottom: 70px;
   padding: 0 0 0 79px;
 }
 
@@ -2994,6 +2994,7 @@ ul {
   }
 
   .advantage__equipmemt-wrapper {
+    min-width: 442px;
     margin-top: 23.5px;
   }
 
@@ -3630,6 +3631,15 @@ ul {
     width: 100%;
     padding: 50px 0 53px 0;
     margin-bottom: 34px;
+  }
+
+  .programs__program:hover,
+  .programs__program:focus {
+    padding: 43px 0 56px 0;
+    border: 7px solid;
+    -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border-image-slice: 1;
   }
 
   .programs__program:last-child {
