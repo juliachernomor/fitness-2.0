@@ -150,12 +150,12 @@ ul {
 .header::after {
   position: absolute;
   content: "";
-  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
-  background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 658px;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
+  background-repeat: no-repeat;
   z-index: 0;
 }
 
@@ -163,9 +163,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 25px;
-  -moz-column-gap: 25px;
-  column-gap: 25px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -174,9 +171,12 @@ ul {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  min-height: 104px;
   padding-top: 30px;
   padding-bottom: 30px;
-  min-height: 104px;
 }
 
 .header__logo {
@@ -194,17 +194,17 @@ ul {
 
 .footer__container {
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 34px;
   background-color: #030a1a;
 }
 
@@ -233,6 +233,7 @@ ul {
 }
 
 .phone {
+  margin-bottom: 12px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   -ms-flex-item-align: center;
@@ -242,13 +243,12 @@ ul {
   line-height: 26px;
   font-weight: 600;
   letter-spacing: 0.78px;
-  margin-bottom: 12px;
 }
 
 .logo__img--footer {
-  margin-top: 2px;
   width: 84px;
   height: 32px;
+  margin-top: 2px;
 }
 
 .hero {
@@ -278,13 +278,13 @@ ul {
 .hero__city {
   padding: 62px 0 0 0;
   margin: 0 54px 20px 0;
+  text-align: right;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 48px;
   letter-spacing: 1.44px;
-  text-align: right;
   text-transform: lowercase;
   word-wrap: break-word;
 }
@@ -306,8 +306,7 @@ ul {
 .hero__link {
   display: block;
   width: 237px;
-  margin-left: 27px;
-  margin-bottom: 27px;
+  margin: 0 27px 20px 27px;
   padding: 14px 56px 14px 56px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
@@ -316,7 +315,6 @@ ul {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   border: 4px solid #ffffff;
-  margin-bottom: 20px;
 }
 
 .hero__link:hover,
@@ -345,11 +343,10 @@ ul {
 }
 
 .hero__img {
-  margin: 0;
-  margin-top: -53px;
-  padding-left: 62px;
   width: 73.5%;
   max-height: 556px;
+  margin: -53px 0 0 0;
+  padding-left: 62px;
 }
 
 .hero__advantages {
@@ -382,7 +379,6 @@ ul {
 }
 
 .nav__list {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,6 +390,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 100%;
   margin-top: 1px;
 }
 
@@ -409,8 +406,8 @@ ul {
 }
 
 .site-list__link {
-  cursor: pointer;
   padding: 5px 10px;
+  cursor: pointer;
 }
 
 .site-list__link:hover {
@@ -462,7 +459,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -472,6 +468,7 @@ ul {
   margin: 0;
   width: 25px;
   height: 25px;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 
@@ -517,6 +514,9 @@ ul {
 
 .video__button {
   position: absolute;
+  content: "";
+  top: 49%;
+  left: 49.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,8 +526,6 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  top: 49%;
-  left: 49.5%;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -644,34 +642,34 @@ ul {
 }
 
 .about-gym__title {
+  margin: 40px 0 11px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.44px;
-  margin: 40px 0 11px 0;
 }
 
 .about-gym__area {
+  margin: 0 0 39px 0;
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 0 39px 0;
 }
 
 .about-gym__descripton {
   display: block;
+  margin: 0;
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
-  margin: 0;
 }
 
 .about-gym__descripton1 {
@@ -685,9 +683,9 @@ ul {
 }
 
 .gym-image__img {
-  margin: 0;
   width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .abonement {
@@ -698,13 +696,13 @@ ul {
 .abonement::after {
   position: absolute;
   content: "";
+  top: calc(100% - 313px);
+  left: calc(100% - 246px);
+  width: 321px;
+  height: 384px;
   background-image: url("../img/gym-equipment-desktop.png");
   background-repeat: no-repeat;
   background-position: -40px -30px;
-  width: 321px;
-  height: 384px;
-  top: calc(100% - 313px);
-  left: calc(100% - 246px);
   z-index: 0;
 }
 
@@ -725,7 +723,6 @@ ul {
 
 .abonement__title {
   margin: 0 0 13px 0;
-  color: #102654;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-style: normal;
@@ -733,35 +730,33 @@ ul {
   line-height: normal;
   letter-spacing: 1.62px;
   text-align: center;
+  color: #102654;
 }
 
 .abonement__months-number {
-  width: 30%;
-  margin: 0 auto;
   position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 46px;
   -moz-column-gap: 46px;
   column-gap: 46px;
-  margin-bottom: 39px;
+  width: 30%;
+  margin: 0 auto 39px auto;
+  text-align: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .abonement__quantity-month {
+  padding: 10px 0;
   color: rgba(16, 38, 84, 0.5);
   border: none;
   background-color: #f8f9fc;
-  padding: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -786,8 +781,8 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
   gap: 3.4%;
+  width: 100%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
@@ -804,9 +799,9 @@ ul {
   align-items: center;
   width: 31%;
   padding: 63px 30px 68px 30px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   z-index: 222;
-  margin-bottom: 30px;
 }
 
 .programs__program:hover,
@@ -827,12 +822,12 @@ ul {
 }
 
 .programs__classes-number {
+  margin-bottom: 65px;
   color: #102654;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 65px;
 }
 
 .programs__price {
@@ -842,25 +837,25 @@ ul {
 
 .programs__numbers {
   display: inline-block;
-  color: #103aae;
+  margin-right: 14px;
+  margin-bottom: 34px;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
-  margin-right: 14px;
-  margin-bottom: 34px;
+  color: #103aae;
   z-index: 1;
 }
 
 .programs__price::after {
+  top: -57px;
+  right: -15px;
   color: #e8e8e8;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
   opacity: 0.5;
-  top: -57px;
-  right: -15px;
   z-index: -1;
 }
 
@@ -881,14 +876,14 @@ ul {
 
 .programs__link {
   display: block;
-  color: #102654;
+  padding: 25px 44px 23px 44px;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
+  color: #102654;
   text-transform: uppercase;
-  padding: 25px 44px 23px 44px;
   border: 2px solid #1c3374;
 }
 
@@ -926,21 +921,21 @@ ul {
   display: grid;
   -ms-grid-columns: 43% 57%;
   grid-template-columns: 43% 57%;
-  row-gap: 30px;
-  padding-top: 120px;
-  padding-bottom: 108.5px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+  row-gap: 30px;
+  padding-top: 120px;
+  padding-bottom: 106.9px;
   background-color: #ffffff;
 }
 
 .supergames-info {
-  padding: 82px 78px 67px 78px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 58.5% 41.5%;
   grid-template-columns: 58.5% 41.5%;
+  padding: 82px 78px 67px 78px;
   color: #ffffff;
   background-color: #ed0233;
 }
@@ -952,8 +947,7 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin: 0;
-  margin-bottom: 9px;
+  margin: 0 0 9px 0;
   text-align: center;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
@@ -966,7 +960,6 @@ ul {
 }
 
 .supergames-info__wrapper {
-  margin-left: 35%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -981,6 +974,7 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 15%;
+  margin-left: 35%;
 }
 
 .supergames-info__date-information {
@@ -1008,9 +1002,9 @@ ul {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 16px;
   word-wrap: break-word;
 }
 
@@ -1056,9 +1050,9 @@ ul {
 }
 
 .supergames-info__time {
+  margin-bottom: 18px;
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 18px;
 }
 
 .supergames-info__hour {
@@ -1084,6 +1078,12 @@ ul {
 }
 
 .supergames-info__link {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,15 +1093,9 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5/6;
-  border: 4px solid #ffffff;
   max-width: 343px;
   min-height: 67px;
+  margin-bottom: 17px;
   padding: 0 114px 0 113px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
@@ -1109,8 +1103,8 @@ ul {
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.6px;
+  border: 4px solid #ffffff;
   text-transform: uppercase;
-  margin-bottom: 17px;
 }
 
 .supergames-info__link:hover,
@@ -1159,12 +1153,12 @@ ul {
   content: "";
   top: 82.5%;
   right: 29%;
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  color: #ffffff;
 }
 
 .slide__card {
@@ -1172,9 +1166,9 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 51px 57px 10px 57px;
   width: 100%;
   height: 100%;
+  padding: 51px 57px 10px 57px;
   background-color: rgba(16, 38, 84, 0.89);
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1189,20 +1183,20 @@ ul {
 
 .trainer__container {
   position: relative;
+  padding-bottom: 109px;
   background-color: #ffffff;
-  padding-bottom: 103px;
 }
 
 .trainer__title {
-  color: #102654;
+  margin: 0 0 51px 0;
+  text-align: start;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.62px;
-  margin: 0 0 51px 0;
-  text-align: start;
+  color: #102654;
 }
 
 .trainer__wrapper {
@@ -1233,17 +1227,17 @@ ul {
 
 .trainer-card__event {
   margin: 0 0 29px 0;
-  color: #b6bdcc;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  color: #b6bdcc;
 }
 
 .trainer-card__advantages-list {
-  list-style-type: disc;
   margin-left: 13px;
+  list-style-type: disc;
 }
 
 .trainer-card__advantages-item {
@@ -1269,13 +1263,13 @@ ul {
 }
 
 .advantages {
-  background-color: #f8f9fc;
   margin-top: 0;
+  background-color: #f8f9fc;
 }
 
 .advantages__container {
   padding-top: 113px;
-  padding-bottom: 124px;
+  padding-bottom: 123px;
 }
 
 .advantages__title {
@@ -1291,7 +1285,6 @@ ul {
 }
 
 .advantages__list {
-  padding: 0 0 0 79px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 29.7% 22.2% 32.6%;
@@ -1301,6 +1294,7 @@ ul {
   column-gap: 5.45%;
   row-gap: 54%;
   margin-bottom: 90px;
+  padding: 0 0 0 79px;
 }
 
 .advantages__item--square {
@@ -1381,8 +1375,7 @@ ul {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .advantage__wrapper {
@@ -1406,33 +1399,33 @@ ul {
 }
 
 .advantage__equipmemt-wrapper {
-  height: 90%;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  height: 90%;
+  margin: 0;
   font-style: normal;
   color: #ffffff;
   background-color: #1c3374;
 }
 
 .advantage__number-equipment {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 74px;
   font-weight: 700;
   line-height: 1;
-  padding-top: 15px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .advantage__unit {
@@ -1444,25 +1437,23 @@ ul {
 }
 
 .advantage__unit-equipment {
+  margin-bottom: 10px;
   color: #ffffff;
   font-size: 26px;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 10px;
 }
 
 .advantage__title {
   padding-top: 10px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
 }
 
 .advantage__description {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 22.4px;
@@ -1491,11 +1482,11 @@ ul {
 
 .advantage__description--equipment {
   padding-top: 17px;
+  margin: 0 15px 27px 15px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 15px 27px 15px;
   text-align: center;
 }
 
@@ -1574,15 +1565,15 @@ ul {
   -ms-flex-pack: start;
   justify-content: start;
   padding: 24px 35px 0 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  line-height: 1;
+  font-style: normal;
   border: 7px solid;
   -o-border-image: linear-gradient(to bottom, #d10a42 0%, #00359f 100%);
   border-image: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#00359f));
   border-image: linear-gradient(to bottom, #d10a42 0%, #00359f 100%);
   border-image-slice: 1;
   color: #1c3374;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  line-height: 1;
-  font-style: normal;
 }
 
 .promotion--first {
@@ -1605,13 +1596,13 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 40px 45px 37px 35px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  padding: 40px 45px 37px 35px;
   background-color: #ed0233;
   color: #ffffff;
 }
@@ -1624,30 +1615,28 @@ ul {
 }
 
 .promotion__price {
-  margin: 0;
+  margin: 0 0 20px 0;
+  padding-left: 10px;
   font-size: 70px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-left: 10px;
   word-wrap: break-word;
 }
 
 .promotion__explanation {
-  margin: 0;
+  margin: 0 0 178px 0;
+  padding-left: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
-  padding-left: 10px;
-  margin-bottom: 178px;
 }
 
 .promotion__link-first {
+  padding: 10px;
   font-size: 14px;
   font-weight: 700;
+  line-height: 16px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-  line-height: 16px;
-  padding: 10px;
   text-decoration: underline;
 }
 
@@ -1673,10 +1662,10 @@ ul {
 }
 
 .promotion__wrapper-img {
-  width: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1699,12 +1688,12 @@ ul {
 
 .promotion__link {
   min-width: 68px;
+  padding: 10px;
   font-size: 12px;
   font-weight: 700;
+  line-height: 16px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-  line-height: 16px;
-  padding: 10px;
   text-decoration: underline;
   color: #1c3374;
 }
@@ -1798,8 +1787,6 @@ ul {
 }
 
 .faq__container {
-  padding-top: 80px;
-  padding-bottom: 113px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1808,6 +1795,8 @@ ul {
   -webkit-column-gap: 3.4%;
   -moz-column-gap: 3.4%;
   column-gap: 3.4%;
+  padding-top: 80px;
+  padding-bottom: 115px;
 }
 
 .faq__title {
@@ -1824,21 +1813,21 @@ ul {
 }
 
 .faq__controls {
-  width: 22.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   row-gap: 10px;
+  width: 22.3%;
 }
 
 .faq__control {
@@ -1878,13 +1867,13 @@ ul {
 }
 
 .faq__content {
-  width: 74.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  width: 74.3%;
 }
 
 .faq__element {
@@ -1925,10 +1914,9 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(28, 51, 116, 0.2);
-  margin: 0;
-  margin-bottom: 20px;
   padding-top: 32px;
+  margin: 0 0 20px 0;
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
 .accordion__element:last-child {
@@ -1945,14 +1933,15 @@ ul {
   content: "";
   top: 26px;
   right: 0;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: #f8f9fc;
   border: 1px solid #1c3374;
-  width: 42px;
-  height: 42px;
 }
 
 .accordion__btn-transform {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1964,11 +1953,12 @@ ul {
   justify-content: center;
   -webkit-transition: all 0.75s ease-in-out;
   transition: all 0.75s ease-in-out;
-  position: relative;
   background-color: #f8f9fc;
 }
 
 .accordion__btn-transform::before {
+  position: absolute;
+  content: "+";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1978,10 +1968,8 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: absolute;
   width: 18px;
   height: 18px;
-  content: "+";
   font-size: 32px;
   font-weight: 300;
   color: #1c3374;
@@ -2005,9 +1993,9 @@ ul {
 }
 
 .is-active > .accordion__button > .accordion__btn-transform::before {
+  content: "−";
   color: #ffffff;
   background-color: #1c3374;
-  content: "−";
 }
 
 .accordion__content {
@@ -2023,9 +2011,9 @@ ul {
 }
 
 .accordion__title {
+  width: 89.3%;
   margin-top: 0;
   margin-bottom: 14px;
-  width: 89.3%;
   font-size: 24px;
   font-weight: 500;
   line-height: 120%;
@@ -2037,8 +2025,8 @@ ul {
 }
 
 .reviews__container {
-  position: relative;
   max-width: 1366px;
+  position: relative;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -2050,9 +2038,8 @@ ul {
 }
 
 .reviews__title {
-  margin: 0;
+  margin: 0 0 42px 0;
   padding-top: 122px;
-  margin-bottom: 42px;
   text-align: center;
   font-family: "Alumni Sans", "Arial", sans-serif;
   color: #102654;
@@ -2064,59 +2051,57 @@ ul {
 }
 
 .reviews__wrapper {
-  width: 48.3%;
-  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  width: 48.3%;
+  margin: 0;
 }
 
 .reviews__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 242px;
   width: 100%;
-  margin: 0;
-  margin-bottom: 120px;
+  margin: 0 0 120px 0;
   background-color: #1c3374;
   padding: 60px 60px 35px 62px;
   -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 242px;
 }
 
 .reviews__author-info {
-  margin: 0;
   width: 76%;
+  margin: 0;
 }
 
 .reviews__author-name {
   display: block;
   width: 100%;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
   line-height: 1;
-  margin-bottom: 15px;
 }
 
 .reviews__author-image {
-  margin-right: 6.4%;
   width: 80px;
   height: 80px;
+  margin-right: 6.4%;
 }
 
 .reviews__text {
   display: block;
-  margin: 0;
+  margin: 0 0 22px 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  margin-bottom: 22px;
 }
 
 .reviews__svg-prev {
@@ -2140,28 +2125,28 @@ ul {
 }
 
 .feedback__container--1 {
-  background-color: #102654;
-  width: 100%;
-  height: 100%;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  width: 100%;
+  height: 100%;
+  background-color: #102654;
 }
 
 .feedback__container--2 {
-  width: 100%;
-  min-height: 100%;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  width: 100%;
+  min-height: 100%;
 }
 
 .contacts {
-  border-top: 1px solid #74819c;
   padding: 59px 100px 0 123px;
   min-height: 336px;
   color: #102654;
   font-style: normal;
+  border-top: 1px solid #74819c;
 }
 
 .contacts__title {
@@ -2173,7 +2158,7 @@ ul {
   letter-spacing: 1.62px;
 }
 
-.contacts__wrapper {
+.contacts__list {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2187,30 +2172,30 @@ ul {
   padding-bottom: 67px;
 }
 
-.contacts__wrapper::before {
+.contacts__list::before {
   position: absolute;
   content: "";
-  background-color: #74819c;
-  height: 102px;
-  width: 1px;
   top: 5%;
   left: 50%;
+  height: 102px;
+  width: 1px;
+  background-color: #74819c;
   z-index: 444;
 }
 
-.contacts__address {
+.contacts__item-address {
   width: 37%;
 }
 
-.contacts__phone {
+.contacts__item-phone {
   width: 36.5%;
 }
 
-.contacts__opening-hours {
+.contacts__item-opening-hours {
   width: 37%;
 }
 
-.contacts__email {
+.contacts__item-email {
   width: 36.5%;
 }
 
@@ -2219,20 +2204,15 @@ ul {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 152.34%;
 }
 
-.contacts__address,
-.contacts__opening-hours,
-.contacts__email,
-.contacts__phone {
+.contacts__point {
   margin: 0;
   padding: 0;
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 150%;
 }
 
 .form {
@@ -2273,11 +2253,11 @@ ul {
   width: 100%;
   margin-bottom: 3px;
   border: none;
-  border-bottom: 1px solid #74819c;
-  background-color: transparent;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   color: #ffffff;
+  border-bottom: 1px solid #74819c;
+  background-color: transparent;
 }
 
 .form__input:hover {
@@ -2316,48 +2296,48 @@ ul {
 }
 
 .form__input::-webkit-input-placeholder {
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
 }
 
 .form__input::-moz-placeholder {
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
 }
 
 .form__input:-ms-input-placeholder {
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
 }
 
 .form__input::-ms-input-placeholder {
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
 }
 
 .form__input::placeholder {
-  color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
 }
 
 .form__input:active::-webkit-input-placeholder,
@@ -2387,19 +2367,19 @@ ul {
 
 .form__submit {
   width: 100%;
-  text-transform: uppercase;
   padding: 17px;
-  text-align: center;
   margin-bottom: 27px;
-  border: 3px solid #ffffff;
-  background-color: #102654;
-  color: #ffffff;
+  text-align: center;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.7px;
+  border: 3px solid #ffffff;
+  background-color: #102654;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 [data-message-base="Поле обязательно к заполнению"],
@@ -2415,13 +2395,12 @@ ul {
 .free-lesson {
   min-height: 336px;
   padding: 56px 170px 0 103px;
-  color: #ffffff;
   font-style: normal;
+  color: #ffffff;
 }
 
 .free-lesson__title {
-  margin: 0;
-  margin-bottom: 19px;
+  margin: 0 0 21px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 700;
@@ -2521,9 +2500,9 @@ ul {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    min-height: 82px;
     padding-top: 26px;
     padding-bottom: 25px;
-    min-height: 82px;
   }
 
   .header__logo {
@@ -2552,22 +2531,21 @@ ul {
   }
 
   .phone {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
     display: block;
     min-height: 17px;
+    margin: 0;
     font-size: 24px;
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.48px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin: 0;
   }
 
   .logo__img--footer {
     width: 81px;
     height: 18px;
-    margin: 0;
-    margin-top: 2px;
+    margin: 2px 0 0 0;
   }
 
   .hero__container {
@@ -2592,8 +2570,8 @@ ul {
 
   .hero__title {
     margin: 0 3px 37px 0;
-    line-height: 86px;
     font-size: 77px;
+    line-height: 86px;
     letter-spacing: 2px;
     text-transform: lowercase;
     text-shadow: 3px 0 0 #ffffff;
@@ -2606,12 +2584,10 @@ ul {
   .hero__link {
     display: block;
     width: 188px;
-    margin: 0;
-    margin-left: auto;
+    margin: 0 0 20px auto;
+    padding: 14px 32px;
     font-size: 11px;
     letter-spacing: 1px;
-    padding: 14px 32px;
-    margin-bottom: 20px;
   }
 
   .hero__picture {
@@ -2639,8 +2615,7 @@ ul {
     left: 6%;
     width: 113px;
     grid-column: none;
-    padding-top: 186px;
-    padding-right: 0;
+    padding: 186px 0 0 0;
   }
 
   .nav__item {
@@ -2663,9 +2638,9 @@ ul {
   }
 
   .video__button {
+    top: 50.5%;
     width: 73px;
     height: 73px;
-    top: 50.5%;
   }
 
   .video__button-svg {
@@ -2674,8 +2649,6 @@ ul {
   }
 
   .gym__container {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
     min-height: 654px;
@@ -2704,15 +2677,15 @@ ul {
   }
 
   .gym__video {
-    min-height: 167px;
-    min-width: 266px;
-    margin-top: 90px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3/5;
+    min-height: 167px;
+    min-width: 266px;
+    margin-top: 90px;
   }
 
   .about-gym {
@@ -2750,10 +2723,10 @@ ul {
   }
 
   .about-gym__descripton {
-    text-align: center;
     width: 74%;
-    font-size: 16px;
+    text-align: center;
     margin-bottom: 34px;
+    font-size: 16px;
     letter-spacing: 0;
   }
 
@@ -2762,10 +2735,10 @@ ul {
   }
 
   .abonement::after {
-    background-image: url("../img/gym-equipment-tablet.png");
-    background-position: -40px -20px;
     top: calc(100% - 300px);
     left: calc(100% - 310px);
+    background-image: url("../img/gym-equipment-tablet.png");
+    background-position: -40px -20px;
   }
 
   .abonement__container {
@@ -2779,10 +2752,10 @@ ul {
   }
 
   .abonement__months-number {
-    width: 50%;
     -webkit-column-gap: 54px;
     -moz-column-gap: 54px;
     column-gap: 54px;
+    width: 50%;
     margin-bottom: 45px;
   }
 
@@ -2818,9 +2791,9 @@ ul {
   }
 
   .supergames__container {
+    min-height: 292px;
     padding-top: 100px;
     padding-bottom: 103px;
-    min-height: 292px;
   }
 
   .supergames-info {
@@ -2828,9 +2801,9 @@ ul {
   }
 
   .supergames-info__title {
+    text-align: center;
     font-size: 48px;
     letter-spacing: 1.44px;
-    text-align: center;
   }
 
   .supergames-info__wrapper {
@@ -2838,36 +2811,36 @@ ul {
   }
 
   .supergames-info__date {
-    font-size: 12px;
     -ms-flex-item-align: self-start;
     -ms-grid-row-align: self-start;
     align-self: self-start;
-    line-height: 1;
     margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1;
   }
 
   .supergames-info__day {
-    font-size: 24px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     padding-top: 8px;
     margin-bottom: 8px;
+    font-size: 24px;
   }
 
   .supergames-info__month {
-    font-size: 10px;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    line-height: 1;
     padding-top: 11px;
+    font-size: 10px;
+    line-height: 1;
   }
 
   .supergames-info__time {
+    margin-bottom: 6px;
     font-size: 12px;
     line-height: 1;
-    margin-bottom: 6px;
   }
 
   .supergames-info__hour {
@@ -2913,10 +2886,10 @@ ul {
   }
 
   .trainer__title {
-    font-size: 42px;
-    letter-spacing: 1.26px;
     margin: 0 0 32px 0;
     text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.26px;
   }
 
   .trainer__svg-prev {
@@ -3025,13 +2998,12 @@ ul {
   }
 
   .advantage__number-equipment {
-    padding-top: 29px;
+    padding-top: 20px;
     margin-bottom: 8px;
   }
 
   .advantage__unit-equipment {
     font-size: 22px;
-    margin-bottom: 10px;
   }
 
   .advantage__title {
@@ -3057,9 +3029,9 @@ ul {
   }
 
   .promotions__title {
+    margin-bottom: 41px;
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 41px;
   }
 
   .promotions__list {
@@ -3105,8 +3077,8 @@ ul {
   }
 
   .promotion__price {
-    margin-bottom: 23px;
     width: 100%;
+    margin-bottom: 23px;
   }
 
   .promotion__explanation {
@@ -3119,18 +3091,18 @@ ul {
   }
 
   .promotion__img {
+    min-width: 399px;
     -o-object-position: 0 0;
     object-position: 0 0;
-    min-width: 399px;
   }
 
   .promotion__description {
+    min-height: 44px;
+    margin: 0 0 36px 10px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    min-height: 44px;
-    margin: 0 0 36px 10px;
   }
 
   .promotion__link {
@@ -3138,8 +3110,6 @@ ul {
   }
 
   .faq__container {
-    padding-top: 67px;
-    padding-bottom: 67px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3147,13 +3117,15 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-top: 67px;
+    padding-bottom: 67px;
   }
 
   .faq__title {
+    margin-bottom: 43px;
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
-    margin-bottom: 43px;
   }
 
   .faq__controls {
@@ -3188,7 +3160,7 @@ ul {
 
   .reviews__title {
     padding-top: 94px;
-    margin-bottom: 41px;
+    margin-bottom: 42.5px;
     font-size: 42px;
     letter-spacing: 1.26;
   }
@@ -3245,17 +3217,17 @@ ul {
   }
 
   .contacts {
-    padding: 63px 133px 36px 133px;
+    padding: 63px 133px 39px 133px;
     border: none;
   }
 
   .contacts__title {
+    margin: 0 0 37px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin: 0 0 34px 0;
   }
 
-  .contacts__wrapper {
+  .contacts__list {
     -webkit-column-gap: 19%;
     -moz-column-gap: 19%;
     column-gap: 19%;
@@ -3266,25 +3238,25 @@ ul {
     padding-bottom: 27px;
   }
 
-  .contacts__wrapper::before {
-    height: 128px;
+  .contacts__list::before {
     top: 4%;
     left: 53%;
+    height: 128px;
   }
 
-  .contacts__address {
+  .contacts__item-address {
     width: 43.4%;
   }
 
-  .contacts__phone {
+  .contacts__item-phone {
     width: 37.4%;
   }
 
-  .contacts__opening-hours {
+  .contacts__item-opening-hours {
     width: 43.4%;
   }
 
-  .contacts__email {
+  .contacts__item-email {
     width: 37.4%;
   }
 
@@ -3292,11 +3264,10 @@ ul {
     font-size: 18px;
   }
 
-  .contacts__address,
-  .contacts__opening-hours,
-  .contacts__email,
-  .contacts__phone {
+  .contacts__point {
     font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
   }
 
   .form {
@@ -3323,8 +3294,8 @@ ul {
   }
 
   .free-lesson {
-    padding: 54px 163px 30px 133px;
     min-height: 324px;
+    padding: 54px 163px 30px 133px;
   }
 
   .free-lesson__title {
@@ -3341,9 +3312,9 @@ ul {
   }
 
   .promotion__description {
-    text-align: center;
     margin-bottom: 15px;
     margin-left: 0;
+    text-align: center;
   }
 }
 
@@ -3402,9 +3373,9 @@ ul {
   }
 
   .logo__img {
+    height: 24px;
     -o-object-fit: contain;
     object-fit: contain;
-    height: 24px;
   }
 
   .logo__img--footer {
@@ -3429,10 +3400,10 @@ ul {
 
   .hero__link {
     width: 100%;
+    padding: 15px 84px 15px 84px;
     text-align: center;
     font-size: 12px;
     letter-spacing: 0.4px;
-    padding: 15px 84px 15px 84px;
   }
 
   .hero__picture {
@@ -3553,11 +3524,8 @@ ul {
     -ms-flex-pack: start;
     justify-content: start;
     min-height: 925px;
-    padding-top: 65px;
+    padding: 65px 0 19px 0;
     margin-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 19px;
     row-gap: 0;
   }
 
@@ -3581,8 +3549,8 @@ ul {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     min-width: 320px;
-    min-height: 313px;
     width: 100%;
+    min-height: 313px;
     margin-bottom: 40px;
   }
 
@@ -3596,8 +3564,7 @@ ul {
     font-size: 32px;
     letter-spacing: 0.96px;
     text-align: left;
-    margin-right: auto;
-    margin-bottom: 7px;
+    margin: 0 auto 7px 0;
   }
 
   .about-gym__area {
@@ -3605,28 +3572,26 @@ ul {
     font-weight: 400;
     letter-spacing: 0;
     min-width: 290px;
-    margin-right: auto;
-    margin-bottom: 24px;
+    margin: 0 auto 24px 0;
   }
 
   .about-gym__descripton {
     display: block;
-    margin-right: auto;
     min-width: 258px;
+    margin: 0 auto 10px 0;
     text-align: left;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 10px;
   }
 
   .gym-image__img {
     min-width: 320px;
+    min-height: 313px;
+    margin: 0 auto;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-    min-height: 313px;
-    margin: 0 auto;
   }
 
   .abonement::after {
@@ -3645,10 +3610,10 @@ ul {
   }
 
   .abonement__months-number {
-    width: 100%;
     -webkit-column-gap: 45px;
     -moz-column-gap: 45px;
     column-gap: 45px;
+    width: 100%;
     margin-bottom: 37px;
     word-wrap: break-word;
   }
@@ -3681,8 +3646,8 @@ ul {
   }
 
   .programs__numbers {
-    font-size: 48px;
     margin-right: 10px;
+    font-size: 48px;
   }
 
   .ruble {
@@ -3696,8 +3661,6 @@ ul {
   }
 
   .supergames__container {
-    padding-top: 70.5px;
-    padding-bottom: 64px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3706,11 +3669,13 @@ ul {
     -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 0;
+    padding-top: 70.5px;
+    padding-bottom: 64px;
   }
 
   .supergames-info {
-    padding: 50px 44px 31px 44px;
     min-height: 292px;
+    padding: 50px 44px 31px 44px;
   }
 
   .supergames-info__title {
@@ -3737,9 +3702,9 @@ ul {
   }
 
   .trainer__title {
+    margin: 0 0 45px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin: 0 0 45px 0;
   }
 
   .trainer__svg-prev {
@@ -3767,14 +3732,16 @@ ul {
   .advantages__container {
     padding-top: 64px;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
     overflow-x: hidden;
   }
 
   .advantages__title {
     margin: 0;
     padding-top: 36px;
-    text-align: center;
     padding-bottom: 45px;
+    text-align: center;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -3796,7 +3763,6 @@ ul {
   }
 
   .advantage {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3810,6 +3776,7 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
     margin: 0;
   }
 
@@ -3839,8 +3806,6 @@ ul {
   }
 
   .advantage__wrapper {
-    padding: 0;
-    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3854,18 +3819,19 @@ ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding: 0;
+    margin: 0 0 32px 0;
     text-align: center;
-    margin-bottom: 32px;
   }
 
   .advantage__equipmemt-wrapper {
-    margin-top: 12px;
     width: 100%;
     min-width: 320px;
+    margin-top: 12px;
   }
 
   .advantage__number-equipment {
-    padding-top: 34px;
+    padding-top: 24px;
     margin-bottom: 3px;
   }
 
@@ -3909,8 +3875,7 @@ ul {
 
   .promotions__title {
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 44.5px;
+    padding: 0 0 44.5px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -3969,16 +3934,16 @@ ul {
     -ms-flex-align: start;
     align-items: start;
     min-width: 290px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
   }
 
   .promotion__wrapper-first {
-    width: 100%;
-    min-width: 290px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
+    min-width: 290px;
     padding-top: 42px;
     padding-bottom: 34px;
   }
@@ -3989,14 +3954,14 @@ ul {
 
   .promotion__price {
     text-align: center;
+    width: 100%;
     padding-left: 10px;
     margin-bottom: 15px;
-    width: 100%;
   }
 
   .promotion__explanation {
-    text-align: center;
     margin-bottom: 22px;
+    text-align: center;
   }
 
   .promotion__link-first {
@@ -4012,17 +3977,17 @@ ul {
   .promotion__img {
     width: 100%;
     min-width: 290px;
+    min-height: 299px;
     -o-object-fit: contain;
     object-fit: contain;
-    min-height: 299px;
     -o-object-position: 0 -5px;
     object-position: 0 -5px;
   }
 
   .promotion__title {
     display: block;
-    text-align: center;
     margin: 0 auto 11px auto;
+    text-align: center;
   }
 
   .promotion__link {
@@ -4033,14 +3998,14 @@ ul {
 
   .faq__container {
     padding-top: 46px;
-    padding-bottom: 70px;
+    padding-bottom: 25px;
   }
 
   .faq__title {
     margin-top: 25px;
+    margin-bottom: 31px;
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 31px;
   }
 
   .faq__controls {
@@ -4069,9 +4034,9 @@ ul {
   }
 
   .accordion__button {
+    top: 37px;
     width: 32px;
     height: 32px;
-    top: 37px;
   }
 
   .accordion__btn-transform::before {
@@ -4097,20 +4062,20 @@ ul {
 
   .accordion__title {
     width: 82%;
+    margin-bottom: 12px;
     font-size: 18px;
     letter-spacing: 0;
-    margin-bottom: 12px;
   }
 
   .reviews__title {
-    font-size: 32px;
-    letter-spacing: 0.5px;
     padding-top: 64px;
     margin-bottom: 45px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
   }
 
   .reviews__slide {
-    padding: 48px 25px 33.5px 25px;
+    padding: 48px 25px 13.5px 25px;
     margin-bottom: 71px;
   }
 
@@ -4128,8 +4093,8 @@ ul {
   .reviews__author-name {
     width: 35%;
     margin-left: 57%;
-    line-height: 130%;
     margin-bottom: 22px;
+    line-height: 130%;
   }
 
   .reviews__author-image {
@@ -4143,13 +4108,8 @@ ul {
 
   .reviews__text {
     text-align: center;
-    margin-left: auto;
+    margin-left: 0 auto;
     margin-right: auto;
-  }
-
-  .reviews__text {
-    text-align: center;
-    margin-bottom: 0;
   }
 
   .reviews__svg-prev {
@@ -4163,15 +4123,16 @@ ul {
   }
 
   .contacts {
-    padding: 65px 15px 37.5px 15px;
+    padding: 65px 15px 35.5px 15px;
   }
 
   .contacts__title {
+    margin-bottom: 39.5px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
 
-  .contacts__wrapper {
+  .contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4180,47 +4141,50 @@ ul {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    row-gap: 22px;
+    row-gap: 23px;
   }
 
-  .contacts__wrapper::before {
+  .contacts__list::before {
     display: none;
   }
 
-  .contacts__address {
+  .contacts__item-address {
     width: 100%;
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .contacts__phone {
+  .contacts__item-phone {
     width: 100%;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
   }
 
-  .contacts__opening-hours {
+  .contacts__item-opening-hours {
     width: 100%;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
 
-  .contacts__email {
+  .contacts__item-email {
     width: 100%;
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
   }
 
-  .contacts__address,
-  .contacts__opening-hours,
-  .contacts__email,
-  .contacts__phone {
+  .contacts__text {
+    line-height: 20px;
+  }
+
+  .contacts__point {
     display: block;
+    margin-bottom: 15px;
     font-size: 20px;
+    line-height: 20px;
   }
 
   .form {
@@ -4242,9 +4206,9 @@ ul {
   }
 
   .free-lesson__title {
+    margin-bottom: 30px;
     font-size: 32px;
     letter-spacing: 0.7px;
-    margin-bottom: 30px;
   }
 
   .slider-row__svg-prev {
