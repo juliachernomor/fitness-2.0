@@ -1,6 +1,5 @@
 .trainer {
   position: relative;
-  background-color: $color-nero;
   overflow: hidden;
 }
 
@@ -18,7 +17,7 @@
   }
 }
 
-.trainer__title {
+.trainer__swiper h2 {
   margin: 0 0 51px 0;
   text-align: start;
   font-family: $ff-alumni-sans;

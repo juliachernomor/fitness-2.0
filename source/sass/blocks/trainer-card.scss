@@ -1,4 +1,4 @@
-.trainer-card__title {
+.trainer-card h3 {
   margin: 0;
   font-size: 18px;
   font-style: normal;
@@ -6,7 +6,7 @@
   line-height: 150%;
 }
 
-.trainer-card__event {
+.trainer-card p {
   margin: 0 0 29px 0;
   text-align: center;
   font-size: 16px;
@@ -16,12 +16,12 @@
   color: $color-spindle;
 }
 
-.trainer-card__advantages-list {
+.trainer-card ul {
   margin-left: 13px;
   list-style-type: disc;
 }
 
-.trainer-card__advantages-item {
+.trainer-card ul li {
   margin: 0;
   font-size: 14px;
   font-style: normal;

@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  background-color: $color-nero;
 
   &::after {
     position: absolute;
@@ -49,11 +48,11 @@
   }
 }
 
-.header__logo {
+.header__container a:nth-child(1) {
   z-index: 1;
 }
 
-.header__phone {
+.header__container a:nth-child(2) {
   max-width: 200px;
   z-index: 1;
 }

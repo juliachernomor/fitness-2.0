@@ -37,7 +37,7 @@
   }
 }
 
-.advantage__about {
+.advantage p {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -164,7 +164,7 @@
   }
 }
 
-.advantage__description {
+.advantage__wrapper p:nth-child(2) {
   margin: 0 0 20px 0;
   font-size: 16px;
   font-weight: 300;

@@ -9,7 +9,7 @@
   }
 }
 
-.about-gym__title {
+.about-gym h2 {
   margin: 40px 0 11px 0;
   font-family: $ff-alumni-sans;
   font-size: 48px;
@@ -38,7 +38,8 @@
   }
 }
 
-.about-gym__area {
+.about-gym span {
+  display: block;
   margin: 0 0 39px 0;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
@@ -62,9 +63,9 @@
   }
 }
 
-.about-gym__descripton {
+.about-gym p:nth-child(3) {
   display: block;
-  margin: 0;
+  margin: 0 0 8px 0;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-size: 16px;
@@ -90,18 +91,17 @@
   }
 }
 
-.about-gym__descripton1 {
+div p:nth-child(4) {
   display: block;
-  margin-bottom: 8px;
-}
+  margin:0 0 25px 0;
+  color: $color-sapphire;
+  font-family: $ff-roboto-condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
 
-.about-gym__descripton2 {
-  display: block;
-  margin-bottom: 25px;
-}
-
-@include vp-1199 {
-  .about-gym__descripton2 {
+  @include vp-1199 {
     display: none;
   }
 }

@@ -46,7 +46,7 @@
   }
 }
 
-.abonement__title {
+.abonement h2 {
   margin: 0 0 13px 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -93,7 +93,7 @@
   }
 }
 
-.abonement__quantity-month {
+.abonement__months-number button {
   padding: 10px 0;
   color: rgba(16, 38, 84, 0.5);
   border: none;
@@ -113,10 +113,11 @@
   }
 }
 
-.abonement__quantity-month.is-active {
+.abonement__months-number button.is-active {
   border-bottom: 1px solid $color-crimson;
 }
 
 .abonement__programs-content {
   margin-bottom: 50px;
 }
+

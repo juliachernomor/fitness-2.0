@@ -64,7 +64,7 @@
   }
 }
 
-.programs__title {
+.programs__program h3 {
   margin: 0 0 13px 0;
   color: #102654;
   font-size: 26px;
@@ -81,7 +81,7 @@
   }
 }
 
-.programs__classes-number {
+.programs__program > span {
   margin-bottom: 65px;
   color: #102654;
   font-size: 16px;
@@ -99,7 +99,7 @@
   margin: 0;
 }
 
-.programs__numbers {
+.programs__price span:nth-child(1) {
   display: inline-block;
   margin-right: 14px;
   margin-bottom: 34px;
@@ -117,7 +117,7 @@
 }
 
 @include vp-767 {
-  .ruble {
+  .programs__price svg {
     width: 24px;
     height: 33px;
   }
