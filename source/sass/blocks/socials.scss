@@ -16,7 +16,7 @@
   }
 }
 
-.socials__item {
+.socials li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 
-.socials__link {
+.socials li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,11 +59,11 @@
   }
 }
 
-.socials__link svg {
+.socials li a svg {
   color: $color-black-russian;
 }
 
-.socials__link:hover svg,
-.socials__link:focus svg {
+.socials li a:hover svg,
+.socials li a:focus svg {
   color: $color-default-white;
 }

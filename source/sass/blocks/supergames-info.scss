@@ -36,8 +36,8 @@
   }
 
   @include vp-767 {
-    text-align: center;
-    margin-bottom: 11px;
+    text-align: left;
+    margin: 0 0 10px 7px;
   }
 }
 
@@ -122,7 +122,7 @@
   font-style: normal;
 }
 
-.supergames-info__wrapper p:nth-child(2) span:nth-child(1){
+.supergames-info__wrapper p:nth-child(2) span:nth-child(1) {
   margin-bottom: 18px;
   font-size: 18px;
   font-weight: 400;
@@ -134,7 +134,7 @@
   }
 }
 
-.supergames-info__wrapper p:nth-child(2) span:nth-child(2){
+.supergames-info__wrapper p:nth-child(2) span:nth-child(2) {
   font-size: 40px;
   font-weight: 700;
   word-wrap: break-word;
@@ -210,5 +210,9 @@
     font-size: 10px;
     letter-spacing: 0.5px;
     text-align: center;
+  }
+
+  @include vp-1199 {
+    min-height: 41px;
   }
 }

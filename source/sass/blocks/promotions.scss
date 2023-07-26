@@ -9,13 +9,13 @@
   }
 
   @include vp-767 {
-    padding-top: 64px;
+    padding-top: 62px;
     padding-bottom: 1px;
     margin-top: -9px;
   }
 }
 
-.promotions__title {
+.promotions__container h2 {
   margin-bottom: 36px;
   text-align: center;
   font-family: $ff-alumni-sans;
@@ -34,13 +34,13 @@
 
   @include vp-767 {
     margin: 0;
-    padding: 0 0 44.5px 0;
+    padding: 0 0 44px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
 }
 
-.promotions__list {
+.promotions__container ul {
   display: grid;
   grid-template-columns: 48.2%  48.2%;
   column-gap: 3.4%;

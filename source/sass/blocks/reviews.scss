@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-.reviews__title {
+.reviews__swiper h2 {
   margin: 0 0 42px 0;
   padding-top: 122px;
   text-align: center;
@@ -45,7 +45,7 @@
   margin: 0;
 }
 
-.reviews__slide {
+.reviews__wrapper blockquote {
   display: flex;
   min-height: 242px;
   width: 100%;
@@ -77,7 +77,7 @@
   }
 }
 
-.reviews__author-name {
+.reviews__author-info cite {
   display: block;
   width: 100%;
   margin-bottom: 15px;
@@ -98,7 +98,7 @@
   }
 }
 
-.reviews__author-image {
+.reviews__wrapper blockquote img {
   width: 80px;
   height: 80px;
   margin-right: 6.4%;
@@ -118,7 +118,7 @@
   }
 }
 
-.reviews__text {
+.reviews__author-info p {
   display: block;
   margin: 0 0 22px 0;
   font-size: 16px;

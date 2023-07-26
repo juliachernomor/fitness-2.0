@@ -1,4 +1,4 @@
-.nav__list {
+.nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,7 +15,7 @@
   }
 }
 
-.nav__item {
+.nav ul li {
   display: inline-block;
 
   @include vp-1199 {

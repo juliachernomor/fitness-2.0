@@ -19,7 +19,7 @@
     align-items: start;
     justify-content: start;
     min-height: 925px;
-    padding: 65px 0 19px 0;
+    padding: 65px 0 18px 0;
     margin-bottom: 0;
     row-gap: 0;
   }
@@ -82,6 +82,6 @@
   }
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 auto 0 auto;
   }
 }

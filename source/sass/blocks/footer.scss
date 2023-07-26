@@ -22,7 +22,7 @@
   }
 }
 
-.footer__logo {
+.footer__container > a {
   width: 7.5%;
   margin-right: 23%;
 
@@ -54,7 +54,7 @@
   }
 }
 
-.footer__socials {
+.footer__container > ul {
   width: 8.7%;
 
   @include vp-1199 {

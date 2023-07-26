@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__title {
+.contacts h3 {
   margin: 0 0 39px 0;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -36,12 +36,12 @@
   }
 }
 
-.contacts__list {
+.contacts ul {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   column-gap: 26%;
-  row-gap: 15px;
+  row-gap: 17px;
   padding-bottom: 67px;
 
   @include vp-1199 {
@@ -60,7 +60,7 @@
   }
 }
 
-.contacts__list::before {
+.contacts ul::before {
   position: absolute;
   content: "";
   top: 5%;
@@ -81,7 +81,7 @@
   }
 }
 
-.contacts__item-address {
+.contacts ul li:nth-child(1) {
   width: 37%;
 
   @include vp-1199 {
@@ -94,7 +94,7 @@
   }
 }
 
-.contacts__item-phone {
+.contacts ul li:nth-child(2) {
   width: 36.5%;
 
   @include vp-1199 {
@@ -107,7 +107,7 @@
   }
 }
 
-.contacts__item-opening-hours {
+.contacts ul li:nth-child(3) {
   width: 37%;
 
   @include vp-1199 {
@@ -120,7 +120,7 @@
   }
 }
 
-.contacts__item-email {
+.contacts ul li:nth-child(4) {
   width: 36.5%;
 
   @include vp-1199 {
@@ -133,7 +133,8 @@
   }
 }
 
-.contacts__text {
+.contacts__common a,
+.contacts__common span {
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-size: 14px;
@@ -148,7 +149,7 @@
   }
 }
 
-.contacts__point {
+.contacts__common p {
   margin: 0;
   padding: 0;
   color: $color-sapphire;

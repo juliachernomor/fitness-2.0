@@ -1,23 +1,6 @@
-.form {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 7%;
-  row-gap: 30px;
-  font-family: $ff-roboto-condensed;
-  color: $color-default-white;
-  font-size: 14px;
-  line-height: 1;
 
-  @include vp-1199 {
-    column-gap: 12.7%;
-  }
 
-  @include vp-767 {
-    width: 100%;
-  }
-}
-
-.form__name {
+.form--name {
   display: flex;
   flex-wrap: wrap;
   width: 46.3%;
@@ -32,7 +15,7 @@
   }
 }
 
-.form__phone {
+.form--phone {
   display: flex;
   flex-wrap: wrap;
   width: 46.3%;
@@ -47,7 +30,7 @@
   }
 }
 
-.form__input {
+.form input {
   width: 100%;
   margin-bottom: 3px;
   border: none;
@@ -78,11 +61,11 @@
   }
 }
 
-.form__input:disabled::placeholder {
+.form input:disabled::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
-.form__input::placeholder {
+.form input::placeholder {
   font-family: $ff-roboto-condensed;
   font-size: 14px;
   font-style: normal;
@@ -91,12 +74,12 @@
   color: $color-default-white;
 }
 
-.form__input:active::placeholder,
-.form__input:focus::placeholder {
+.form input:active::placeholder,
+.form input:focus::placeholder {
   color: transparent;
 }
 
-.form__submit {
+form button {
   width: 100%;
   padding: 17px;
   margin-bottom: 27px;
