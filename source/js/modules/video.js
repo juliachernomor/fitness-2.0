@@ -9,6 +9,7 @@ const setupVideo = () => {
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.width = '100%';
   iframe.height = '100%';
+  iframe.loading = 'lazy';
   video.appendChild(iframe);
 
   button.addEventListener('click', () => {
