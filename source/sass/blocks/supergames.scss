@@ -3,13 +3,13 @@
   grid-template-columns: 43% 57%;
   justify-content: start;
   row-gap: 30px;
-  padding-top: 120px;
-  padding-bottom: 106.9px;
+  padding-top: 122px;
+  padding-bottom: 108px;
   background-color: $color-default-white;
 
   @include vp-1199 {
     min-height: 292px;
-    padding-top: 100px;
+    padding-top: 99px;
     padding-bottom: 103px;
   }
 

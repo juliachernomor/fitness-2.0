@@ -22,14 +22,14 @@
   flex-direction: column;
   align-items: center;
   width: 31%;
-  padding: 63px 30px 68px 30px;
+  padding: 64px 30px 68px 30px;
   margin-bottom: 30px;
   background-color: $color-default-white;
   z-index: 222;
 
   &:hover,
   &:focus {
-    padding: 56px 23px 61px 23px;
+    padding: 57px 23px 61px 23px;
     border: 7px solid;
     border-image: $torch-red-to-cobalt;
     border-image-slice: 1;
@@ -37,7 +37,7 @@
 
   @include vp-1199 {
     width: 65%;
-    padding: 63px 30px 68px 30px;
+    padding: 65px 30px 68px 30px;
     margin-bottom: 40px;
   }
 }
@@ -45,7 +45,7 @@
 @include vp-767 {
   .programs__program {
     width: 100%;
-    padding: 50px 0 53px 0;
+    padding: 50px 0 55px 0;
     margin-bottom: 34px;
 
     &:hover,
@@ -89,6 +89,10 @@
   font-weight: 400;
   line-height: 150%;
 
+  @include vp-1199 {
+    margin-bottom: 63px;
+  }
+
   @include vp-767 {
     margin-bottom: 52px;
   }
@@ -110,9 +114,14 @@
   color: $color-egyptian-blue;
   z-index: 1;
 
+  @include vp-1199 {
+    margin-bottom: 36px;
+  }
+
   @include vp-767 {
     margin-right: 10px;
     font-size: 48px;
+    margin-bottom: 33px;
   }
 }
 
@@ -168,7 +177,11 @@
   border: 2px solid $color-resolution-blue;
 
   @include vp-1199 {
-    padding: 23px 44px 23px 44px;
+    padding: 22.5px 44px 23px 44px;
+  }
+
+  @include vp-767 {
+    padding: 22px 44px 23px 44px;
   }
 }
 
