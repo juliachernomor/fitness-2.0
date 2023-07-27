@@ -2929,7 +2929,7 @@ ul {
 .reviews__wrapper blockquote img {
   width: 80px;
   height: 80px;
-  margin-right: 6.4%;
+  margin-right: 28px;
 }
 
 .reviews__author-info p {
@@ -4031,7 +4031,6 @@ form button {
   }
 
   .reviews__wrapper blockquote img {
-    margin-right: 6.6%;
     margin-top: 1%;
   }
 
@@ -4845,17 +4844,16 @@ form button {
   .promotion__wrapper-img {
     width: 100%;
     min-width: 290px;
-    height: 299px;
+    min-height: 299px;
     margin: 0 auto;
   }
 
   .promotion__wrapper-img img {
     width: 100%;
     min-width: 290px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    -o-object-position: 0 -5px;
-    object-position: 0 -5px;
+    min-height: 299px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .promotion h3 {
