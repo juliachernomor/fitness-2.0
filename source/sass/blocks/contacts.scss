@@ -1,9 +1,9 @@
 .contacts {
   padding: 59px 100px 0 123px;
   min-height: 336px;
+  max-width: 683px;
   color: $color-sapphire;
   font-style: normal;
-  border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1199 {
     padding: 63px 133px 39px 133px;

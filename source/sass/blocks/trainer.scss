@@ -18,7 +18,7 @@
 }
 
 .trainer__swiper h2 {
-  margin: 0 0 51px 0;
+  margin: 0 0 52px 0;
   text-align: start;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -73,6 +73,6 @@
 
   @include vp-767 {
     top: 20%;
-    left: -15%;
+    left: 0;
   }
 }

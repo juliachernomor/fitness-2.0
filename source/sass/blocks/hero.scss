@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 11.5% 22.8% 65.7%;
   min-height: 450px;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 
   @include vp-1199 {
     grid-template-columns: 48% 52%;
@@ -19,7 +19,7 @@
   @include vp-767 {
     grid-template-columns: 100%;
     min-height: 435px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 }
 

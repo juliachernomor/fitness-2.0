@@ -11,6 +11,8 @@
 }
 
 .feedback__container--1 {
+  display: flex;
+  justify-content: end;
   grid-column: 1/2;
   width: 100%;
   height: 100%;
@@ -23,9 +25,12 @@
 }
 
 .feedback__container--2 {
+  display: flex;
+  justify-content: start;
   grid-column: 2/3;
   width: 100%;
   min-height: 100%;
+  border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1199 {
     grid-column: 1/2;
