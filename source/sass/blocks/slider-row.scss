@@ -43,3 +43,8 @@
   display: block;
   stroke: $color-default-white;
 }
+
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: none;
+}

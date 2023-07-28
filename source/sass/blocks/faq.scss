@@ -92,6 +92,11 @@
     outline: none;
   }
 
+  &:active {
+    background-image: $torch-red-to-cobalt;
+    color: $color-default-white;
+  }
+
   &:disabled {
     border: 1px solid $color-link-water;
     color: $color-link-water;
@@ -106,11 +111,6 @@
     padding: 14px;
     font-size: 14px;
   }
-}
-
-.faq__control.is-active {
-  background-image: $torch-red-to-cobalt;
-  color: $color-default-white;
 }
 
 .faq__content {
@@ -128,4 +128,9 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
+}
+
+.faq__control.is-active {
+  background-image: $torch-red-to-cobalt;
+  color: $color-default-white;
 }

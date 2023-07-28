@@ -8,10 +8,9 @@
   }
 
   @include vp-767 {
-    width: 320px;
-    height: 167px;
-    margin: 0 auto;
-    text-align: center;
+    min-width: 320px;
+    min-height: 167px;
+    margin: 0;
   }
 }
 
@@ -22,7 +21,12 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: rgba(20, 54, 122, 0.5);
+  
+  @include vp-767 {
+    object-fit: cover;
+    min-width: 320px;
+    min-height: 167px;
+  }
 }
 
 .video__button {
@@ -40,6 +44,7 @@
   border: none;
   transform: translate(-50%, -50%);
   z-index: 66666;
+  cursor: pointer;
 
   @include vp-1199 {
     top: 50.5%;
@@ -100,6 +105,11 @@
   @include vp-1199 {
     height: 167px;
     width: 266px;
+  }
+
+  @include vp-767 {
+    min-height: 167px;
+    min-width: 320px;
   }
 }
 

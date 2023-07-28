@@ -157,6 +157,7 @@
 .promotion__wrapper-img {
   grid-column: 2/3;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 
 
@@ -176,6 +177,7 @@
 .promotion__wrapper-img img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
   object-position: -45px 0;
 
   @include vp-1199 {

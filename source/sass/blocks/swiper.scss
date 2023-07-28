@@ -11,7 +11,7 @@
 }
 
 .swiper--2 {
-  width: 48.2%;
+  width: 560px;
 
   @include vp-1199 {
     width: 83.6%;
@@ -22,8 +22,9 @@
   }
 }
 
+.swiper-slide
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
-

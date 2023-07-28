@@ -1,6 +1,6 @@
 .reviews__container {
-  max-width: 1366px;
   position: relative;
+  max-width: 1366px;
   margin: 0 auto;
   background-color: $color-default-white;
 }
@@ -136,8 +136,10 @@
 }
 
 .reviews__svg-prev {
+  position: absolute;
   top: 100%;
   left: 1180%;
+
 
   @include vp-1199 {
     top: 80%;
@@ -151,6 +153,7 @@
 }
 
 .reviews__svg-next {
+  position: absolute;
   top: 100%;
   right: 1180%;
 
