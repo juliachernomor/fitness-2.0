@@ -8,6 +8,8 @@
   @include vp-1199 {
     padding: 63px 133px 39px 133px;
     border: none;
+    max-width: none;
+    width: 100%;
   }
 
   @include vp-767 {
@@ -42,7 +44,7 @@
   flex-wrap: wrap;
   column-gap: 26%;
   row-gap: 17px;
-  padding-bottom: 67px;
+  padding-bottom: 63px;
 
   @include vp-1199 {
     column-gap: 19%;

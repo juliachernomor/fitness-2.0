@@ -182,6 +182,9 @@
 
   @include vp-767 {
     padding: 22px 44px 23px 44px;
+    min-width: 206px;
+    text-align: center;
+    width: 71%;
   }
 }
 

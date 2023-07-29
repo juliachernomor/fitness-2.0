@@ -1,12 +1,27 @@
+.form {
+  position: relative;
+}
 
+.form span {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40px;
+  width: 300px;
+
+  @include vp-1199 {
+    top: 35px;
+  }
+}
 
 .form--name {
   display: flex;
-  flex-wrap: wrap;
-  width: 46.3%;
+  max-width: 190px;
+  width: 100%;
 
   @include vp-1199 {
-    width: 43.6%;
+    max-width: none;
+    min-width: 206px;
   }
 
   @include vp-767 {
@@ -17,11 +32,12 @@
 
 .form--phone {
   display: flex;
-  flex-wrap: wrap;
-  width: 46.3%;
+  max-width: 190px;
+  width: 100%;
 
   @include vp-1199 {
-    width: 43.6%;
+    max-width: none;
+    min-width: 206px;
   }
 
   @include vp-767 {
@@ -31,7 +47,10 @@
 }
 
 .form input {
+  max-width: 190px;
   width: 100%;
+  height: 36px;
+  padding: 0;
   margin-bottom: 3px;
   border: none;
   font-family: $ff-roboto-condensed;
@@ -46,9 +65,10 @@
 
   &:active,
   &:focus {
-    padding: 10px 15px;
+    padding: 5px;
     outline: 1px solid $color-default-white;
     border: none;
+    margin-bottom: 0;
   }
 
   &:disabled {
@@ -56,8 +76,9 @@
   }
 
   @include vp-1199 {
-    padding-bottom: 5px;
-    margin-bottom: 0;
+    max-width: none;
+    min-width: 206px;
+    height: 34px;
   }
 }
 
@@ -70,7 +91,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1;
   color: $color-default-white;
 }
 
@@ -80,6 +101,7 @@
 }
 
 form button {
+  max-width: 410px;
   width: 100%;
   padding: 17px;
   margin-bottom: 27px;
@@ -94,9 +116,11 @@ form button {
   background-color: $color-sapphire;
   color: $color-default-white;
   text-transform: uppercase;
+  cursor: pointer;
 
   @include vp-1199 {
     margin-bottom: 15px;
+    max-width: none;
   }
 }
 
