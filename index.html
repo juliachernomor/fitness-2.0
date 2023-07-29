@@ -15,6 +15,8 @@
   <link rel="preload" as="style" href="fonts/alumnisans-semibold.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/alumnisans-bold.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="style" href="fonts/alumnisans-bold.woff" type="font/woff" crossorigin>
+  <link rel="preload" as="style" href="fonts/alumnisans-black.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="style" href="fonts/alumnisans-black.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/robotocondensed-light.woff2" type="font/woff2" crossorigin>
   <link rel="preload" as="style" href="fonts/robotocondensed-light.woff" type="font/woff" crossorigin>
   <link rel="preload" as="style" href="fonts/robotocondensed-regular.woff2" type="font/woff2" crossorigin>
@@ -916,11 +918,11 @@
       </section>
       <section class="main__feedback feedback">
         <div class=" feedback__container feedback__container--1">
-          <h2 class="visually-hidden">Приглашение и наши контакты
-          </h2>
+          <h2 class="visually-hidden">Приглашение и наши контакты</h2>
           <div class="feedback__free-lesson free-lesson" data-form-validate data-callback="base">
             <h3>Бесплатное занятие</h3>
             <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
+              <div class="free-lesson__wrapper">
               <div class=" form form--name" data-validate-type="text" data-limitation="name"
                 data-message-base="Поле обязательно к заполнению"
                 data-message-extra="Проверьте корректность заполнения поля" data-required>
@@ -933,6 +935,7 @@
                 <label class="visually-hidden" for="phone">Телефон:</label>
                 <input placeholder="Телефон" id="phone" type="tel" name="user-phone" aria-invalid="true" required>
               </div>
+            </div>
               <button type="submit">Отправить</button>
             </form>
           </div>
