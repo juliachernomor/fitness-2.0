@@ -47,7 +47,7 @@
   row-gap: 40px;
 
   @include vp-1199 {
-    grid-template-columns: 47.8%  47.8%;
+    grid-template-columns: 1fr  1fr;
     column-gap: 4.4%;
     row-gap: 30px;
   }
@@ -68,6 +68,7 @@
   @include vp-1199 {
     grid-column: 1/3;
     grid-row: 1/2;
+    width: 100%;
     margin: 0 auto;
   }
 

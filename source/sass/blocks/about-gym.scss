@@ -12,6 +12,7 @@
 .about-gym h2 {
   margin: 40px 0 11px 0;
   font-family: $ff-alumni-sans;
+  text-align: center;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -40,7 +41,8 @@
 
 .about-gym span {
   display: block;
-  margin: 0 0 39px 0;
+  margin: 0 0 39px -15px;
+  text-align: center;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-size: 18px;
@@ -49,7 +51,7 @@
   line-height: 150%;
 
   @include vp-1199 {
-    margin-bottom: 37px;
+    margin: 0 0 37px 0;
     letter-spacing: 1px;
     font-size: 16px;
   }
@@ -65,7 +67,8 @@
 
 .about-gym p:nth-child(3) {
   display: block;
-  margin: 0 0 8px 0;
+  margin: 0 0 8px auto;
+  max-width: 355px;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-size: 16px;
@@ -75,8 +78,10 @@
 
   @include vp-1199 {
     width: 75%;
+    max-width: none;
     text-align: center;
-    margin-bottom: 42.5px;
+    margin: 0 0 42.5px 0;
+    min-width: 505px;
     font-size: 16px;
     letter-spacing: 0;
   }
@@ -93,7 +98,8 @@
 
 .about-gym p:nth-child(4) {
   display: block;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px auto;
+  max-width: 355px;
   color: $color-sapphire;
   font-family: $ff-roboto-condensed;
   font-size: 16px;

@@ -26,7 +26,8 @@
 
   @include vp-1199 {
     width: 100%;
-    grid-template-columns: 41.15% 58.9%;
+    grid-template-columns: 41.1% 58.9%;
+    height: 100%;
   }
 
   @include vp-767 {
@@ -51,7 +52,7 @@
 
   @include vp-1199 {
     padding: 44px 45px 34px 35px;
-    min-height: 462px;
+    height: 100%;
     width: 100%;
   }
 
@@ -150,7 +151,10 @@
 
   @include vp-767 {
     margin-bottom: 1.5px;
-    margin-left: 10px;
+  }
+
+  @include vp-1199 {
+    margin-top: auto;
   }
 }
 
@@ -163,7 +167,10 @@
 
   @include vp-1199 {
     width: 100%;
-    min-width: 399px;
+    min-width: 100%;
+    height: 100%;
+    overflow: visible;
+
   }
 
   @include vp-767 {
@@ -183,6 +190,8 @@
   @include vp-1199 {
     width: 100%;
     min-width: 399px;
+    object-fit: cover;
+    height: 100%;
     object-position: 0 0;
   }
 

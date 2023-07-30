@@ -106,27 +106,36 @@
   }
 }
 
+.is-active > .accordion__button > .accordion__btn-transform::before {
+  content: "−";
+  color: $color-resolution-blue;
+  background-color: $color-ghost-white;
+}
+
+
 .accordion__button:hover,
-.accordion__button:focus {
+.accordion__button:focus-visible {
   background-color: $color-resolution-blue;
+}
+
+.accordion__button:focus {
+  outline: none;
 }
 
 .accordion__button:hover > .accordion__btn-transform::before,
+.accordion__button:focus-visible > .accordion__btn-transform::before {
+  color: $color-default-white;
+  background-color: $color-resolution-blue;
+}
+
 .accordion__button:focus > .accordion__btn-transform::before {
-  color: $color-default-white;
+  outline: none;
+}
+
+.accordion__button:active {
   background-color: $color-resolution-blue;
 }
 
-.is-active > .accordion__button {
-  color: $color-default-white;
-  background-color: $color-resolution-blue;
-}
-
-.is-active > .accordion__button > .accordion__btn-transform::before {
-  content: "−";
-  color: $color-default-white;
-  background-color: $color-resolution-blue;
-}
 
 @include vp-1199 {
   .accordion__element:last-child > .accordion__button {

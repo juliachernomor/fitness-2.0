@@ -7,12 +7,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 657.5px;
+    min-height: 658px;
     background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
     background-repeat: no-repeat;
     z-index: 0;
 
-    @include vp-1199 {
+    @include vp-768 {
       min-height: 554px;
     }
 
@@ -31,9 +31,10 @@
   min-height: 104px;
   padding-top: 30px;
   padding-bottom: 30px;
+  z-index: 11111;
 
 
-  @include vp-1199 {
+  @include vp-768 {
     align-items: flex-start;
     min-height: 82px;
     padding-top: 26px;
@@ -48,7 +49,7 @@
   }
 }
 
-.header__container a:nth-child(1) {
+.header__container a {
   z-index: 1;
 }
 
@@ -57,7 +58,7 @@
   z-index: 1;
 }
 
-@include vp-1199 {
+@include vp-768 {
   .header__container a:nth-child(1) {
     display: block;
     width: 81px;

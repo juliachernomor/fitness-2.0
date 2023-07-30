@@ -2,12 +2,13 @@
   display: grid;
   grid-template-columns: 43% 57%;
   justify-content: start;
-  row-gap: 30px;
   padding-top: 122px;
   padding-bottom: 108px;
   background-color: $color-default-white;
 
   @include vp-1199 {
+    grid-template-columns: 292px 1fr;
+    margin: 0 auto;
     min-height: 292px;
     padding-top: 99px;
     padding-bottom: 103px;
