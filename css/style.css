@@ -1246,9 +1246,9 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1292,14 +1292,14 @@ ul {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 3%;
-  -moz-column-gap: 3%;
-  column-gap: 3%;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
   row-gap: 20px;
 }
 
@@ -2003,7 +2003,8 @@ iframe {
   display: block;
 }
 
-.slide:hover > .slide__name {
+.slide:hover > span,
+.slide:hover > .slide__name--modified {
   display: none;
 }
 
@@ -2027,7 +2028,7 @@ iframe {
 }
 
 .slide .slide__name--modified {
-  right: 26.5%;
+  left: 25%;
 }
 
 .slide__card {
@@ -2042,6 +2043,7 @@ iframe {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 .trainer {
@@ -2206,9 +2208,9 @@ iframe {
 }
 
 .advantages__item--experience {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4/6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
@@ -2930,7 +2932,7 @@ iframe {
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  width: 48.3%;
+  width: 560px;
   margin: 0;
 }
 
@@ -3009,7 +3011,6 @@ iframe {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   width: 100%;
-  min-height: 320px;
   background-color: #102654;
 }
 
@@ -3024,13 +3025,11 @@ iframe {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   width: 100%;
-  min-height: 100%;
   border-top: 1px solid #74819c;
 }
 
 .contacts {
-  padding: 59px 100px 0 123px;
-  min-height: 336px;
+  padding: 59px 0 0 124px;
   max-width: 683px;
   color: #102654;
   font-style: normal;
@@ -3052,38 +3051,28 @@ iframe {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 26%;
-  -moz-column-gap: 26%;
-  column-gap: 26%;
+  -webkit-column-gap: 15%;
+  -moz-column-gap: 15%;
+  column-gap: 15%;
   row-gap: 17px;
-  padding-bottom: 63px;
+  padding: 0;
+  margin-bottom: 63px;
 }
 
 .contacts ul::before {
   position: absolute;
   content: "";
-  top: 5%;
-  left: 50%;
-  height: 102px;
+  top: 2%;
+  left: 41.5%;
+  min-height: 102px;
+  height: 100%;
   width: 1px;
   background-color: #74819c;
   z-index: 444;
 }
 
-.contacts ul li:nth-child(1) {
-  width: 37%;
-}
-
-.contacts ul li:nth-child(2) {
-  width: 36.5%;
-}
-
-.contacts ul li:nth-child(3) {
-  width: 37%;
-}
-
-.contacts ul li:nth-child(4) {
-  width: 36.5%;
+.contacts ul li {
+  width: 36.9%;
 }
 
 .contacts__common a,
@@ -4295,7 +4284,7 @@ form button {
   }
 
   .contacts {
-    padding: 63px 133px 39px 133px;
+    padding: 63px 83px 39px 133px;
     border: none;
     max-width: none;
     width: 100%;
@@ -4308,47 +4297,35 @@ form button {
   }
 
   .contacts ul {
-    -webkit-column-gap: 19%;
-    -moz-column-gap: 19%;
-    column-gap: 19%;
+    -webkit-column-gap: 14%;
+    -moz-column-gap: 14%;
+    column-gap: 14%;
     row-gap: 23px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    min-height: 100px;
-    padding-bottom: 27px;
+    margin-bottom: 27px;
   }
 
   .contacts ul::before {
     top: 4%;
-    left: 53%;
-    height: 128px;
+    left: 48%;
+    height: 95%;
+    min-height: 128px;
   }
 
-  .contacts ul li:nth-child(1) {
-    width: 43.4%;
-  }
-
-  .contacts ul li:nth-child(2) {
-    width: 37.4%;
-  }
-
-  .contacts ul li:nth-child(3) {
-    width: 43.4%;
-  }
-
-  .contacts ul li:nth-child(4) {
-    width: 37.4%;
+  .contacts ul li {
+    width: 43%;
   }
 
   .contacts__common a,
   .contacts__common span {
     font-size: 18px;
+    width: 100%;
   }
 
   .contacts__common p {
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
+    width: 100%;
   }
 
   .form span {
@@ -4640,7 +4617,6 @@ form button {
   .video {
     min-width: 320px;
     min-height: 167px;
-    margin: 0;
   }
 
   .video__link img {
@@ -4656,6 +4632,11 @@ form button {
   }
 
   iframe {
+    min-height: 167px;
+    min-width: 320px;
+  }
+
+  .video__link::after {
     min-height: 167px;
     min-width: 320px;
   }
@@ -4707,9 +4688,12 @@ form button {
 
   .gym__video {
     position: relative;
+    height: auto;
     left: 0;
     margin: 0;
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
     min-height: 167px;
   }
 
@@ -4910,7 +4894,14 @@ form button {
   }
 
   .slide .slide__name--modified {
-    right: 20%;
+    left: 13%;
+  }
+
+  .slide__card {
+    width: 100%;
+    padding: 48px 30px 0 30px;
+    height: 100%;
+    margin: 0 auto;
   }
 
   .trainer__container {
@@ -4931,6 +4922,12 @@ form button {
   .trainer__svg-next {
     top: 20%;
     left: 0;
+  }
+
+  .trainer-card ul {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
   }
 
   .swiper--1 {
@@ -5206,6 +5203,7 @@ form button {
   .promotion__wrapper-first p:nth-child(3) {
     margin-bottom: 22px;
     text-align: center;
+    width: 200px;
   }
 
   .promotion__link-first {
@@ -5375,7 +5373,7 @@ form button {
   }
 
   .contacts h3 {
-    margin-bottom: 39.5px;
+    margin-bottom: 41px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -5396,32 +5394,32 @@ form button {
     display: none;
   }
 
-  .contacts ul li:nth-child(1) {
+  .contacts ul li {
     width: 100%;
+  }
+
+  .contacts ul li:nth-child(1) {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  .contacts ul li:nth-child(2) {
-    width: 100%;
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
   .contacts ul li:nth-child(3) {
-    width: 100%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
   }
 
-  .contacts ul li:nth-child(4) {
-    width: 100%;
+  .contacts ul li:nth-child(2) {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+  }
+
+  .contacts ul li:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
   }
 
   .contacts__common a,
