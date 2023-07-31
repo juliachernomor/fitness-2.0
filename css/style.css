@@ -4214,7 +4214,7 @@ form button {
     -ms-flex-align: center;
     align-items: center;
     padding-top: 67px;
-    padding-bottom: 73.5px;
+    padding-bottom: 78.5px;
   }
 
   .faq__container h2 {
@@ -5299,7 +5299,7 @@ form button {
 
   .faq__container {
     padding-top: 46px;
-    padding-bottom: 56px;
+    padding-bottom: 0;
   }
 
   .faq__container h2 {
@@ -5380,7 +5380,8 @@ form button {
   }
 
   .reviews__swiper h2 {
-    padding-top: 64px;
+    margin: -9px;
+    padding-top: 65px;
     margin-bottom: 44px;
     font-size: 32px;
     letter-spacing: 0.5px;
