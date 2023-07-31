@@ -31,9 +31,18 @@ const createNewSlider2 = () => {
           prevEl:'.reviews__swiper-prev',
         },
         breakpoints: {
-              1200: {
-                slidesPerView: 1,
-              }
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 10000,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 10000,
+          },
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 10000,
+          },
       }});
     }
 

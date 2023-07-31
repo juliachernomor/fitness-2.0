@@ -7,7 +7,7 @@
   background-color: $color-default-white;
 
   @include vp-1199 {
-    grid-template-columns: 292px 1fr;
+    grid-template-columns: 43% 57%;
     margin: 0 auto;
     min-height: 292px;
     padding-top: 99px;

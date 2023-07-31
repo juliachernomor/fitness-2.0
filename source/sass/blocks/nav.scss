@@ -2,21 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  column-gap: 20px;
   align-items: center;
   width: 100%;
   margin-top: 1px;
+  padding-left: 0;
 
   @include vp-1199 {
     justify-content: center;
     column-gap: 10px;
   }
 
-
   @include vp-767 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px 10%;
+    gap: 16px 22%;
     margin-bottom: 34px;
   }
 }

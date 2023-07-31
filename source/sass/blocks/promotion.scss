@@ -83,7 +83,7 @@
 }
 
 .promotion__wrapper-first p:nth-child(2) {
-  margin: 0 0 20px 0;
+  margin: 0 0 21px 0;
   padding-left: 10px;
   font-size: 70px;
   font-weight: 700;
@@ -110,7 +110,7 @@
   line-height: 140%;
 
   @include vp-1199 {
-    margin-bottom: 179px;
+    margin-bottom: 178px;
   }
 
   @include vp-767 {
@@ -152,6 +152,7 @@
 
   @include vp-767 {
     margin-bottom: 1.5px;
+    margin-left: 10px;
   }
 
   @include vp-1199 {
@@ -171,7 +172,6 @@
     min-width: 100%;
     height: 100%;
     overflow: visible;
-
   }
 
   @include vp-767 {

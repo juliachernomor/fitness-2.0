@@ -5,19 +5,19 @@
   font-style: normal;
 
   @include vp-1199 {
-    padding: 63px 83px 39px 133px;
+    padding: 63px 83px 37px 133px;
     border: none;
     max-width: none;
     width: 100%;
   }
 
   @include vp-767 {
-    padding: 65px 15px 35.5px 15px;
+    padding: 65px 15px 38px 15px;
   }
 }
 
 .contacts h3 {
-  margin: 0 0 39px 0;
+  margin: 0 0 39px -3px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -41,14 +41,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 15%;
+  column-gap: 22%;
   row-gap: 17px;
   padding: 0;
-  margin-bottom: 63px;
+  margin-bottom: 59px;
 
   @include vp-1199 {
     column-gap: 14%;
-    row-gap: 23px;
+    row-gap: 24px;
     margin-bottom: 27px;
   }
 
@@ -92,13 +92,12 @@
 
   @include vp-767 {
     width: 100%;
-
   }
 }
 
 .contacts ul li:nth-child(1) {
   @include vp-767 {
-     order: -1;
+    order: -1;
   }
 }
 
@@ -119,9 +118,6 @@
     order: 4;
   }
 }
-
-
-
 
 .contacts__common a,
 .contacts__common span {
@@ -158,8 +154,16 @@
 
   @include vp-767 {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+
+@include vp-767 {
+  .contacts__common .contacts__phone {
+    display: block;
+    padding-top: 4px;
   }
 }

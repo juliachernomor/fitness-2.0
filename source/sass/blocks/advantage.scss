@@ -25,7 +25,6 @@
 
   @include vp-1199 {
     grid-template-columns: 19.6% 73.5%;
-    margin-left: 50px;
     margin: 0 auto;
   }
 
@@ -75,7 +74,7 @@
 
 @include vp-767 {
   .advantage__wrapper--convenience {
-    margin-bottom: 33.5px;
+    margin-bottom: 31.5px;
   }
 }
 
@@ -116,6 +115,7 @@
   font-style: normal;
   color: $color-default-white;
   background-color: $color-resolution-blue;
+
 
   @include vp-1199 {
     min-width: 442px;
@@ -237,7 +237,7 @@
   align-items: center;
 
   @include vp-1199 {
-    margin-bottom: 38px;
+    margin-bottom: 39px;
   }
 }
 
