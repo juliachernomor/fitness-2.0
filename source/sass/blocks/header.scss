@@ -1,5 +1,7 @@
 .header {
   position: relative;
+  color: $color-default-white;
+  background-color: $color-black-russian;
 
   &::after {
     position: absolute;
@@ -23,6 +25,11 @@
 }
 
 .header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;

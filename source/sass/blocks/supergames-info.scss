@@ -13,6 +13,9 @@
   }
 
   @include vp-767 {
+    grid-template-columns: 50% 27%;
+    width: 100%;
+    column-gap: 16%;
     min-height: 292px;
     padding: 50px 44px 31px 44px;
   }
@@ -55,6 +58,11 @@
   @include vp-1199 {
     row-gap: 0;
     margin-left: 0;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    margin-left: auto;
   }
 }
 
@@ -113,6 +121,10 @@
     padding-top: 11px;
     font-size: 10px;
     line-height: 1;
+  }
+
+  @include vp-1199 {
+    width: 30px;
   }
 }
 
@@ -219,5 +231,6 @@
 
   @include vp-767 {
     min-height: 41px;
+    width: 100%;
   }
 }

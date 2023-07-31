@@ -991,6 +991,8 @@ ul {
 
 .header {
   position: relative;
+  color: #ffffff;
+  background-color: #030a1a;
 }
 .header::after {
   position: absolute;
@@ -1018,6 +1020,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1035,7 +1047,7 @@ ul {
   z-index: 11111;
 }
 @media (max-width: 768px) {
-  .header__container {
+  .header__wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1045,7 +1057,7 @@ ul {
   }
 }
 @media (max-width: 767.5px) {
-  .header__container {
+  .header__wrapper {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -1234,11 +1246,6 @@ ul {
 }
 
 .hero {
-  background-color: #030a1a;
-  color: #ffffff;
-}
-
-.hero__container {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -1249,7 +1256,7 @@ ul {
   z-index: 1;
 }
 @media (max-width: 1199.5px) {
-  .hero__container {
+  .hero {
     -ms-grid-columns: 16.9% 210px 52%;
     grid-template-columns: 16.9% 210px 52%;
     min-height: 472px;
@@ -1257,7 +1264,7 @@ ul {
   }
 }
 @media (max-width: 767.5px) {
-  .hero__container {
+  .hero {
     -ms-grid-columns: none;
     grid-template-columns: none;
     min-height: 435px;
@@ -1750,10 +1757,11 @@ ul {
 }
 @media (max-width: 767.5px) {
   .video__link img {
+    position: relative;
     -o-object-fit: cover;
        object-fit: cover;
     min-width: 320px;
-    min-height: 167px;
+    height: 167px;
   }
 }
 
@@ -1853,8 +1861,11 @@ iframe {
 }
 @media (max-width: 767.5px) {
   iframe {
+    width: 100%;
+    height: 100%;
     min-height: 167px;
-    min-width: 320px;
+    max-width: none;
+    max-height: none;
   }
 }
 
@@ -2017,13 +2028,11 @@ iframe {
 @media (max-width: 767.5px) {
   .gym__video {
     position: relative;
-    height: auto;
-    left: 0;
-    margin: 0;
     width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
     min-width: 320px;
-    min-height: 167px;
+    height: 167px;
   }
 }
 
@@ -2348,9 +2357,9 @@ iframe {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   gap: 3.4%;
   width: 100%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2642,6 +2651,12 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .supergames-info {
+    -ms-grid-columns: 50% 27%;
+    grid-template-columns: 50% 27%;
+    width: 100%;
+    -webkit-column-gap: 16%;
+       -moz-column-gap: 16%;
+            column-gap: 16%;
     min-height: 292px;
     padding: 50px 44px 31px 44px;
   }
@@ -2700,6 +2715,12 @@ iframe {
   .supergames-info__wrapper {
     row-gap: 0;
     margin-left: 0;
+  }
+}
+@media (max-width: 767.5px) {
+  .supergames-info__wrapper {
+    width: 42px;
+    margin-left: auto;
   }
 }
 
@@ -2786,6 +2807,11 @@ iframe {
     padding-top: 11px;
     font-size: 10px;
     line-height: 1;
+  }
+}
+@media (max-width: 1199.5px) {
+  .supergames-info__wrapper p:nth-child(1) span:nth-child(3) {
+    width: 30px;
   }
 }
 
@@ -2914,6 +2940,7 @@ iframe {
 @media (max-width: 767.5px) {
   .supergames-info__link {
     min-height: 41px;
+    width: 100%;
   }
 }
 
@@ -2944,6 +2971,7 @@ iframe {
        object-fit: cover;
     min-height: 292px;
     margin-right: 0;
+    max-height: none;
   }
 }
 

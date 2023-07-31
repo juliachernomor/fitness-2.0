@@ -1,9 +1,5 @@
-.hero {
-  background-color: $color-black-russian;
-  color: $color-default-white;
-}
 
-.hero__container {
+.hero {
   position: relative;
   display: grid;
   grid-template-columns: 11.5% 22.8% 65.7%;
