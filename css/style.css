@@ -1004,6 +1004,8 @@ ul {
 
 .header {
   position: relative;
+  color: #ffffff;
+  background-color: #030a1a;
 }
 
 .header::after {
@@ -1019,6 +1021,16 @@ ul {
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,11 +1124,6 @@ ul {
 }
 
 .hero {
-  background-color: #030a1a;
-  color: #ffffff;
-}
-
-.hero__container {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -1643,9 +1650,9 @@ iframe {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   gap: 3.4%;
   width: 100%;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3425,7 +3432,7 @@ form button {
     margin: 2px 0 0 0;
   }
 
-  .hero__container {
+  .hero {
     -ms-grid-columns: 16.9% 210px 52%;
     grid-template-columns: 16.9% 210px 52%;
     min-height: 472px;
@@ -3769,6 +3776,10 @@ form button {
     padding-top: 11px;
     font-size: 10px;
     line-height: 1;
+  }
+
+  .supergames-info__wrapper p:nth-child(1) span:nth-child(3) {
+    width: 30px;
   }
 
   .supergames-info__wrapper p:nth-child(2) span:nth-child(1) {
@@ -4399,7 +4410,7 @@ form button {
     min-height: 554px;
   }
 
-  .header__container {
+  .header__wrapper {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -4436,7 +4447,7 @@ form button {
     min-height: 491px;
   }
 
-  .header__container {
+  .header__wrapper {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
@@ -4493,7 +4504,7 @@ form button {
     margin: 0;
   }
 
-  .hero__container {
+  .hero {
     -ms-grid-columns: none;
     grid-template-columns: none;
     min-height: 435px;
@@ -4621,10 +4632,11 @@ form button {
   }
 
   .video__link img {
+    position: relative;
     -o-object-fit: cover;
     object-fit: cover;
     min-width: 320px;
-    min-height: 167px;
+    height: 167px;
   }
 
   .video__button {
@@ -4633,8 +4645,11 @@ form button {
   }
 
   iframe {
+    width: 100%;
+    height: 100%;
     min-height: 167px;
-    min-width: 320px;
+    max-width: none;
+    max-height: none;
   }
 
   .video__link::after {
@@ -4689,13 +4704,11 @@ form button {
 
   .gym__video {
     position: relative;
-    height: auto;
-    left: 0;
-    margin: 0;
     width: 100%;
-    height: 100%;
+    top: 0;
+    left: 0;
     min-width: 320px;
-    min-height: 167px;
+    height: 167px;
   }
 
   .about-gym h2 {
@@ -4831,6 +4844,12 @@ form button {
   }
 
   .supergames-info {
+    -ms-grid-columns: 50% 27%;
+    grid-template-columns: 50% 27%;
+    width: 100%;
+    -webkit-column-gap: 16%;
+    -moz-column-gap: 16%;
+    column-gap: 16%;
     min-height: 292px;
     padding: 50px 44px 31px 44px;
   }
@@ -4840,12 +4859,18 @@ form button {
     margin: 0 0 10px 7px;
   }
 
+  .supergames-info__wrapper {
+    width: 42px;
+    margin-left: auto;
+  }
+
   .supergames-info > p {
     margin-bottom: 31px;
   }
 
   .supergames-info__link {
     min-height: 41px;
+    width: 100%;
   }
 
   .supergames-picture img {
@@ -4854,6 +4879,7 @@ form button {
     object-fit: cover;
     min-height: 292px;
     margin-right: 0;
+    max-height: none;
   }
 
   .slide img {
