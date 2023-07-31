@@ -2718,6 +2718,7 @@ iframe {
   font-size: 16px;
   font-weight: 500;
   line-height: 100%;
+  color: #102654;
   border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
 }
