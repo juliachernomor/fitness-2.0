@@ -1,9 +1,9 @@
 .socials {
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: start;
   flex-wrap: wrap;
-  column-gap: 3%;
+  column-gap: 5px;
   row-gap: 20px;
 
   @include vp-1199 {

@@ -13,7 +13,6 @@
   justify-content: start;
   grid-column: 1/2;
   width: 100%;
-  min-height: 320px;
   background-color: $color-sapphire;
 
   @include vp-1199 {
@@ -28,7 +27,6 @@
   justify-content: start;
   grid-column: 2/3;
   width: 100%;
-  min-height: 100%;
   border-top: 1px solid $color-light-slate-grey;
 
   @include vp-1199 {

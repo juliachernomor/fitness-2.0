@@ -30,6 +30,11 @@
   margin-left: 13px;
   list-style-type: disc;
 
+  @include vp-767 {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .trainer-card ul li {

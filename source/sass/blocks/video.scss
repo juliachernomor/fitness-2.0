@@ -8,12 +8,9 @@
     min-width: 266px;
   }
 
-
-
   @include vp-767 {
     min-width: 320px;
     min-height: 167px;
-    margin: 0;
   }
 }
 
@@ -136,5 +133,10 @@ iframe {
   @include vp-1199 {
     min-height: 167px;
     min-width: 266px;
+  }
+
+  @include vp-767 {
+    min-height: 167px;
+    min-width: 320px;
   }
 }
