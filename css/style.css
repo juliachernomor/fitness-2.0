@@ -4427,7 +4427,7 @@ form button {
   }
 
   .promotion p {
-    margin: 0 auto 15px auto;
+    margin: 0 20px 15px 20px;
     text-align: center;
   }
 }
@@ -4494,6 +4494,9 @@ form button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 34px;
+    padding-right: 45px;
   }
 
   .footer__container > a {
