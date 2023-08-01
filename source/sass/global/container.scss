@@ -11,3 +11,9 @@
     padding: 0 15px;
   }
 }
+
+@include vp-767 {
+  .container--footer {
+    padding: 45px 45px 34px 15px;
+  }
+}
