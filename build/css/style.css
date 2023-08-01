@@ -989,6 +989,11 @@ ul {
   }
 }
 
+@media (max-width: 767.5px) {
+  .container--footer {
+    padding: 45px 45px 34px 15px;
+  }
+}
 .header {
   position: relative;
   color: #ffffff;
@@ -1123,9 +1128,6 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 45px;
-    padding-bottom: 34px;
-    padding-right: 45px;
   }
 }
 
@@ -4165,6 +4167,7 @@ iframe {
     min-width: 290px;
     width: 100%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
