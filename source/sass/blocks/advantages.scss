@@ -122,6 +122,10 @@
     width: 304px;
     margin: 0 auto;
   }
+
+  @include vp-767 {
+    padding-top: 38px;
+  }
 }
 
 .advantages__item--experience {

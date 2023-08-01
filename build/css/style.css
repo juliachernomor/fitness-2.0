@@ -3544,6 +3544,11 @@ iframe {
     margin: 0 auto;
   }
 }
+@media (max-width: 767.5px) {
+  .advantages__item--convenience {
+    padding-top: 38px;
+  }
+}
 
 .advantages__item--experience {
   -ms-grid-column: 3;
@@ -3880,6 +3885,11 @@ iframe {
     margin-bottom: 39px;
   }
 }
+@media (max-width: 1199.5px) {
+  .advantage--equipment {
+    margin: 0;
+  }
+}
 
 .advantage__description-equipment,
 .advantage__equipmemt-wrapper p {
@@ -4116,7 +4126,7 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .promotion {
-    padding: 35px 43px 20px 43px;
+    padding: 35px 0 20px 0;
   }
 }
 

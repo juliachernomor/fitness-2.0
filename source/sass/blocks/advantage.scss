@@ -230,7 +230,6 @@
   }
 }
 
-
 .advantage--equipment {
   grid-template-columns: 100%;
   justify-content: center;
@@ -238,6 +237,10 @@
 
   @include vp-1199 {
     margin-bottom: 39px;
+  }
+
+  @include vp-1199 {
+    margin: 0;
   }
 }
 
