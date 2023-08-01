@@ -4470,6 +4470,10 @@ form button {
     padding: 0 15px;
   }
 
+  .container--footer {
+    padding: 45px 45px 34px 15px;
+  }
+
   .header::after {
     min-height: 491px;
   }
@@ -4494,9 +4498,6 @@ form button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-top: 45px;
-    padding-bottom: 34px;
-    padding-right: 45px;
   }
 
   .footer__container > a {
