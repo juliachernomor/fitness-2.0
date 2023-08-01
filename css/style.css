@@ -4088,10 +4088,6 @@ form button {
     margin-bottom: 39px;
   }
 
-  .advantage--equipment {
-    margin: 0;
-  }
-
   .advantage__description-equipment {
     display: block;
     min-width: 172px;
@@ -5162,6 +5158,10 @@ form button {
     min-width: 227px;
     margin: 0 46.5px;
     padding: 0;
+  }
+
+  .advantage--equipment {
+    margin: 0;
   }
 
   .advantage__description-equipment {
