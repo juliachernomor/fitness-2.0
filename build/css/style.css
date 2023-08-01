@@ -1123,6 +1123,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 34px;
+    padding-right: 45px;
   }
 }
 
@@ -3885,7 +3888,7 @@ iframe {
     margin-bottom: 39px;
   }
 }
-@media (max-width: 1199.5px) {
+@media (max-width: 767.5px) {
   .advantage--equipment {
     margin: 0;
   }
@@ -4385,7 +4388,7 @@ iframe {
 }
 @media (max-width: 1199.5px) and (max-width: 767.5px) {
   .promotion p {
-    margin: 0 auto 15px auto;
+    margin: 0 20px 15px 20px;
     text-align: center;
   }
 }
