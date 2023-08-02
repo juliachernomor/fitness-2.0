@@ -52,7 +52,7 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    padding: 44px 45px 34px 35px;
+    padding: 44px 45px 37px 35px;
     height: 100%;
     width: 100%;
   }
@@ -92,7 +92,7 @@
 
   @include vp-1199 {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   @include vp-767 {
@@ -209,6 +209,10 @@
   font-size: 26px;
   margin: 0 0 12px 10px;
 
+  @include vp-1199 {
+    margin: 0 0 9px 10px;
+  }
+
   @include vp-767 {
     display: block;
     margin: 0 auto 11px auto;
@@ -269,7 +273,7 @@
   }
 
   @include vp-1199 {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   @include vp-767 {
