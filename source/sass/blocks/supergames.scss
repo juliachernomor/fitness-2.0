@@ -7,11 +7,15 @@
   background-color: $color-default-white;
 
   @include vp-1199 {
-    grid-template-columns: 43% 57%;
-    margin: 0 auto;
+    grid-template-columns: 292px 57%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 292px;
     padding-top: 99px;
     padding-bottom: 103px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
   @include vp-767 {

@@ -2,27 +2,19 @@
   position: relative;
   color: $color-default-white;
   background-color: $color-black-russian;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
+  background-repeat: no-repeat;
+  min-height: 657.5px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 662px;
-    background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
-    background-repeat: no-repeat;
-    z-index: 0;
+  @include vp-768 {
+    min-height: 554px;
+  }
 
-    @include vp-768 {
-      min-height: 554px;
-    }
-
-    @include vp-767 {
-      min-height: 491px;
-    }
+  @include vp-767 {
+    min-height: 491px;
   }
 }
+
 
 .header__container {
   display: flex;

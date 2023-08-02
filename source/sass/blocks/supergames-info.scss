@@ -6,10 +6,12 @@
   background-color: $color-torch-red3;
 
   @include vp-1199 {
-    grid-template-columns: 51% 27%;
-    column-gap: 21.5%;
+    grid-template-columns: 51% 24%;
+    grid-template-rows: 103px 49px 39px;
+    column-gap: 29px;
     padding: 51px 45px 34px 45px;
-    margin: 0;
+    margin: 0 auto;
+    align-content: space-around;
   }
 
   @include vp-767 {
@@ -58,6 +60,7 @@
   @include vp-1199 {
     row-gap: 0;
     margin-left: 0;
+
   }
 
   @include vp-767 {
