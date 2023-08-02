@@ -3,7 +3,6 @@
   color: $color-default-white;
   background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 304deg, #003d85 360deg);
   background-repeat: no-repeat;
-  min-height: 657.5px;
 
   @include vp-768 {
     min-height: 554px;
@@ -18,6 +17,7 @@
 .header__container {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .header__wrapper {

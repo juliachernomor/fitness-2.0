@@ -80,10 +80,11 @@
   justify-content: center;
   width: 100%;
   padding: 16.5px 18px 18px 18px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 100%;
   color: $color-sapphire;
+  background-color: $color-ghost-white;
   border: 1px solid $color-sapphire-rgba3;
   cursor: pointer;
 
@@ -91,6 +92,11 @@
   &:focus {
     border: 1px solid $color-sapphire;
     outline: none;
+  }
+
+  &:active {
+    background-image: $torch-red-to-cobalt;
+    color: $color-default-white;
   }
 
   &:disabled {
