@@ -125,6 +125,11 @@
 
 .abonement__months-number button.is-active {
   border-bottom: 1px solid $color-ghost-white;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-torch-red3;
+  }
 }
 
 .abonement__programs-content {
