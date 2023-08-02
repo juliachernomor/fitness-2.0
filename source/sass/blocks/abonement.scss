@@ -74,7 +74,7 @@
   display: flex;
   justify-content: start;
   align-self: center;
-  column-gap: 46px;
+  column-gap: 37px;
   margin: 0 0 37px 0;
   text-align: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
@@ -124,12 +124,8 @@
 }
 
 .abonement__months-number button.is-active {
-  border-bottom: 1px solid $color-ghost-white;
-
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid $color-torch-red3;
-  }
+  border-bottom: 1px solid $color-torch-red3;
+  color: $color-sapphire;
 }
 
 .abonement__programs-content {
