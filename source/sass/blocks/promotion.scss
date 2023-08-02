@@ -228,15 +228,16 @@
     line-height: 22px;
 
     @include vp-767 {
-      margin: 0 20px 15px 20px;
+      width: 80%;
       margin: 0 auto;
+      text-align: center;
     }
   }
 }
 
 .promotion__link {
   min-width: 68px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   padding: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -273,7 +274,7 @@
 
   @include vp-767 {
     display: block;
-    margin: 0 auto 11px auto;
+    margin: 15px auto 11px auto;
     text-align: center;
   }
 }

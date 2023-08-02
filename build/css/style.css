@@ -975,7 +975,7 @@ ul {
 
 .container {
   max-width: 1366px;
-  padding: 0 101px 0 103px;
+  padding: 0 102px 0 103px;
   margin: 0 auto;
 }
 @media (max-width: 1199.5px) {
@@ -1128,6 +1128,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 44px;
+    padding-bottom: 50px;
+    padding-right: 45px;
   }
 }
 
@@ -1145,7 +1148,7 @@ ul {
   .footer__container > a {
     position: absolute;
     content: "";
-    top: 19%;
+    top: 17.2%;
     width: 66px;
     height: 15px;
   }
@@ -1420,7 +1423,7 @@ ul {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  padding-top: 28px;
+  padding-top: 29px;
   margin: 0 6px 48px 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 92px;
@@ -1439,7 +1442,7 @@ ul {
     font-size: 77px;
     width: 200px;
     margin-left: auto;
-    line-height: 86px;
+    line-height: 85px;
     letter-spacing: 2px;
     text-transform: lowercase;
     text-shadow: 3px 0 0 #ffffff;
@@ -1597,7 +1600,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 16px 22%;
+    gap: 16px 23%;
     margin-bottom: 34px;
   }
 }
@@ -1825,7 +1828,7 @@ ul {
 }
 @media (max-width: 767.5px) {
   .video__link img {
-    position: relative;
+    position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
     min-width: 320px;
@@ -1867,8 +1870,8 @@ ul {
 }
 @media (max-width: 767.5px) {
   .video__button {
-    top: 50%;
-    left: 50.5%;
+    top: 49.5%;
+    left: 50%;
   }
 }
 
@@ -1937,6 +1940,7 @@ iframe {
     max-width: none;
     max-height: none;
     min-width: 320px;
+    aspect-ratio: 320/167;
   }
 }
 
@@ -2099,7 +2103,8 @@ iframe {
 @media (max-width: 767.5px) {
   .gym__video {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 52%;
+    min-height: 167px;
     width: 100%;
     height: 0;
     top: 0;
@@ -2316,7 +2321,7 @@ iframe {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 122px;
-  padding-bottom: 39px;
+  padding-bottom: 38px;
 }
 @media (max-width: 1199.5px) {
   .abonement__container {
@@ -2326,8 +2331,8 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .abonement__container {
-    padding-top: 64px;
-    padding-bottom: 20.5px;
+    padding-top: 65px;
+    padding-bottom: 17px;
     margin-bottom: 0;
   }
 }
@@ -2353,7 +2358,7 @@ iframe {
   .abonement h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin: 0 0 15px 0;
+    margin: 0 0 11px 0;
   }
 }
 
@@ -2413,6 +2418,7 @@ iframe {
 @media (max-width: 767.5px) {
   .abonement__months-number button {
     font-size: 16px;
+    padding: 12px 0;
   }
 }
 
@@ -2488,6 +2494,13 @@ iframe {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 767.5px) {
+  .programs__program {
+    width: 65%;
+    padding: 65px 30px 66px 30px;
+    margin-bottom: 41px;
+  }
+}
 
 @media (max-width: 767.5px) {
   .programs__program {
@@ -2496,7 +2509,7 @@ iframe {
     margin-bottom: 34px;
   }
   .programs__program:hover, .programs__program:focus {
-    padding: 43px 0 56px 0;
+    padding: 43px 0 52px 0;
     border: 7px solid;
     -o-border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
        border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
@@ -2509,7 +2522,7 @@ iframe {
   }
 }
 .programs__program h3 {
-  margin: 0 0 13px 0;
+  margin: 0 0 15px 0;
   color: #102654;
   font-size: 26px;
   font-style: normal;
@@ -2523,12 +2536,12 @@ iframe {
 @media (max-width: 767.5px) {
   .programs__program h3 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 }
 
 .programs__program > span {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
   color: #102654;
   font-size: 16px;
   font-style: normal;
@@ -2554,7 +2567,7 @@ iframe {
 .programs__price span:nth-child(1) {
   display: inline-block;
   margin-right: 14px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -2616,7 +2629,7 @@ iframe {
 
 .programs__link {
   display: block;
-  padding: 25px 44px 23px 44px;
+  padding: 24px 44px 23px 44px;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -2633,7 +2646,7 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .programs__link {
-    padding: 22px 44px 23px 44px;
+    padding: 23px 44px 24px 44px;
     min-width: 206px;
     text-align: center;
     width: 71%;
@@ -2668,13 +2681,13 @@ iframe {
 .supergames__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 43% 57%;
-  grid-template-columns: 43% 57%;
+  -ms-grid-columns: 43.15% 57%;
+  grid-template-columns: 43.15% 57%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   padding-top: 122px;
-  padding-bottom: 108px;
+  padding-bottom: 109px;
   background-color: #ffffff;
 }
 @media (max-width: 1199.5px) {
@@ -2684,7 +2697,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     min-height: 292px;
-    padding-top: 99px;
+    padding-top: 99.5px;
     padding-bottom: 103px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2706,7 +2719,7 @@ iframe {
             flex-direction: column;
     row-gap: 0;
     padding-top: 70.5px;
-    padding-bottom: 64px;
+    padding-bottom: 65px;
   }
 }
 
@@ -2728,8 +2741,10 @@ iframe {
     -webkit-column-gap: 29px;
        -moz-column-gap: 29px;
             column-gap: 29px;
-    padding: 51px 45px 34px 45px;
+    padding: 50px 45px 53px 45px;
     margin: 0 auto;
+    min-height: 292px;
+    height: 100%;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
   }
@@ -2743,7 +2758,7 @@ iframe {
        -moz-column-gap: 16%;
             column-gap: 16%;
     min-height: 292px;
-    padding: 50px 44px 31px 44px;
+    padding: 50px 45px 50px 44px;
   }
 }
 
@@ -2754,7 +2769,7 @@ iframe {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin: 3px 0 20px 0;
+  margin: 3px 0 22px 0;
   text-align: center;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 82px;
@@ -2834,7 +2849,7 @@ iframe {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   font-size: 18px;
   font-weight: 400;
   word-wrap: break-word;
@@ -2896,9 +2911,10 @@ iframe {
     margin: 0;
   }
 }
-@media (max-width: 1199.5px) {
+@media (max-width: 767.5px) {
   .supergames-info__wrapper p:nth-child(1) span:nth-child(3) {
-    width: 30px;
+    width: 27px;
+    margin-left: 5px;
   }
 }
 
@@ -2919,7 +2935,7 @@ iframe {
 }
 
 .supergames-info__wrapper p:nth-child(2) span:nth-child(1) {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -2950,7 +2966,7 @@ iframe {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 0 0 33px 16px;
+  margin: 0 0 36px 16px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -2966,7 +2982,7 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .supergames-info > p {
-    margin-bottom: 31px;
+    margin-bottom: 26px;
   }
 }
 
@@ -2989,7 +3005,7 @@ iframe {
   width: 100%;
   min-height: 67px;
   margin-bottom: 17px;
-  margin-left: 15px;
+  margin-left: 13px;
   padding: 0 100px 0 100px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
@@ -3026,7 +3042,7 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .supergames-info__link {
-    min-height: 41px;
+    min-height: 40px;
     width: 100%;
   }
 }
@@ -3034,6 +3050,7 @@ iframe {
 .supergames-picture {
   width: 100%;
   height: 100%;
+  min-height: 292px;
 }
 
 .supergames-picture img {
@@ -3089,11 +3106,7 @@ iframe {
 }
 @media (max-width: 1199.5px) {
   .slide img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 100%;
-    min-width: 40%;
+    aspect-ratio: 268/294;
     min-height: 294px;
   }
 }
@@ -3184,7 +3197,7 @@ iframe {
 @media (max-width: 1199.5px) {
   .slide span {
     width: 60%;
-    top: 80.5%;
+    top: 83%;
     left: 21%;
   }
 }
@@ -3256,7 +3269,7 @@ iframe {
 }
 @media (max-width: 1199.5px) {
   .trainer__container {
-    padding-bottom: 91px;
+    padding-bottom: 99px;
   }
 }
 @media (max-width: 767.5px) {
@@ -3266,7 +3279,7 @@ iframe {
 }
 
 .trainer__swiper h2 {
-  margin: 0 0 52px 2px;
+  margin: 0 0 51px 2px;
   text-align: start;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -3312,7 +3325,7 @@ iframe {
 }
 @media (max-width: 1199.5px) {
   .trainer__svg-prev {
-    top: -45%;
+    top: -35%;
     left: 58%;
   }
 }
@@ -3329,7 +3342,7 @@ iframe {
 }
 @media (max-width: 1199.5px) {
   .trainer__svg-next {
-    top: -45%;
+    top: -35%;
     right: 58%;
   }
 }
@@ -3433,6 +3446,10 @@ iframe {
   }
 }
 
+.swiper--2 .swiper-slide {
+  height: auto;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -3490,7 +3507,7 @@ iframe {
   .advantages h2 {
     margin: 0;
     padding-top: 36px;
-    padding-bottom: 45px;
+    padding-bottom: 43px;
     text-align: center;
     font-size: 32px;
     letter-spacing: 0.96px;
@@ -4021,7 +4038,7 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .promotions__container {
-    padding-top: 62px;
+    padding-top: 64px;
     padding-bottom: 1px;
     margin-top: -9px;
   }
@@ -4048,7 +4065,7 @@ iframe {
 @media (max-width: 767.5px) {
   .promotions__container h2 {
     margin: 0;
-    padding: 0 0 44px 0;
+    padding: 0 0 43.5px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -4463,14 +4480,15 @@ iframe {
 }
 @media (max-width: 1199.5px) and (max-width: 767.5px) {
   .promotion p {
-    margin: 0 20px 15px 20px;
+    width: 80%;
     margin: 0 auto;
+    text-align: center;
   }
 }
 
 .promotion__link {
   min-width: 68px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   padding: 10px;
   font-size: 12px;
   font-weight: 700;
@@ -4505,7 +4523,7 @@ iframe {
 @media (max-width: 767.5px) {
   .promotion__link {
     display: block;
-    margin: 0 auto 11px auto;
+    margin: 15px auto 11px auto;
     text-align: center;
   }
 }
@@ -4581,9 +4599,9 @@ iframe {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 3.4%;
-     -moz-column-gap: 3.4%;
-          column-gap: 3.4%;
+  -webkit-column-gap: 3.45%;
+     -moz-column-gap: 3.45%;
+          column-gap: 3.45%;
   padding-top: 80px;
   padding-bottom: 121px;
 }
@@ -4698,10 +4716,6 @@ iframe {
   border: 1px solid #102654;
   outline: none;
 }
-.faq__control:active {
-  background-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-}
 .faq__control:disabled {
   border: 1px solid #c8c9cc;
   color: #c8c9cc;
@@ -4726,7 +4740,7 @@ iframe {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  width: 74.3%;
+  width: 74.25%;
 }
 @media (max-width: 1199.5px) {
   .faq__content {
@@ -4890,6 +4904,8 @@ iframe {
 }
 @media (max-width: 767.5px) {
   .accordion__btn-transform::before {
+    -webkit-mask-position: center;
+            mask-position: center;
     width: 12px;
     height: 12px;
   }
@@ -4914,6 +4930,14 @@ iframe {
           align-items: center;
   width: 18px;
   height: 2px;
+}
+@media (max-width: 767.5px) {
+  .is-active > .accordion__button > .accordion__btn-transform::before {
+    -webkit-mask-position: center;
+            mask-position: center;
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .accordion__button:hover,

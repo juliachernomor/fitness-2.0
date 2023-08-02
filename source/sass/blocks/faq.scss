@@ -8,7 +8,7 @@
 .faq__container {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 3.4%;
+  column-gap: 3.45%;
   padding-top: 80px;
   padding-bottom: 121px;
 
@@ -93,11 +93,6 @@
     outline: none;
   }
 
-  &:active {
-    background-image: $torch-red-to-cobalt;
-    color: $color-default-white;
-  }
-
   &:disabled {
     border: 1px solid $color-link-water;
     color: $color-link-water;
@@ -117,7 +112,7 @@
 .faq__content {
   display: flex;
   align-items: start;
-  width: 74.3%;
+  width: 74.25%;
 
   @include vp-1199 {
     width: 100%;

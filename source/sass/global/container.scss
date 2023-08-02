@@ -1,6 +1,6 @@
 .container {
   max-width: 1366px;
-  padding: 0 101px 0 103px;
+  padding: 0 102px 0 103px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -16,7 +16,7 @@
 .container--footer {
   padding: 0 103px 0 103px;
 
-  @include vp-1199{
+  @include vp-1199 {
     padding: 45px 45px 34px 45px;
   }
 
