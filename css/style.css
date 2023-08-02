@@ -1683,6 +1683,11 @@ iframe {
   border-bottom: 1px solid #f8f9fc;
 }
 
+.abonement__months-number button.is-active:hover,
+.abonement__months-number button.is-active:focus {
+  border-bottom: 1px solid #ed0233;
+}
+
 .abonement__programs-content {
   margin-bottom: 50px;
 }
