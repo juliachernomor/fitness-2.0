@@ -103,6 +103,16 @@
   line-height: 150%;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-torch-red3;
+  }
+
+  &:disabled {
+    border-bottom: none;
+  }
+
   @include vp-1199 {
     font-size: 18px;
   }
@@ -114,7 +124,7 @@
 }
 
 .abonement__months-number button.is-active {
-  border-bottom: 1px solid $color-crimson;
+  border-bottom: 1px solid $color-ghost-white;
 }
 
 .abonement__programs-content {
