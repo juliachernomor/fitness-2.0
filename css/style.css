@@ -1669,8 +1669,18 @@ iframe {
   cursor: pointer;
 }
 
+.abonement__months-number button:hover,
+.abonement__months-number button:focus {
+  color: #102654;
+  border-bottom: 1px solid #ed0233;
+}
+
+.abonement__months-number button:disabled {
+  border-bottom: none;
+}
+
 .abonement__months-number button.is-active {
-  border-bottom: 1px solid #d10a42;
+  border-bottom: 1px solid #f8f9fc;
 }
 
 .abonement__programs-content {
