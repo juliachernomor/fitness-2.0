@@ -94,11 +94,6 @@
     outline: none;
   }
 
-  &:active {
-    background-image: $torch-red-to-cobalt;
-    color: $color-default-white;
-  }
-
   &:disabled {
     border: 1px solid $color-link-water;
     color: $color-link-water;
