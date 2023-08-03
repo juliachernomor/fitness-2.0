@@ -534,17 +534,22 @@
         <div class="promotions__container container">
           <h2>Акции</h2>
           <ul>
-            <li class="promotions__items promotions__items--first promotion promotion--first">
-              <div class="promotion__wrapper-first">
+
+            <li class="promotions__items promotion-first">
+              <div class="promotion-first__wrapper">
                 <p>Год</p>
                 <p>4999</p>
                 <p>
                   Безлимитный абонемент в тренажерный зал
                 </p>
-                <a href="#" class="promotion__link-first">Подробнее</a>
+                <a href="#" class="promotion-first__link">Подробнее</a>
               </div>
-              <div class="promotion__wrapper-img">
+              <div class="promotion-first__wrapper-img">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/promotion-desktop.webp, img/promotion-desktop@2x.webp 2x" width="280" height="462">
+                    <source type="image/jpg" media="(min-width: 1200px)"
+                    srcset="img/promotion-desktop.jpg, img/promotion-desktop@2x.jpg 2x" width="280" height="462">
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/promotion-tablet.webp, img/promotion-tablet@2x.webp 2x" width="399" height="462">
                   <source type="image/webp" media="(min-width: 320px)"
@@ -556,20 +561,23 @@
                 </picture>
               </div>
             </li>
-            <li class="promotions__items promotions__items--second promotion">
+
+            <li class="promotions__items promotion">
               <h3>Месяц бесплатно</h3>
               <p>
                 Приведи друга, получи абонемент&nbsp;в&nbsp;подарок
               </p>
               <a class="promotion__link read-more" href="#">Подробнее</a>
             </li>
-            <li class="promotions__items promotions__items--third promotion">
+
+            <li class="promotions__items  promotion">
               <h3>Скидка 20%</h3>
               <p>
                 Корпоративный фитнес с&nbsp;командой
               </p>
               <a class="promotion__link read-more" href="#">Подробнее</a>
             </li>
+
           </ul>
         </div>
       </section>
