@@ -2391,9 +2391,9 @@ iframe {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-column-gap: 37px;
-     -moz-column-gap: 37px;
-          column-gap: 37px;
+  -webkit-column-gap: 47px;
+     -moz-column-gap: 47px;
+          column-gap: 47px;
   margin: 0 0 37px 0;
   text-align: center;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
