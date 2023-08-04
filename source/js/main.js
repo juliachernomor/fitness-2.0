@@ -5,6 +5,7 @@ import {createNewSlider1, createNewSlider2} from './vendor/slider';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
 import {setupVideo} from './modules/video';
+import {tlPreview} from './modules/animation';
 
 
 // ---------------------------------
@@ -12,6 +13,7 @@ import {setupVideo} from './modules/video';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
+  tlPreview();
   setupVideo();
   initAccordions();
   iosVhFix();
