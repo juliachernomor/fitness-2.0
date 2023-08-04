@@ -1674,6 +1674,7 @@ iframe {
 .abonement__months-number button:focus {
   color: #102654;
   border-bottom: 1px solid #ed0233;
+  outline: none;
 }
 
 .abonement__months-number button:disabled {
