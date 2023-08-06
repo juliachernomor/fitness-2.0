@@ -1178,6 +1178,7 @@ ul {
 }
 
 .hero__main-information p:nth-child(2) {
+  height: 104px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1185,7 +1186,7 @@ ul {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding: 64px 0 0 0;
-  margin: 0 54px 18px 0;
+  margin: 0 0 18px 0;
   text-align: right;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
