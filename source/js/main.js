@@ -6,6 +6,7 @@ import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion';
 import {setupVideo} from './modules/video';
 import {tlPreview} from './modules/animation';
+import {typeText} from './modules/text';
 
 
 // ---------------------------------
@@ -13,6 +14,7 @@ import {tlPreview} from './modules/animation';
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
+  typeText();
   tlPreview();
   setupVideo();
   initAccordions();
