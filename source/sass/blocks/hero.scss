@@ -95,8 +95,10 @@
   letter-spacing: 1.44px;
   text-transform: lowercase;
   word-wrap: break-word;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#ffffff30);
 
   @include vp-1199 {
+    -webkit-box-reflect: none;
     padding-top: 47px;
     margin: 0 4px 3px 0;
     font-size: 34px;
@@ -127,6 +129,7 @@
   text-align: right;
   text-transform: uppercase;
   text-shadow: 5px 0 0 $color-default-white;
+  animation: intro-greetings-glow 2s linear forwards;
 
   @include vp-1199 {
     padding: 0;
@@ -151,6 +154,18 @@
     }
   }
 }
+
+@keyframes intro-greetings-glow {
+  0%, 5%, 18%, 20%, 30%, 40%, 50%, 60%, 70.5%, 80%, 90% {
+    color: #ffffff30;
+    text-shadow: none;
+  }
+  5.1%, 18.1%, 20.1%, 30.1%, 40.5%, 55%, 60.1%, 70.8%, 80.3%, 100% {
+    color: #ffffff;
+    text-shadow: 0 -4px 10px #5c5c5c;
+  }
+}
+
 
 .hero__main-information a {
   min-height: 65px;

@@ -43,5 +43,5 @@ export default function typeText() {
   const time = isEnd ? 2000 : time1;
   setTimeout(typeText, time);
 }
-
 setTimeout(typeText, 3000);
+

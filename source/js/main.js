@@ -8,13 +8,13 @@ import {setupVideo} from './modules/video';
 import {tlPreview} from './modules/animation';
 import {typeText} from './modules/text';
 
-
+setTimeout(typeText, 3000);
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
-  typeText();
+  // typeText();
   tlPreview();
   setupVideo();
   initAccordions();
