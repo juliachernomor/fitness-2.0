@@ -1196,6 +1196,7 @@ ul {
   letter-spacing: 1.44px;
   text-transform: lowercase;
   word-wrap: break-word;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1882352941));
 }
 
 .hero__main-information h1 {
@@ -1215,6 +1216,32 @@ ul {
   text-align: right;
   text-transform: uppercase;
   text-shadow: 5px 0 0 #ffffff;
+  -webkit-animation: intro-greetings-glow 2s linear forwards;
+  animation: intro-greetings-glow 2s linear forwards;
+}
+
+@-webkit-keyframes intro-greetings-glow {
+  0%, 5%, 18%, 20%, 30%, 40%, 50%, 60%, 70.5%, 80%, 90% {
+    color: rgba(255, 255, 255, 0.1882352941);
+    text-shadow: none;
+  }
+
+  5.1%, 18.1%, 20.1%, 30.1%, 40.5%, 55%, 60.1%, 70.8%, 80.3%, 100% {
+    color: #ffffff;
+    text-shadow: 0 -4px 10px #5c5c5c;
+  }
+}
+
+@keyframes intro-greetings-glow {
+  0%, 5%, 18%, 20%, 30%, 40%, 50%, 60%, 70.5%, 80%, 90% {
+    color: rgba(255, 255, 255, 0.1882352941);
+    text-shadow: none;
+  }
+
+  5.1%, 18.1%, 20.1%, 30.1%, 40.5%, 55%, 60.1%, 70.8%, 80.3%, 100% {
+    color: #ffffff;
+    text-shadow: 0 -4px 10px #5c5c5c;
+  }
 }
 
 .hero__main-information a {
@@ -3528,6 +3555,7 @@ form button {
   }
 
   .hero__main-information p:nth-child(2) {
+    -webkit-box-reflect: none;
     padding-top: 47px;
     margin: 0 4px 3px 0;
     font-size: 34px;
